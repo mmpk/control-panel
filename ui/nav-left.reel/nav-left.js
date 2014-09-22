@@ -14,15 +14,6 @@ exports.NavLeft = Component.specialize(/** @lends NavLeft# */ {
             this.super();
         }
     },
-    templateDidLoad: {
-        value: function() {
-            this.templateObjects.repetition.addPathChangeListener("selection.0.data",
-                 this, function(v){
-                    console.log(v)
-                 });
-
-        }
-    },
     Data: {
         value: [
             { display_name: "HTML", url: "/r/html5" },
@@ -32,5 +23,11 @@ exports.NavLeft = Component.specialize(/** @lends NavLeft# */ {
             { display_name: "Web Dev", url: "/r/webdev" },
             { display_name: "Startups", url: "/r/startups" }
         ]
+    },
+    
+    handleButtonAction: {
+        value: function(v) {
+             console.log(v)
+        }
     }
 });
