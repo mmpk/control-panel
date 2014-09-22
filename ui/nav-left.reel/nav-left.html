@@ -10,16 +10,17 @@
                 "element": {"#": "owner"}
             }
         },
-        "link": {
-            "prototype": "montage/ui/base/abstract-link.AbstractLink",
+        "anchor": {
+            "prototype": "native/ui/anchor.reel",
             "properties": {
-                "element": {"#": "link"},
-                "label": "Text",
-                "url": "#"
+                "element": {"#": "anchor"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true"
             },
             "bindings": {
-                "label": {"<-": "@repetition:iteration.object.display_name"},
-                "url": {"<-": "@repetition:iteration.object.url"}
+                "href": {"<-": "@repetition:iteration.object.url"},
+                "textContent": {"<-": "@repetition:iteration.object.display_name"}
             }
         },
         "repetition": {
@@ -39,9 +40,7 @@
     <div data-montage-id="owner" class="NavLeft">
         <ul class="nav nav-pills nav-stacked" data-montage-id="repetition">
             <li>
-                <p data-montage-id="link">
-                    111111
-                </p>
+                <div data-montage-id="anchor"></div>
             </li>
         </ul>
     </div>
