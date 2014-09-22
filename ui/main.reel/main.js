@@ -13,5 +13,11 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         value: function Main() {
             this.super();
         }
+    },
+    templateDidLoad: {
+        value: function(){
+             var subt = this.templateObjects.substitution;
+             subt.addSwitchElement("key1", this.templateObjects.image) 
+        }
     }
 });
