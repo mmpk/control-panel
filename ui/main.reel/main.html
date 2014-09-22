@@ -23,6 +23,18 @@
                 "width": "600"
             }
         },
+        "image2": {
+            "prototype": "native/ui/image.reel",
+            "properties": {
+                "element": {"#": "image2"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "title": "Interior",
+                "src": "http://img.drive.ru/i/0/5420105c95a65690388b457c.jpg",
+                "width": "600"
+            }
+        },
         "navLeft": {
             "prototype": "ui/nav-left.reel",
             "properties": {
@@ -56,7 +68,6 @@
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
-
         <nav class="navbar navbar-default" role="navigation">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -179,8 +190,9 @@
             </div>
             <div class="col-md-7">
                 <input data-montage-id="textarea">
-                <div data-montage-id="substitution"> 
+                <div data-montage-id="substitution">
                     <img data-montage-id="image">
+                    <div data-montage-id="image2"></div>
                 </div>
             </div>
             <div class="col-md-3">
