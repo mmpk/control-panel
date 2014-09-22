@@ -33,12 +33,26 @@
             "bindings": {
                 "content": {"<-": "@owner.Data"}
             }
+        },
+        "textarea": {
+            "prototype": "native/ui/textarea.reel",
+            "properties": {
+                "element": {"#": "textarea"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "value": "has"
+            },
+            "bindings": {
+                "value": {"<-": "@repetition.selection.0.display_data"}
+            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="owner" class="NavLeft">
+        <div data-montage-id="textarea"> </div>
         <ul class="nav nav-pills nav-stacked" data-montage-id="repetition">
             <li>
                 <a data-montage-id="anchor"></a>
