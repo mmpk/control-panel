@@ -21,7 +21,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
              console.log(subt)
              setTimeout(function(){
              //subt.addSwitchElement("key1", this.templateObjects.image) 
-                 subt.switchValue("key1")
+                 subt.switchValue = "key1"
              },1500)
         }
     }
