@@ -19,7 +19,10 @@ exports.Main = Component.specialize(/** @lends Main# */ {
              var subt = this.templateObjects.substitution;
             console.log("SUBT:")
              console.log(subt)
+             setTimeout(function(){
              //subt.addSwitchElement("key1", this.templateObjects.image) 
+                 subt.switchValue("key1")
+             },1500)
         }
     }
 });
