@@ -13,7 +13,8 @@
         "repetition": {
             "prototype": "montage/ui/repetition.reel",
             "properties": {
-                "element": {"#": "repetition"}
+                "element": {"#": "repetition"},
+                "isSelectionEnabled": true
             },
             "bindings": {
                 "content": {"<-": "@owner.Data"}
@@ -34,8 +35,7 @@
 </head>
 <body>
     <div data-montage-id="owner" class="NavLeft">
-
-        <ul data-montage-id="repetition">
+        <ul data-montage-id="repetition" class="nav nav-pills nav-stacked">
             <p data-montage-id="text">
 
             </p>
