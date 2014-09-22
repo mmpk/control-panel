@@ -21,7 +21,8 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             console.log("SUBT:")
              setInterval(function(){
              //subt.addSwitchElement("key1", this.templateObjects.image) 
-                 subt.switchValue = "key" + c++
+                 c++
+                 subt.switchValue = "key" + c
                  console.log(subt.switchValue)
                  if(c == 2) c = 0
              },1500)
