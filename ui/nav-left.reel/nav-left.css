@@ -1,7 +1,21 @@
 .NavLeft {
     background: #333;
     color: #FFF;
+    text-align: left;
 }
-.selected {
+
+.NavLeft ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.NavLeft li {
+    border-bottom: 1px solid #000;
+    padding: 12px;
+}
+
+.NavLeft .selected {
     background: #e74c3c;
 }
