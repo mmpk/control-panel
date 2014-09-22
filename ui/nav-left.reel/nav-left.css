@@ -1,3 +1,8 @@
 .NavLeft {
-
+    background: #333;
+    color: #FFF;
+}
+.activet {
+    color: red;
+    background: #333;
 }
