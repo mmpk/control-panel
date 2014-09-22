@@ -22,6 +22,25 @@
                 "url": {"<-": "@repetition:iteration.object.url"}
             }
         },
+        "link": {
+            "module": "montage/ui/anchor.reel",
+            "name": "Anchor",
+            "properties": {
+                "element": {"#": "link"}
+            },
+            "bindings": {
+                "href": {
+                    "boundObject": {"@": "list1"},
+                    "boundObjectPropertyPath": "objectAtCurrentIteration.href",
+                    "oneway": true
+                },
+                "textContent": {
+                    "boundObject": {"@": "list1"},
+                    "boundObjectPropertyPath": "objectAtCurrentIteration.src",
+                    "oneway": true
+                }
+            }
+        },
         "repetition": {
             "prototype": "montage/ui/repetition.reel",
             "properties": {
