@@ -28,7 +28,7 @@ exports.NavLeft = Component.specialize(/** @lends NavLeft# */ {
     handleButtonAction: {
         value: function(v) {
             var rep =  this.templateObjects.repetition;
-             console.log(rep.selection.0.display_name)
+             console.log(rep.selection[0].url)
         }
     }
 });
