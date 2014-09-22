@@ -11,12 +11,12 @@ var Component = require("montage/ui/component").Component;
 exports.NavLeft = Component.specialize(/** @lends NavLeft# */ {
     constructor: {
         value: function NavLeft() {
-            //this.super();
+            this.super();
         }
     },
     templateDidLoad: {
         value: function() {
-            this.addPathChangeListener("templateObjects.repetition.selection.0.data",
+            this.templateObjects.repetition.addPathChangeListener("selection.0.data",
                  this, function(v){
                     console.log(v)
                  });
