@@ -10,6 +10,22 @@
                 "element": {"#": "owner"}
             }
         },
+        "button": {
+            "prototype": "native/ui/button.reel",
+            "properties": {
+                "element": {"#": "button"},
+                "formenctype": "application/x-www-form-urlencoded",
+                "formmethod": "get",
+                "type": "button"
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "useCapture": false,
+                    "listener": {"@": "owner"}
+                }
+            ]
+        },
         "repetition": {
             "prototype": "montage/ui/repetition.reel",
             "properties": {
@@ -35,6 +51,7 @@
 </head>
 <body>
     <div data-montage-id="owner" class="NavLeft">
+        <div data-montage-id="button">PUSH </div>
         <ul class="nav-left" data-montage-id="repetition">
             <li data-montage-id="text1">
 
