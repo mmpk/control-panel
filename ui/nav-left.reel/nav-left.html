@@ -9,12 +9,34 @@
             "properties": {
                 "element": {"#": "owner"}
             }
+        },
+        "repetition": {
+            "prototype": "montage/ui/repetition.reel",
+            "properties": {
+                "element": {"#": "repetition"}
+            },
+            "bindings": {
+                "content": {"<-": "@owner.Data"}
+            }
+        },
+        "text": {
+            "prototype": "digit/ui/text.reel",
+            "properties": {
+                "element": {"#": "text"},
+                "value": "Text"
+            },
+            "bindings": {
+                "value": {"<-": "@repetition:iteration.object"}
+            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="owner" class="NavLeft">
+        <ul data-montage-id="repetition">
+            <p data-montage-id="text"></p>
+        </ul>
     </div>
 </body>
 </html>
