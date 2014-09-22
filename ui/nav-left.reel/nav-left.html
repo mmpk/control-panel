@@ -21,13 +21,10 @@
             }
         },
         "text": {
-            "prototype": "montage/ui/text.reel",
+            "prototype": "montage/ui/base/abstract-link.js",
             "properties": {
                 "element": {"#": "text"},
                 "value": "Text"
-            },
-            "bindings": {
-                "value": {"<-": "@repetition:iteration.object.display_name"}
             }
         }
     }
@@ -35,13 +32,11 @@
 </head>
 <body>
     <div data-montage-id="owner" class="NavLeft">
-
-            <ul  class="nav nav-pills nav-stacked" data-montage-id="repetition">
-                <li>
-                <p data-montage-id="text">  </p>
-                </li>
-            </ul>
-
+        <ul class="nav nav-pills nav-stacked" data-montage-id="repetition">
+            <li>
+                <p data-montage-id="text"></p>
+            </li>
+        </ul>
     </div>
 </body>
 </html>
