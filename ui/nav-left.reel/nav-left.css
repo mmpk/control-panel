@@ -2,7 +2,6 @@
     background: #333;
     color: #FFF;
 }
-.activet {
-    color: red;
-    background: #333;
+.selected {
+    background: #e74c3c;
 }

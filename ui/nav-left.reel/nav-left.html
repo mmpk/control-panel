@@ -10,20 +10,6 @@
                 "element": {"#": "owner"}
             }
         },
-        "anchor": {
-            "prototype": "native/ui/anchor.reel",
-            "properties": {
-                "element": {"#": "anchor"},
-                "contenteditable": "true",
-                "dir": "ltr",
-                "draggable": "true"
-            },
-            "bindings": {
-                "classList.has('activet')": {"<-": "false"},
-                "href": {"<-": "@repetition:iteration.object.url"},
-                "textContent": {"<-": "@repetition:iteration.object.display_name"}
-            }
-        },
         "inputText": {
             "prototype": "native/ui/input-text.reel",
             "properties": {
@@ -43,6 +29,16 @@
             "bindings": {
                 "content": {"<-": "@owner.Data"}
             }
+        },
+        "text1": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "text1"},
+                "value": "Text"
+            },
+            "bindings": {
+                "value": {"<-": "@repetition:iteration.object.display_name"}
+            }
         }
     }
     </script>
@@ -51,9 +47,9 @@
     <div data-montage-id="owner" class="NavLeft">
         <div data-montage-id="inputText"></div>
         <br>
-        <ul class="nav nav-pills nav-stacked" data-montage-id="repetition">
-            <li>
-                <a data-montage-id="anchor"></a>
+        <ul class="nav-left" data-montage-id="repetition">
+            <li data-montage-id="text1">
+
             </li>
         </ul>
     </div>
