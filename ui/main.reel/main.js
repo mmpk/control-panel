@@ -3,7 +3,7 @@
  * @requires montage/ui/component
  */
 var Component = require("montage/ui/component").Component;
-var prez = require("ui/content-presenter").ContentPresenter;
+var prez = require("ui/content-presenter.reel").ContentPresenter;
 /**
  * @class Main
  * @extends Component
