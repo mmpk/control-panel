@@ -2,13 +2,12 @@
  * @module ui/toggle-btn.reel
  * @requires montage/ui/component
  */
-var Component = require("montage/ui/component").Component;
-
+var AbstractToggleSwitch = require("montage/ui/base/abstract-toggle-switch").AbstractToggleSwitch;
 /**
  * @class ToggleBtn
  * @extends Component
  */
-exports.ToggleBtn = Component.specialize(/** @lends ToggleBtn# */ {
+exports.ToggleBtn = AbstractToggleSwitch.specialize(/** @lends ToggleBtn# */ {
     constructor: {
         value: function ToggleBtn() {
             this.super();
