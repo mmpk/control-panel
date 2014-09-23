@@ -48,9 +48,6 @@
                 "element": {"#": "repetition"},
                 "isSelectionEnabled": true
             },
-            "_dev": {
-                "isHidden": true
-            },
             "bindings": {
                 "content": {"<-": "@owner.parentComponent.Data"}
             }
@@ -61,38 +58,22 @@
                 "element": {"#": "text1"},
                 "value": "Text"
             },
-            "_dev": {
-                "isHidden": true
-            },
             "bindings": {
                 "value": {"<-": "@repetition:iteration.object.title"}
             }
-        },
-        "text2": {
-            "prototype": "montage/ui/text.reel",
-            "properties": {
-                "element": {"#": "text2"},
-                "expo": 7,
-                "value": "Text"
-            },
-            "bindings": {
-                "expo": {"<->": "this.classList.contains('selected')"},
-                "value": {"<-": "expo"},
-                "expo": {"<->": "@treeRep:iteration.object.expanded"}
-            },
-            "listeners": [
-                {
-                    "type": "action",
-                    "useCapture": false,
-                    "listener": {"@": "owner"}
-                }
-            ]
         },
         "textField": {
             "prototype": "digit/ui/text-field.reel",
             "properties": {
                 "element": {"#": "textField"},
                 "placeholderValue": "Text"
+            }
+        },
+        "toggleBtn": {
+            "prototype": "ui/toggle-btn.reel",
+            "properties": {
+                "element": {"#": "toggleBtn"},
+                "value": "TOGG"
             }
         },
         "treeController": {
@@ -123,10 +104,8 @@
         <input data-montage-id="textField" type="text">
         <ul data-montage-id="treeRep">
             <li>
+                <div data-montage-id="toggleBtn"> </div>
                 <input type="radio" data-montage-id="radio">
-                <span data-montage-id="text2">
-
-                </span>
             </li>
         </ul>
         <ul class="nav-left" data-montage-id="repetition">
