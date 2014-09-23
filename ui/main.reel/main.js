@@ -27,8 +27,8 @@ exports.Main = Component.specialize(/** @lends Main# */ {
     templateDidLoad: {
         value: function(){
             var exp = this.templateObjects.expander;
-            exp.element.innerHTML = '<div style="width: 180px;background:pink;">PINKY</div>';
-            console.log(exp.lement.children)
+            //exp.element.innerHTML = '<div style="width: 180px;background:pink;">PINKY</div>';
+            console.log(exp.element.children)
             
              var subt = this.templateObjects.substitution;
              var img = this.templateObjects.image2;
