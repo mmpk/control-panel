@@ -20,7 +20,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
              var img = this.templateObjects.image2;
              subt.addSwitchElement("key2", img) 
              
-             var nodes = subt.children
+             var nodes = this.templateObjects.navLeft.children;
             console.log(nodes)
              var c = 0;
              setInterval(function(){   
