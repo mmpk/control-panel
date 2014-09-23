@@ -26,6 +26,7 @@ exports.ToggleBtn = AbstractCheckbox.specialize(/** @lends ToggleBtn# */ {
             if (this._value !== value) {
                 this._value = value;
                 this.needsDraw = true;
+                console.log(" this.needsDraw")
             }
         }
     },
@@ -38,6 +39,7 @@ exports.ToggleBtn = AbstractCheckbox.specialize(/** @lends ToggleBtn# */ {
         value: function() {
             // get correct value
             var value = this._value, displayValue = (value || 0 === value ) ? value : this.defaultValue;
+             console.log("displayValue = ", displayValue)
             this.templateObjects.text.value = displayValue;
         }
     }
