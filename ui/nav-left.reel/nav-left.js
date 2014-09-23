@@ -3,8 +3,8 @@
  * @requires montage/ui/component
  */
 var Component = require("montage/ui/component").Component;
-var prez = require("ui/content-presenter.reel").ContentPresenter;
-var table = require("ui/table-view.reel").TableView;
+var prez = 10;
+var table = 100;
 /**
  * @class NavLeft
  * @extends Component
