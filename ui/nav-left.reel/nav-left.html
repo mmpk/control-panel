@@ -30,6 +30,13 @@
                 }
             ]
         },
+        "radio": {
+            "prototype": "digit/ui/radio-button.reel",
+            "properties": {
+                "element": {"#": "radio"},
+                "checked": true
+            }
+        },
         "repetition": {
             "prototype": "montage/ui/repetition.reel",
             "properties": {
@@ -41,15 +48,6 @@
             },
             "bindings": {
                 "content": {"<-": "@owner.parentComponent.Data"}
-            }
-        },
-        "text": {
-            "prototype": "montage/ui/text.reel",
-            "properties": {
-                "value": "Text"
-            },
-            "bindings": {
-                "value": {"<-": "@treeRep:iteration.object.content.name"}
             }
         },
         "text1": {
@@ -69,12 +67,12 @@
             "prototype": "montage/ui/text.reel",
             "properties": {
                 "element": {"#": "text2"},
-                "value": "Text",
-                "expo": true
+                "expo": true,
+                "value": "Text"
             },
             "bindings": {
-                "value": {"<-": "@treeRep:iteration.object.content.name"},
-                "expo":  {"<->": "@treeRep:iteration.object.expanded"}
+                "expo": {"<->": "@treeRep:iteration.object.expanded"},
+                "value": {"<-": "@treeRep:iteration.object.content.name"}
             }
         },
         "treeController": {
@@ -106,8 +104,11 @@
 
             </li>
         </ul>
-        <h3>tree</h3>
+        <h3>
+            tree
+        </h3>
         <ul data-montage-id="treeRep">
+            <input type="radio" data-montage-id="radio">
             <li data-montage-id="text2">
 
             </li>
