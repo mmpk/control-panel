@@ -28,6 +28,20 @@ exports.ToggleBtn = AbstractCheckbox.specialize(/** @lends ToggleBtn# */ {
                 this.needsDraw = true;
             }
         }
+    },
+    
+    draw: {
+        value: function() {
+            // get correct value
+            var value = this._value, displayValue = (value || 0 === value ) ? value : this.defaultValue;
+
+            if (this.converter) {
+                displayValue = this.converter.convert(displayValue);
+            }
+
+            //push to DOM
+            this._valueNode.data = displayValue;
+        }
     }
     
 });
