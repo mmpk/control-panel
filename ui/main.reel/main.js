@@ -34,7 +34,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
              var img = this.templateObjects.image2;
              subt.addSwitchElement("key2", img) 
 
-             subt.addSwitchElement("key3", img) 
+             subt.addSwitchElement("key3", exp) 
             
              this.Data.forEach(function(d){
                  subt.addSwitchElement(d.title, d.comp)
