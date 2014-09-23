@@ -16,12 +16,13 @@ exports.Main = Component.specialize(/** @lends Main# */ {
     },
     templateDidLoad: {
         value: function(){
+            /*
              var subt = this.templateObjects.substitution;
              var img = this.templateObjects.image2;
              subt.addSwitchElement("key2", img) 
              var prez = require("ui/content-presenter.reel").ContentPresenter;
              subt.addSwitchElement("key3", prez) 
-            /*
+            
              var c = 0;
              setInterval(function(){   
                  c++
