@@ -28,8 +28,8 @@ exports.NavLeft = Component.specialize(/** @lends NavLeft# */ {
     
     handleButtonAction: {
         value: function(v) {
-            var rep =  this.templateObjects.repetition;
-             console.log("mouseover")
+            var p =  this.templateObjects.parentNode;
+             console.log(p)
         }
     }
 });
