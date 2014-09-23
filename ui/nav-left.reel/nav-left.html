@@ -74,8 +74,22 @@
                 "value": "Text"
             },
             "bindings": {
-                "expo": {"<->": "@treeRep:iteration.object.expanded"},
+                "classList.has('flip')": {"<->": "@textField.value"},
                 "value": {"<-": "@treeRep:iteration.object.content.name"}
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "useCapture": false,
+                    "listener": {"@": "owner"}
+                }
+            ]
+        },
+        "textField": {
+            "prototype": "digit/ui/text-field.reel",
+            "properties": {
+                "element": {"#": "textField"},
+                "placeholderValue": "Text"
             }
         },
         "treeController": {
@@ -103,6 +117,7 @@
 <body>
     <div data-montage-id="owner" class="NavLeft">
         <input data-montage-id="button">
+        <input data-montage-id="textField" type="text">
         <ul data-montage-id="treeRep">
             <li>
                 <input type="radio" data-montage-id="radio">
