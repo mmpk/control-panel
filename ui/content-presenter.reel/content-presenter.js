@@ -2,7 +2,8 @@
  * @module ui/content-presenter.reel
  * @requires montage/ui/component
  */
-var Component = require("montage/ui/component").Component;
+var Montage = require("montage/core/core").Montage,
+    Component = require("montage/ui/component").Component;
 /**
  * @class ContentPresenter
  * @extends Component
