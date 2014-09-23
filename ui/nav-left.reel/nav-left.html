@@ -63,8 +63,7 @@
                 "isHidden": true
             },
             "bindings": {
-                "value": {"<-": "@treeRep:iteration.object.content.name"},
-                "this.classList.has('selected')": {"<-": "@treeRep:iteration.object.expanded"}
+                "value": {"<-": "@repetition:iteration.object.title"},
             }
         },
         "text2": {
@@ -75,7 +74,7 @@
                 "value": "Text"
             },
             "bindings": {
-           
+                "this.classList.contains('selected')": {"<-": "@treeRep:iteration.object.expanded"},
                 "value": {"<-": "@treeRep:iteration.object.content.name"}
             }
         },
