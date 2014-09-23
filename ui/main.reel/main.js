@@ -26,6 +26,9 @@ exports.Main = Component.specialize(/** @lends Main# */ {
     },
     templateDidLoad: {
         value: function(){
+            var exp = this.templateObjects.expander;
+            console.log(exp.element.innerHTML)
+            
              var subt = this.templateObjects.substitution;
              var img = this.templateObjects.image2;
              subt.addSwitchElement("key2", img) 
