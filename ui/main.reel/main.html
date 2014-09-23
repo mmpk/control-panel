@@ -21,9 +21,6 @@
                 "dir": "ltr",
                 "draggable": "true",
                 "value": "HERRRRREEE"
-            },
-            "bindings": {
-                "value": {"<-": "@CellInput.value"}
             }
         },
         "CellInput": {
@@ -33,6 +30,9 @@
                 "contenteditable": "true",
                 "dir": "ltr",
                 "draggable": "true"
+            },
+            "bindings": {
+                "value": {"<->": "@Cell1.value"}
             }
         },
         "image": {
@@ -67,6 +67,9 @@
             "prototype": "ui/nav-left.reel",
             "properties": {
                 "element": {"#": "navLeft"}
+            },
+            "_dev": {
+                "isHidden": true
             }
         },
         "substitution": {
@@ -91,6 +94,9 @@
             "properties": {
                 "element": {"#": "toggleBtn"},
                 "value": "I'm toggleBtn"
+            },
+            "_dev": {
+                "isHidden": true
             }
         }
     }
