@@ -20,7 +20,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
              var img = this.templateObjects.image2;
              subt.addSwitchElement("key2", img) 
              
-            var prez = require("../ui/content-presenter").ContentPresenter;
+            var prez = require("../content-presenter").ContentPresenter;
             console.log(prez)
              var c = 0;
              setInterval(function(){   
