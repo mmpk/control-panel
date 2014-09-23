@@ -17,30 +17,25 @@ exports.Main = Component.specialize(/** @lends Main# */ {
     },
     Data: {
         value: [
-            { display_name: "PARENTNODE", comp: prez },
-            { display_name: "Tables",    comp: table },
-            { display_name: "Coding",    comp: table  },
-            { display_name: "key1",  comp: table  },
-            { display_name: "key2",   comp: table  },
-            { display_name: "key3",  comp: table  }
+            { title: "PARENTNODE", comp: prez },
+            { title: "Tables",    comp: table },
+            { title: "Coding",    comp: table  },
+            { title: "key1",  comp: table  },
+            { title: "key2",   comp: table  },
+            { title: "key3",  comp: table  }
         ]
     },
     templateDidLoad: {
         value: function(){
-            /*
              var subt = this.templateObjects.substitution;
              var img = this.templateObjects.image2;
              subt.addSwitchElement("key2", img) 
              var prez = require("ui/content-presenter.reel").ContentPresenter;
              subt.addSwitchElement("key3", prez) 
             
-             var c = 0;
-             setInterval(function(){   
-                 c++
-                 subt.switchValue = "key" + c
-                 if(c == 3) c = 0
-             },1000);
-            */
+             this.Data.forEach(function(d){
+                 subt.addSwitchElement(d.title, d.comp)
+             })
         }
     }
 });
