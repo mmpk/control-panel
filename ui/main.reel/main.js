@@ -30,7 +30,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
              var subt = this.templateObjects.substitution;
              var img = this.templateObjects.image2;
              subt.addSwitchElement("key2", img) 
-             var prez = require("ui/content-presenter.reel").ContentPresenter;
+             var prez = require("ui/content-presenter.reel").Accordion;
              subt.addSwitchElement("key3", prez) 
             
              this.Data.forEach(function(d){
