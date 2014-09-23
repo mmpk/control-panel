@@ -4,3 +4,12 @@
 .ToggleBtn > .label {
     vertical-align: middle;
 }
+/*
+.ToggleBtn.montage-Checkbox--checked {
+    background: #e74c3c;
+}
+*/
+
+.ToggleBtn.selected {
+    background: #e74c3c;
+}
