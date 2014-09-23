@@ -1,3 +1,6 @@
+.ToggleBtn {
+    height: 100%;
+}
 .ToggleBtn :after {
     content: " + ";
 }
@@ -6,15 +9,14 @@
 }
 
 .ToggleBtn.montage-Checkbox--checked {
-    background: #9b59b6;
+    background: #111;
 }
 
 .ToggleBtn.montage-Checkbox--checked :after {
     content: " - ";
 }
 
-.ToggleBtn.montage-Checkbox--disabled :after {
-    content: "*  ";
-      background: #f1c40f;
+.ToggleBtn.montage--disabled :after {
+    content: " ";
 }
 
