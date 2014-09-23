@@ -13,6 +13,28 @@
                 "element": {"#": "main"}
             }
         },
+        "Cell1": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "Cell1"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "value": "Text"
+            },
+            "bindings": {
+                "value": {"<-": "@CellInput.value"}
+            }
+        },
+        "CellInput": {
+            "prototype": "native/ui/input-text.reel",
+            "properties": {
+                "element": {"#": "CellInput"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true"
+            }
+        },
         "image": {
             "prototype": "digit/ui/image.reel",
             "properties": {
@@ -62,32 +84,6 @@
             },
             "bindings": {
                 "switchValue": {"<-": "@navLeft.templateObjects.repetition.selection[0].title"}
-            }
-        },
-        "text": {
-            "prototype": "montage/ui/text.reel",
-            "properties": {
-                "element": {"#": "text"},
-                "contenteditable": "true",
-                "dir": "ltr",
-                "draggable": "true",
-                "value": "Text"
-            }
-        },
-        "textarea": {
-            "prototype": "native/ui/textarea.reel",
-            "properties": {
-                "element": {"#": "textarea"},
-                "contenteditable": "true",
-                "dir": "ltr",
-                "draggable": "true",
-                "errorMessage": "ERR-1",
-                "textContent": "I NEED",
-                "title": "is TITLE",
-                "value": "XXXXX"
-            },
-            "bindings": {
-                "value": {"<->": "@text.value"}
             }
         },
         "toggleBtn": {
@@ -223,8 +219,6 @@
                 </div>
             </div>
             <div class="col-md-7">
-                <p data-montage-id="text"></p>
-                <input data-montage-id="textarea">
                 <div data-montage-id="substitution">
                     <img data-montage-id="image" data-arg="key1">
                 </div>
@@ -232,6 +226,8 @@
             <div class="col-md-3">
                 <img data-montage-id="image2" data-arg="key2">
                 <div data-montage-id="toggleBtn"></div>
+                <p data-montage-id="Cell1"></p>
+                <div data-montage-id="CellInput"></div>
             </div>
         </div>
     </div>
