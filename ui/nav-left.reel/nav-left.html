@@ -37,7 +37,7 @@
                 "checked": true
             },
             "bindings": {
-                "checked": {"<-": "@treeRep:iteration.object.expanded"},
+                "checked": {"<->": "@treeRep:iteration.object.expanded"},
                 "enabled": {"<-": "@treeRep:iteration.object.children.length != 0"}
             }
         },
@@ -75,7 +75,6 @@
                 "value": "Text"
             },
             "bindings": {
-                "expo": {"<->": "@treeRep:iteration.object.expanded"},
                 "value": {"<-": "@treeRep:iteration.object.content.name"}
             }
         },
@@ -111,10 +110,12 @@
         <h3>
             tree
         </h3>
-        <ul data-montage-id="treeRep">       
+        <ul data-montage-id="treeRep">
             <li>
-                 <input type="radio" data-montage-id="radio">
-                <span data-montage-id="text2"> </span>
+                <input type="radio" data-montage-id="radio">
+                <span data-montage-id="text2">
+
+                </span>
             </li>
         </ul>
     </div>
