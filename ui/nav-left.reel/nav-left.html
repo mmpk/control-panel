@@ -30,6 +30,16 @@
                 }
             ]
         },
+        "padding": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "padding"},
+                "value": "Text"
+            },
+            "bindings": {
+                "value": {"<-": "@treeRep:iteration.object.depth.range().map{'--'}.join('')"}
+            }
+        },
         "repetition": {
             "prototype": "montage/ui/repetition.reel",
             "properties": {
@@ -38,15 +48,6 @@
             },
             "bindings": {
                 "content": {"<-": "@owner.parentComponent.Data"}
-            }
-        },
-        "text": {
-            "prototype": "montage/ui/text.reel",
-            "properties": {
-                "value": "Text"
-            },
-            "bindings": {
-                "value": {"<-": "@treeRep.object.content.name"}
             }
         },
         "text1": {
@@ -112,8 +113,9 @@
         <h3>
             tree
         </h3>
-        <ul data-montage-id="treeRep">
+        <ul class="nav-left" data-montage-id="treeRep">
             <li>
+                <p data-montage-id="padding"></p>
                 <div data-montage-id="toggleBtn">
 
                 </div>
