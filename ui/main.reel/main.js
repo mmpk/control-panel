@@ -21,13 +21,14 @@ exports.Main = Component.specialize(/** @lends Main# */ {
              subt.addSwitchElement("key2", img) 
              var prez = require("ui/content-presenter.reel").ContentPresenter;
              subt.addSwitchElement("key3", prez) 
-            console.log(typeof prez)
+            /*
              var c = 0;
              setInterval(function(){   
                  c++
                  subt.switchValue = "key" + c
                  if(c == 3) c = 0
              },1000);
+            */
         }
     }
 });

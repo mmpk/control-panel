@@ -20,9 +20,9 @@ exports.NavLeft = Component.specialize(/** @lends NavLeft# */ {
             { display_name: "Prezenter", comp: prez },
             { display_name: "Tables",    comp: table },
             { display_name: "Coding",    comp: table  },
-            { display_name: "Comp Sci",  comp: table  },
-            { display_name: "Web Dev",   comp: table  },
-            { display_name: "Startups",  comp: table  }
+            { display_name: "key1",  comp: table  },
+            { display_name: "key2",   comp: table  },
+            { display_name: "key3",  comp: table  }
         ]
     },
     

@@ -45,8 +45,14 @@
             "prototype": "montage/ui/substitution.reel",
             "properties": {
                 "element": {"#": "substitution"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
                 "shouldLoadComponentTree": false,
                 "transition": "width 2s"
+            },
+            "bindings": {
+                "switchValue": {"<-": "@navLeft.templateObjects.repetition.selection[0].display_name"}
             }
         },
         "textarea": {
