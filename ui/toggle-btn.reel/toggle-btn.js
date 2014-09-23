@@ -30,17 +30,15 @@ exports.ToggleBtn = AbstractCheckbox.specialize(/** @lends ToggleBtn# */ {
         }
     },
     
+    defaultValue: {
+        value: ""
+    },
+    
     draw: {
         value: function() {
             // get correct value
             var value = this._value, displayValue = (value || 0 === value ) ? value : this.defaultValue;
-
-            if (this.converter) {
-                displayValue = this.converter.convert(displayValue);
-            }
-
-            //push to DOM
-            this._valueNode.data = displayValue;
+            this.templateObjects.text.value = displayValue;
         }
     }
     
