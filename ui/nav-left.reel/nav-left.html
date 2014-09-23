@@ -37,7 +37,6 @@
                 "checked": true
             },
             "bindings": {
-                "checked": {"<->": "@treeRep:iteration.object.expanded"},
                 "enabled": {"<-": "@treeRep:iteration.object.children.length != 0"}
             }
         },
@@ -64,7 +63,8 @@
                 "isHidden": true
             },
             "bindings": {
-                "value": {"<-": "@repetition:iteration.object.title"}
+                "value": {"<-": "@treeRep:iteration.object.content.name"},
+                "this.classList.contains('selected')": {"<-": "@treeRep:iteration.object.expanded"}
             }
         },
         "text2": {
