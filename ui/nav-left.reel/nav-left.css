@@ -9,7 +9,6 @@
     padding: 0;
     margin: 0;
     width: 100%;
-    height: 100%;
 }
 
 .NavLeft li {
@@ -19,4 +18,8 @@
 
 .flip {
     height: 900px;
+}
+
+.dep {
+    float: left;
 }
