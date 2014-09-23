@@ -11,7 +11,7 @@ var te;
 exports.ToggleBtn = AbstractCheckbox.specialize(/** @lends ToggleBtn# */ {
     constructor: {
         value: function ToggleBtn() {
-            this.super();
+           // this.super();
             te = this.templateObjects.text;
         }
     },
