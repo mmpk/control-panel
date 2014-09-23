@@ -19,12 +19,12 @@
     vertical-align: middle;
 }
 
-/* States --------------------- */
-
-.ToggleBtn.montage--active,
-.ToggleBtn.montage-Checkbox--checked {
-    background-color: currentColor;
-    
+.ToggleBtn :before {
+    position: absolute;
+    content: "";
+ 
+    left: 5px;
+   
     width: 0;
     height: 0;
     border-style: solid;
@@ -32,8 +32,18 @@
     border-color: transparent transparent transparent #ffffff;
 
 }
+/* States --------------------- */
+.ToggleBtn.montage--active,
+.ToggleBtn.montage--checked :before{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 8px 0 8px;
+    border-color: #ffffff transparent transparent transparent;
 
-.ToggleBtn.montage-Checkbox--disabled {
+}
+
+.ToggleBtn.montage-expander--disabled {
     opacity: .5;
     pointer-events: none;
 }
