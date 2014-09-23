@@ -64,6 +64,16 @@
                 "switchValue": {"<-": "@navLeft.templateObjects.repetition.selection[0].title"}
             }
         },
+        "text": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "text"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "value": "Text"
+            }
+        },
         "textarea": {
             "prototype": "native/ui/textarea.reel",
             "properties": {
@@ -77,7 +87,7 @@
                 "value": "XXXXX"
             },
             "bindings": {
-                "value": {"<->": "@toggleBtn.templateObjects.text.value"}
+                "value": {"<->": "@text.value"}
             }
         },
         "toggleBtn": {
@@ -213,6 +223,7 @@
                 </div>
             </div>
             <div class="col-md-7">
+                <p data-montage-id="text"></p>
                 <input data-montage-id="textarea">
                 <div data-montage-id="substitution">
                     <img data-montage-id="image" data-arg="key1">
