@@ -29,8 +29,8 @@ exports.Main = Component.specialize(/** @lends Main# */ {
              var subt = this.templateObjects.substitution;
              var img = this.templateObjects.image2;
              subt.addSwitchElement("key2", img) 
-             var prez = require("ui/content-presenter.reel").Accordion;
-             subt.addSwitchElement("key3", prez) 
+
+             subt.addSwitchElement("key3", img) 
             
              this.Data.forEach(function(d){
                  subt.addSwitchElement(d.title, d.comp)
