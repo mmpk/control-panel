@@ -18,7 +18,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         value: function(){
              var subt = this.templateObjects.substitution;
              //subt.addSwitchElement("key2","<HTML>Body</HTML>") 
-            console.log(this.templateObjects.image2.addSwitchElement)
+            console.log(this.templateObjects.image2.parentNode)
              var c = 0;
              setInterval(function(){   
                  c++
