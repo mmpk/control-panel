@@ -28,7 +28,7 @@ exports.NavLeft = Component.specialize(/** @lends NavLeft# */ {
     
     handleButtonAction: {
         value: function(v) {
-            var p =  this;
+            var p =  this.classList.toggle('flip');
              console.log(p.classList)
         }
     }
