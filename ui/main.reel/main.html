@@ -52,10 +52,7 @@
                 "transition": "width 2s"
             },
             "bindings": {
-                "addSwitchElement": {"<-": "$display_name, $comp",
-                "parameters":"@navLeft.templateObjects.repetition:iteration.object"},
-                  
-                
+                "addSwitchElement": {"<-": "@navLeft.templateObjects.repetition:iteration.object.map{[$display_name, $comp]}"},
                 "switchValue": {"<-": "@navLeft.templateObjects.repetition.selection[0].display_name"}
             }
         },
