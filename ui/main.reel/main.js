@@ -25,7 +25,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
                  subt.switchValue = "key" + c
                  console.log(subt.switchValue)
                  if(c == 2) c = 0
-             },1500)
+             },3500)
         }
     }
 });
