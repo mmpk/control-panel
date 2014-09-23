@@ -14,14 +14,18 @@
             "prototype": "native/ui/button.reel",
             "properties": {
                 "element": {"#": "button"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
                 "formenctype": "application/x-www-form-urlencoded",
                 "formmethod": "get",
-                "type": "button",
-                "label": "ClickME"
+                "label": "ClickME",
+                "type": "button"
             },
             "listeners": [
                 {
                     "type": "action",
+                    "useCapture": true,
                     "listener": {"@": "owner"}
                 }
             ]
@@ -51,7 +55,7 @@
 </head>
 <body>
     <div data-montage-id="owner" class="NavLeft">
-        <input data-montage-id="button"/>
+        <input data-montage-id="button">
         <ul class="nav-left" data-montage-id="repetition">
             <li data-montage-id="text1">
 
