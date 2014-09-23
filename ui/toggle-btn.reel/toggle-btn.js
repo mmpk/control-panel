@@ -3,7 +3,6 @@
  * @requires montage/ui/component
  */
 var AbstractCheckbox = require("montage/ui/base/abstract-checkbox").AbstractCheckbox;
-var te;
 /**
  * @class ToggleBtn
  * @extends Component
@@ -11,8 +10,7 @@ var te;
 exports.ToggleBtn = AbstractCheckbox.specialize(/** @lends ToggleBtn# */ {
     constructor: {
         value: function ToggleBtn() {
-           // this.super();
-            te = this.templateObjects.text;
+            this.super();
         }
     },
     
@@ -28,8 +26,7 @@ exports.ToggleBtn = AbstractCheckbox.specialize(/** @lends ToggleBtn# */ {
             if (this._value !== value) {
                 this._value = value;
                 this.needsDraw = true;
-                te.value = value
-                console.log(" this.needsDraw")
+                console.log("value")
             }
         }
     },
