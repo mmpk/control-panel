@@ -28,7 +28,7 @@ exports.NavLeft = Component.specialize(/** @lends NavLeft# */ {
     
     handleButtonAction: {
         value: function(v) {
-            var p =  this.parentNode;
+            var p =  this.parentComponent;
              console.log(p)
         }
     }
