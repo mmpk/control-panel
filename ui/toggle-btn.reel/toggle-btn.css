@@ -1,11 +1,11 @@
 .ToggleBtn {
-    border: 1px solid;
+
 }
 .ToggleBtn > .label {
     vertical-align: middle;
 }
-/*
+
 .ToggleBtn.montage-Checkbox--checked {
-    background: #e74c3c;
+    background: #9b59b6;
 }
-*/
+
