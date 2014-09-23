@@ -69,11 +69,12 @@
             "prototype": "montage/ui/text.reel",
             "properties": {
                 "element": {"#": "text2"},
-                "value": "Text"
+                "value": "Text",
+                "expo": true
             },
             "bindings": {
                 "value": {"<-": "@treeRep:iteration.object.content.name"},
-                "classList.contains('selected')":  {"<->": "@treeRep:iteration.object.expanded"}
+                "expo":  {"<->": "@treeRep:iteration.object.expanded"}
             }
         },
         "treeController": {
