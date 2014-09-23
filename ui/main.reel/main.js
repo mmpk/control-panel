@@ -23,8 +23,9 @@ exports.Main = Component.specialize(/** @lends Main# */ {
                  c++
                  subt.switchValue = "key" + c
                  if(c == 2) c = 0
-             },500);
+             },1000);
             console.log(this.templateObjects.image) 
+           // subt.addSwitchElement("key1", this.templateObjects.image) 
         }
     }
 });
