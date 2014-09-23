@@ -19,9 +19,9 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         value: [
             { title: "PARENTNODE", comp: prez },
             { title: "Tables",    comp: table },
-            { title: "Coding",    comp: table  },
+            { title: "Coding",    comp: this  },
             { title: "key1",  comp: table  },
-            { title: "key2",   comp: table  },
+            { title: "key2",   comp: prez  },
             { title: "key3",  comp: table  }
         ]
     },
