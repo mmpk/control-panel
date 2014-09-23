@@ -40,6 +40,16 @@
                 "content": {"<-": "@owner.parentComponent.Data"}
             }
         },
+        "text": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "text"},
+                "value": "Text"
+            },
+            "bindings": {
+                "value": {"<-": "@treeRep.object.content.name"}
+            }
+        },
         "text1": {
             "prototype": "montage/ui/text.reel",
             "properties": {
@@ -108,6 +118,7 @@
                 <div data-montage-id="toggleBtn">
 
                 </div>
+                <p data-montage-id="text"></p>
             </li>
         </ul>
     </div>
