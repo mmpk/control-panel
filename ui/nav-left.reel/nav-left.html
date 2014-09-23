@@ -34,10 +34,11 @@
             "prototype": "digit/ui/checkbox.reel",
             "properties": {
                 "element": {"#": "radio"},
-                "checked": true
+                "checked": true,
+                "foo": false
             },
             "bindings": {
-                "checked": {"<->": "@treeRep:iteration.object.expanded"},
+                "foo": {"<->": "@treeRep:iteration.object.expanded"},
                 "enabled": {"<-": "@treeRep:iteration.object.children.length != 0"}
             }
         },
@@ -75,7 +76,7 @@
                 "value": "Text"
             },
             "bindings": {
-                "expo": {"<-": "this.classList.contains('selected')"},
+                "expo": {"<->": "this.classList.contains('selected')"},
                 "value": {"<-": "expo"},
                 "expo": {"<->": "@treeRep:iteration.object.expanded"}
             },
