@@ -36,6 +36,9 @@
                 "element": {"#": "repetition"},
                 "isSelectionEnabled": true
             },
+            "_dev": {
+                "isHidden": true
+            },
             "bindings": {
                 "content": {"<-": "@owner.parentComponent.Data"}
             }
@@ -43,7 +46,6 @@
         "text": {
             "prototype": "montage/ui/text.reel",
             "properties": {
-                "element": {"#": "text"},
                 "value": "Text"
             },
             "bindings": {
@@ -56,8 +58,21 @@
                 "element": {"#": "text1"},
                 "value": "Text"
             },
+            "_dev": {
+                "isHidden": true
+            },
             "bindings": {
                 "value": {"<-": "@repetition:iteration.object.title"}
+            }
+        },
+        "text2": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "text2"},
+                "value": "Text"
+            },
+            "bindings": {
+                "value": {"<-": "@treeRep:iteration.object.content.name"}
             }
         },
         "treeController": {
@@ -90,8 +105,8 @@
             </li>
         </ul>
         <ul data-montage-id="treeRep">
-            <li>
-                <p data-montage-id="text"></p>
+            <li data-montage-id="text2">
+
             </li>
         </ul>
     </div>
