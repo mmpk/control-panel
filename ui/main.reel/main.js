@@ -17,15 +17,15 @@ exports.Main = Component.specialize(/** @lends Main# */ {
     templateDidLoad: {
         value: function(){
              var subt = this.templateObjects.substitution;
+             subt.addSwitchElement("key2", this.templateObjects.image2) 
+            
              var c = 0;
-             setInterval(function(){
-             //subt.addSwitchElement("key1", this.templateObjects.image) 
+             setInterval(function(){   
                  c++
                  subt.switchValue = "key" + c
                  if(c == 2) c = 0
              },1000);
-            console.log(this.templateObjects.image) 
-           // subt.addSwitchElement("key1", this.templateObjects.image) 
+            console.log(this.templateObjects.image2) 
         }
     }
 });
