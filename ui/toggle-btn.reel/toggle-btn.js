@@ -20,7 +20,6 @@ exports.ToggleBtn = AbstractCheckbox.specialize(/** @lends ToggleBtn# */ {
     
     value: {
         get: function() {
-              console.log("return = ",  this._value)
             return this._value;
         },
         set: function(value) {
