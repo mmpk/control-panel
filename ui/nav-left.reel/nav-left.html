@@ -74,8 +74,9 @@
                 "value": "Text"
             },
             "bindings": {
-                "classList.has('selected')": {"<->": "@textField.value"},
-                "value": {"<-": "@treeRep:iteration.object.content.name"}
+                "expo": {"<->": "this.classList.has('selected')"},
+                "value": {"<-": "@treeRep:iteration.object.content.name"},
+                "expo": {"<->": "@treeRep:iteration.object.expanded"}
             },
             "listeners": [
                 {
