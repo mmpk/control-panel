@@ -29,7 +29,7 @@ exports.NavLeft = Component.specialize(/** @lends NavLeft# */ {
     handleButtonAction: {
         value: function(v) {
             var p =  this;
-             console.log(p.className)
+             console.log(p.classList)
         }
     }
 });
