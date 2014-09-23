@@ -30,17 +30,6 @@
                 }
             ]
         },
-        "radio": {
-            "prototype": "digit/ui/checkbox.reel",
-            "properties": {
-                "checked": true,
-                "foo": false
-            },
-            "bindings": {
-                "checked": {"<->": "@treeRep:iteration.object.expanded"},
-                "enabled": {"<-": "@treeRep:iteration.object.children.length != 0"}
-            }
-        },
         "repetition": {
             "prototype": "montage/ui/repetition.reel",
             "properties": {
