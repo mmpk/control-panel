@@ -20,8 +20,8 @@ exports.Main = Component.specialize(/** @lends Main# */ {
              var img = this.templateObjects.image2;
              subt.addSwitchElement("key2", img) 
              
-             var nodes = this.templateObjects.navLeft.component;
-            console.log(nodes)
+            var prez = require("ui/content-presenter").ContentPresenter;
+            console.log(prez)
              var c = 0;
              setInterval(function(){   
                  c++
