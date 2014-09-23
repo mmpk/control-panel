@@ -3,7 +3,7 @@
  * @requires montage/ui/component
  */
 var Component = require("montage/ui/component").Component;
-
+var prez = require("ui/content-presenter").ContentPresenter;
 /**
  * @class Main
  * @extends Component
@@ -20,7 +20,6 @@ exports.Main = Component.specialize(/** @lends Main# */ {
              var img = this.templateObjects.image2;
              subt.addSwitchElement("key2", img) 
              
-            var prez = require("../content-presenter").ContentPresenter;
             console.log(prez)
              var c = 0;
              setInterval(function(){   
