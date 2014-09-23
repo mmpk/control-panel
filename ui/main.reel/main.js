@@ -3,7 +3,7 @@
  * @requires montage/ui/component
  */
 var Component = require("montage/ui/component").Component;
-var prez = require("ui/content-presenter.reel").ContentPresenter;
+var prez = require("ui/content-presenter.reel").Accordion;
 var table = require("ui/table-view.reel").TableView;
 /**
  * @class Main
