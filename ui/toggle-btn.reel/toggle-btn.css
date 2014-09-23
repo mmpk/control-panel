@@ -13,13 +13,7 @@
     -webkit-tap-highlight-color: transparent;
 }
 
-.ToggleBtn > .expander {
-    display: inline-block;
-    float: left;
-}
-
 .ToggleBtn > .label {
-    display: inline-block;
     float: right;
 }
 
