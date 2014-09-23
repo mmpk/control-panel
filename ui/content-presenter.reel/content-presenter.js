@@ -2,8 +2,7 @@
  * @module ui/content-presenter.reel
  * @requires montage/ui/component
  */
-var Montage = require("montage/core/core").Montage,
-    Component = require("montage/ui/component").Component;
+var Component = require("montage/ui/component").Component;
 /**
  * @class ContentPresenter
  * @extends Component
@@ -38,9 +37,13 @@ var findClosestOfType = function(el, type, context, clazz) {
 
 };
 
-exports.Accordion = Montage.create(Component, {
-
-
+exports.Accordion = Component.specialize(/** @lends NavLeft# */ {
+    constructor: {
+        value: function Accordion() {
+            this.super();
+        }
+    },
+   
     prepareForDraw: {
         value: function() {
             if(window.Touch) {
