@@ -1,5 +1,6 @@
 .ToggleBtn {
-    border: 1px dashed;
+    width: 200px;
+    height: 40px;
 }
 .ToggleBtn > .label {
     vertical-align: middle;

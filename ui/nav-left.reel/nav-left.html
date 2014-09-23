@@ -43,7 +43,6 @@
         "text": {
             "prototype": "montage/ui/text.reel",
             "properties": {
-                "element": {"#": "text"},
                 "value": "Text"
             },
             "bindings": {
@@ -76,7 +75,7 @@
             "bindings": {
                 "checked": {"<->": "@treeRep:iteration.object.expanded"},
                 "enabled": {"<-": "@treeRep:iteration.object.children.length != 0"},
-                "value": {"<-": "@treeRep.object.content.name"}
+                "value": {"<-": "@treeRep:iteration.object.content.name"}
             }
         },
         "treeController": {
@@ -118,7 +117,6 @@
                 <div data-montage-id="toggleBtn">
 
                 </div>
-                <p data-montage-id="text"></p>
             </li>
         </ul>
     </div>
