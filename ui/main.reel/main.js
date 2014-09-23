@@ -37,7 +37,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
              subt.addSwitchElement("key3", exp) 
             
              this.Data.forEach(function(d){
-                 subt.addSwitchElement(d.title, d.comp)
+                 //subt.addSwitchElement(d.title, d.comp)
              })
         }
     },
