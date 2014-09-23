@@ -26,7 +26,7 @@ exports.NavLeft = Component.specialize(/** @lends NavLeft# */ {
         ]
     },
     
-    handleHover: {
+    handleHoverAction: {
         value: function(v) {
             var rep =  this.templateObjects.repetition;
              console.log("mouseover")
