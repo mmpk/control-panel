@@ -13,13 +13,15 @@
     -webkit-tap-highlight-color: transparent;
 }
 
+.ToggleBtn > .expander {
+    display: inline-block;
+    float: right;
+    margin: 50px;
+}
 
 .ToggleBtn > .label {
+    display: inline-block;
     float: right;
-    width: 3.75em;
-    border-radius: 0;
-    text-align: center;
-    color: green;
 }
 
 /* States --------------------- */
@@ -39,14 +41,13 @@
 /* Icon --------------------- */
 
 .digit-Checkbox-icon {
-    fill: yellow;
-    border: 3px solid red;
+    fill: transparent;
 }
 
-.digit-Checkbox.montage-Checkbox--checked .digit-Checkbox-icon {
+.ToggleBtn.montage-Checkbox--checked .digit-Checkbox-icon {
     fill: inherit;
 }
 
-.digit-Checkbox.montage--active .digit-Checkbox-icon {
+.ToggleBtn.montage--active .digit-Checkbox-icon {
     fill: transparent;
 }
