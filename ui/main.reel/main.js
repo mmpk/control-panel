@@ -25,7 +25,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
              setInterval(function(){   
                  c++
                  subt.switchValue = "key" + c
-                 if(c == 2) c = 0
+                 if(c == 3) c = 0
              },1000);
         }
     }
