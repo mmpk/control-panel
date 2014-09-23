@@ -18,7 +18,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         value: function(){
              var subt = this.templateObjects.substitution;
             var img = this.templateObjects.image2;
-            if (img.parentNode) {
+            if (!img.parentNode) {
                alert("Can't handle elements inside the DOM.");
             }
 
