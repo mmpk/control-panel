@@ -26,7 +26,7 @@ exports.ToggleBtn = AbstractCheckbox.specialize(/** @lends ToggleBtn# */ {
               console.log(value)
             if (this._value !== value) {
                 this._value = value;
-               // this.needsDraw = true;
+                this.needsDraw = true;
               
             }
         }
