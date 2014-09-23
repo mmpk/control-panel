@@ -20,7 +20,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
              var img = this.templateObjects.image2;
              subt.addSwitchElement("key2", img) 
              
-            console.log(prez)
+            console.log(typeof prez)
              var c = 0;
              setInterval(function(){   
                  c++
