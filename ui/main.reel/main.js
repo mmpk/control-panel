@@ -27,7 +27,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
     templateDidLoad: {
         value: function(){
             var exp = this.templateObjects.expander;
-            exp.element.appendChild('<div style="width: 180px;background:pink;">PINKY</div>');
+            exp.element.appendChild('APPENDAAAAAAA');
             console.log(exp.element)
             
              var subt = this.templateObjects.substitution;
