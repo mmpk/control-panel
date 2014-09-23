@@ -8,6 +8,9 @@
         "owner": {
             "properties": {
                 "element": {"#": "owner"}
+            },
+            "bindings": {
+                "classList.has('selected')": {"<-": "this.checked"}
             }
         },
         "text": {
@@ -25,7 +28,6 @@
 </head>
 <body>
     <div data-montage-id="owner" class="ToggleBtn">
-
         <p data-montage-id="text" class="label">
 
         </p>
