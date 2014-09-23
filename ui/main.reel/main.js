@@ -24,7 +24,7 @@ subt._switchElements["key2"] = img;
              var c = 0;
              setInterval(function(){   
                  c++
-                 //subt.switchValue = "key" + c
+                 subt.switchValue = "key" + c
                  if(c == 2) c = 0
              },1000);
         }
