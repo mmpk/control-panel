@@ -15,8 +15,7 @@
 
 .ToggleBtn > .expander {
     display: inline-block;
-    float: right;
-    margin: 50px;
+    float: left;
 }
 
 .ToggleBtn > .label {
