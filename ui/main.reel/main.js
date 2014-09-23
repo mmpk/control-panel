@@ -22,7 +22,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
                alert("Can't handle elements inside the DOM.");
             }
 
-             subt.addSwitchElement("key2",img) 
+            // subt.addSwitchElement("key2",img) 
            // console.log(this.templateObjects.image2.parentNode)
              var c = 0;
              setInterval(function(){   
