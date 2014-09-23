@@ -40,6 +40,16 @@
                 "content": {"<-": "@owner.parentComponent.Data"}
             }
         },
+        "text": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "text"},
+                "value": "Text"
+            },
+            "bindings": {
+                "value": {"<-": "@treeRep:iteration.object.content.name"}
+            }
+        },
         "text1": {
             "prototype": "montage/ui/text.reel",
             "properties": {
@@ -48,6 +58,24 @@
             },
             "bindings": {
                 "value": {"<-": "@repetition:iteration.object.title"}
+            }
+        },
+        "treeController": {
+            "prototype": "montage/core/tree-controller",
+            "properties": {
+                "childrenPath": "children"
+            },
+            "bindings": {
+                "content": {"<-": "@owner.parentComponent.root"}
+            }
+        },
+        "treeRep": {
+            "prototype": "montage/ui/repetition.reel",
+            "properties": {
+                "element": {"#": "treeRep"}
+            },
+            "bindings": {
+                "content": {"<-": "@treeController.iterations"}
             }
         }
     }
@@ -59,6 +87,11 @@
         <ul class="nav-left" data-montage-id="repetition">
             <li data-montage-id="text1">
 
+            </li>
+        </ul>
+        <ul data-montage-id="treeRep">
+            <li>
+                <p data-montage-id="text"></p>
             </li>
         </ul>
     </div>
