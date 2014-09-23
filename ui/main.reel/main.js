@@ -27,7 +27,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
     templateDidLoad: {
         value: function(){
             var exp = this.templateObjects.expander;
-            exp.element.appendChild(table);
+            exp.element.appendChild(table.element);
             console.log(exp.element)
             
              var subt = this.templateObjects.substitution;
