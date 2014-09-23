@@ -75,8 +75,8 @@
                 "value": "Text"
             },
             "bindings": {
-
-                "value": {"<-": "classList.contains('selected')"}
+           
+                "value": {"<-": "@treeRep:iteration.object.content.name"}
             }
         },
         "treeController": {
@@ -91,7 +91,8 @@
         "treeRep": {
             "prototype": "montage/ui/repetition.reel",
             "properties": {
-                "element": {"#": "treeRep"}
+                "element": {"#": "treeRep"},
+                "isSelectionEnabled": true
             },
             "bindings": {
                 "content": {"<-": "@treeController.iterations"}
