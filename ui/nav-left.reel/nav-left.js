@@ -31,5 +31,12 @@ exports.NavLeft = Component.specialize(/** @lends NavLeft# */ {
             var p =  this.classList.toggle('flip');
              console.log(this.classList.contains('flip'))
         }
+    },
+    
+    handleText2Action: {
+        value: function(v) {
+            var p =  this.classList.toggle('flip');
+            console.log(this.classList.contains('flip'))
+        }
     }
 });
