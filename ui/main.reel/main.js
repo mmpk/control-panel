@@ -18,8 +18,8 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         value: function(){
              var subt = this.templateObjects.substitution;
              var img = this.templateObjects.image2;
-subt._switchElements["key2"] = img;
-            // subt.addSwitchElement("key2", img) 
+//subt._switchElements["key2"] = img;
+            subt.addSwitchElement("key2", img) 
            // console.log(this.templateObjects.image2.parentNode)
              var c = 0;
              setInterval(function(){   
