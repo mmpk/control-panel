@@ -33,7 +33,6 @@
         "radio": {
             "prototype": "digit/ui/checkbox.reel",
             "properties": {
-                "element": {"#": "radio"},
                 "checked": true,
                 "foo": false
             },
@@ -74,6 +73,11 @@
             "properties": {
                 "element": {"#": "toggleBtn"},
                 "value": "TOGG"
+            },
+            "bindings": {
+                "checked": {"<->": "@treeRep:iteration.object.expanded"},
+                "enabled": {"<-": "@treeRep:iteration.object.children.length != 0"},
+                "value": {"<-": "@treeRepiteration.object.content.name"}
             }
         },
         "treeController": {
@@ -104,8 +108,9 @@
         <input data-montage-id="textField" type="text">
         <ul data-montage-id="treeRep">
             <li>
-                <div data-montage-id="toggleBtn"> </div>
-                <input type="radio" data-montage-id="radio">
+                <div data-montage-id="toggleBtn">
+
+                </div>
             </li>
         </ul>
         <ul class="nav-left" data-montage-id="repetition">
