@@ -3,7 +3,8 @@
  * @requires montage/ui/component
  */
 var Component = require("montage/ui/component").Component;
-
+var prez = require("ui/content-presenter.reel").ContentPresenter;
+var table = require("ui/table-view.reel").TableView;
 /**
  * @class Main
  * @extends Component
@@ -13,6 +14,16 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         value: function Main() {
             this.super();
         }
+    },
+    Data: {
+        value: [
+            { display_name: "PARENTNODE", comp: prez },
+            { display_name: "Tables",    comp: table },
+            { display_name: "Coding",    comp: table  },
+            { display_name: "key1",  comp: table  },
+            { display_name: "key2",   comp: table  },
+            { display_name: "key3",  comp: table  }
+        ]
     },
     templateDidLoad: {
         value: function(){
