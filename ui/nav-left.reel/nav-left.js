@@ -3,7 +3,8 @@
  * @requires montage/ui/component
  */
 var Component = require("montage/ui/component").Component;
-
+var prez = require("ui/content-presenter.reel").ContentPresenter;
+var table = require("ui/table-view.reel").TableView;
 /**
  * @class NavLeft
  * @extends Component
@@ -16,12 +17,12 @@ exports.NavLeft = Component.specialize(/** @lends NavLeft# */ {
     },
     Data: {
         value: [
-            { display_name: "HTML", url: "/r/html5" },
-            { display_name: "Programming", url: "/r/programming" },
-            { display_name: "Coding", url: "/r/coding" },
-            { display_name: "Comp Sci", url: "/r/compsci" },
-            { display_name: "Web Dev", url: "/r/webdev" },
-            { display_name: "Startups", url: "/r/startups" }
+            { display_name: "Prezenter", comp: prez },
+            { display_name: "Tables",    comp: table },
+            { display_name: "Coding",    comp: table  },
+            { display_name: "Comp Sci",  comp: table  },
+            { display_name: "Web Dev",   comp: table  },
+            { display_name: "Startups",  comp: table  }
         ]
     },
     
