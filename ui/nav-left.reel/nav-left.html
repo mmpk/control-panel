@@ -13,7 +13,6 @@
         "button": {
             "prototype": "native/ui/button.reel",
             "properties": {
-                "element": {"#": "button"},
                 "contenteditable": "true",
                 "dir": "ltr",
                 "draggable": "true",
@@ -43,7 +42,6 @@
         "repetition": {
             "prototype": "montage/ui/repetition.reel",
             "properties": {
-                "element": {"#": "repetition"},
                 "isSelectionEnabled": true
             },
             "bindings": {
@@ -53,18 +51,10 @@
         "text1": {
             "prototype": "montage/ui/text.reel",
             "properties": {
-                "element": {"#": "text1"},
                 "value": "Text"
             },
             "bindings": {
                 "value": {"<-": "@repetition:iteration.object.title"}
-            }
-        },
-        "textField": {
-            "prototype": "digit/ui/text-field.reel",
-            "properties": {
-                "element": {"#": "textField"},
-                "placeholderValue": "Text"
             }
         },
         "toggleBtn": {
@@ -103,16 +93,6 @@
 </head>
 <body>
     <div data-montage-id="owner" class="NavLeft">
-        <input data-montage-id="button">
-        <input data-montage-id="textField" type="text">
-        <ul class="nav-left" data-montage-id="repetition">
-            <li data-montage-id="text1">
-
-            </li>
-        </ul>
-        <h3>
-            tree
-        </h3>
         <ul class="nav-left" data-montage-id="treeRep">
             <li>
                 <span class="dep" data-montage-id="padding">

@@ -27,8 +27,8 @@ exports.Main = Component.specialize(/** @lends Main# */ {
     templateDidLoad: {
         value: function(){            
              var subt = this.templateObjects.substitution;
-                 subt.addSwitchElement("key2", table) 
-                 subt.addSwitchElement("key3", table) 
+                 subt.addSwitchElement("key1", table) 
+                 subt.addSwitchElement("Me", table) 
                  subt.switchValue ='key3'
                  console.log(subt.content)
             
@@ -71,7 +71,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
 
                      ]
                     },
-                    {"name": "Me"},
+                    {"name": "key1"},
                     {"name": "HTML"},
                     {"name": "Pluto"}
                 ]
