@@ -10,6 +10,47 @@
                 "element": {"#": "owner"}
             }
         },
+        "actionEventListener": {
+            "prototype": "montage/core/event/action-event-listener",
+            "properties": {
+                "action": "show",
+                "handler": {"@": "alert"}
+            },
+            "_dev": {
+                "isHidden": true
+            }
+        },
+        "alert": {
+            "prototype": "matte/ui/popup/alert.reel",
+            "properties": {
+                "element": {"#": "alert"},
+                "details": "детали",
+                "msg": "Сообщение",
+                "popup": " ",
+                "title": "Это"
+            }
+        },
+        "button": {
+            "prototype": "matte/ui/button.reel",
+            "properties": {
+                "element": {"#": "button"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "enabled": true,
+                "formenctype": "application/x-www-form-urlencoded",
+                "formmethod": "get",
+                "label": "Button",
+                "type": "button"
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "useCapture": false,
+                    "listener": {"@": "actionEventListener"}
+                }
+            ]
+        },
         "checkbox": {
             "prototype": "matte/ui/input-checkbox.reel",
             "properties": {
@@ -100,6 +141,8 @@
 </head>
 <body>
     <div data-montage-id="owner" class="TableView">
+        <button data-montage-id="button"></button>
+        <div data-montage-id="alert"></div>
         <ul data-montage-id="repetition">
             <li></li>
         </ul>
