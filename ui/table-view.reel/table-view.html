@@ -10,11 +10,22 @@
                 "element": {"#": "owner"}
             }
         },
+        "inputText": {
+            "prototype": "matte/ui/input-text.reel",
+            "properties": {
+                "element": {"#": "inputText"},
+                "value": "Text"
+            },
+            "bindings": {
+                "value": {"<-": "@list:iteration.object.name"}
+            }
+        },
         "list": {
             "prototype": "matte/ui/list.reel",
             "properties": {
                 "element": {"#": "list"},
-                "contentController": {"@": "rangeController"}
+                "contentController": {"@": "rangeController"},
+                "isSelectionEnabled": true
             }
         },
         "rangeController": {
@@ -34,6 +45,7 @@
         <ul data-montage-id="list">
             <li>
                 Item
+                <input data-montage-id="inputText" type="text">
             </li>
         </ul>
     </div>
