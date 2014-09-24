@@ -69,14 +69,6 @@
                 "element": {"#": "repetition"}
             }
         },
-        "scroller": {
-            "prototype": "matte/ui/scroller.reel",
-            "properties": {
-                "element": {"#": "scroller"},
-                "axis": "horizontal",
-                "displayScrollbars": "horizontal"
-            }
-        },
         "select": {
             "prototype": "matte/ui/select.reel",
             "properties": {
@@ -114,21 +106,19 @@
         <h1>
             TableView
         </h1>
-        <div data-montage-id="scroller" id="horiz">
-            <div class="container">
-                <ul data-montage-id="list" class="mgrid">
-                    <li>
-                        <input data-montage-id="inputName" type="text">
-                        <input data-montage-id="inputScore" type="text">
-                        <select data-montage-id="select">
+        <div class="container">
+            <ul data-montage-id="list" class="mgrid">
+                <li>
+                    <input data-montage-id="inputName" type="text">
+                    <input data-montage-id="inputScore" type="text">
+                    <select data-montage-id="select">
 
-                        </select>
-                        <input type="date" data-montage-id="date">
-                        <input type="checkbox" data-montage-id="checkbox">
-                        <button data-montage-id="toggleButton"></button>
-                    </li>
-                </ul>
-            </div>
+                    </select>
+                    <input type="date" data-montage-id="date">
+                    <input type="checkbox" data-montage-id="checkbox">
+                    <button data-montage-id="toggleButton"></button>
+                </li>
+            </ul>
         </div>
     </div>
 </body>
