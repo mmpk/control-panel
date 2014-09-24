@@ -71,7 +71,9 @@ exports.Main = Component.specialize(/** @lends Main# */ {
 
                      ]
                     },
-                    {"name": "Me"}
+                    {"name": "Me"},
+                    {"name": "HTML"},
+                    {"name": "Pluto"}
                 ]
                }
     }
