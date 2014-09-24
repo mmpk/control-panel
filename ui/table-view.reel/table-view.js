@@ -21,5 +21,5 @@ exports.TableView = Component.specialize(/** @lends TableView# */ {
     },
     Data: {
         value: []
-    },
+    }
 });
