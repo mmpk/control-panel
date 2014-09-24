@@ -73,10 +73,8 @@
             "prototype": "matte/ui/scroller.reel",
             "properties": {
                 "element": {"#": "scroller"},
-                "axis": "horizontal",
-                "displayScrollbars": "horizontal",
-                "hasMomentum": "true",
-                "scrollX": "200"
+                "axis": "both",
+                "displayScrollbars": "both"
             }
         },
         "select": {
@@ -104,9 +102,6 @@
                 "unpressedLabel": "Off",
                 "value": true
             }
-        },
-        "tokenField": {
-            "prototype": "matte/ui/token-field/token-field.reel"
         }
     }
     </script>
@@ -119,8 +114,8 @@
         <h1>
             TableView
         </h1>
-        <div class="container">
-            <div data-montage-id="scroller" style="height: 200px;width: 400px;">        </div>
+        <div data-montage-id="scroller">
+            <div class="container">
                 <ul data-montage-id="list" class="mgrid">
                     <li>
                         <input data-montage-id="inputName" type="text">
@@ -134,7 +129,7 @@
                     </li>
                 </ul>
             </div>
-
+        </div>
     </div>
 </body>
 </html>
