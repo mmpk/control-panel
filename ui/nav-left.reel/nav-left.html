@@ -34,7 +34,7 @@
             "prototype": "matte/ui/dynamic-element.reel",
             "properties": {
                 "element": { "#": "padding" },
-                "allowedTagNames": ["span"]
+                "allowedTagNames": ["div"]
             },
             "bindings": {
                 "innerHTML": {"<-": "@treeRep:iteration.object.depth.range().map{'<span>&nbsp;&nbsp;&nbsp;</span>'}.join('')"}
@@ -115,7 +115,7 @@
         </h3>
         <ul class="nav-left" data-montage-id="treeRep">
             <li>
-                <span class="dep" data-montage-id="padding">
+                <span class="div" data-montage-id="padding">
 
                 </span>
                 <div data-montage-id="toggleBtn">
