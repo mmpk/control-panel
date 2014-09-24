@@ -9,13 +9,33 @@
             "properties": {
                 "element": {"#": "owner"}
             }
+        },
+        "list": {
+            "prototype": "matte/ui/list.reel",
+            "properties": {
+                "element": {"#": "list"},
+                "contentController": {"@": "rangeController"}
+            }
+        },
+        "rangeController": {
+            "prototype": "montage/core/range-controller",
+            "bindings": {
+                "content": {"<-": "@owner.Data"}
+            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="owner" class="TableView">
-            <h1>TableView</h1>
+        <h1>
+            TableView
+        </h1>
+        <ul data-montage-id="list">
+            <li>
+                Item
+            </li>
+        </ul>
     </div>
 </body>
 </html>
