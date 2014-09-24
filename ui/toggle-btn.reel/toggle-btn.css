@@ -7,22 +7,13 @@
 }
 
 .ToggleBtn.montage-Checkbox--checked {
-    background: #333;
-}
-/*
-.ToggleBtn :after {
-    content: " + ";
+    background: #2c3e50;
 }
 
-.ToggleBtn.montage-Checkbox--checked :after {
-    content: " - ";
+.ToggleBtn.montage--disabled .glyphicon {
+    display: none;
 }
 
-.ToggleBtn.montage--disabled :after {
-    content: " ";
-}
-
-*/
 
 .ToggleBtn.montage-Checkbox--checked .glyphicon {
      transform: rotate(90deg);
