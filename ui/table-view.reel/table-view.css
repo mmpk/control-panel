@@ -2,9 +2,14 @@
 
 }
 
-.matte-List {
+.mgrid{
     list-style: none;
     padding: 0;
     margin: 0;
+
+}
+.mgrid li {
+    float: left;
+    border: 5px solid ;
 
 }
