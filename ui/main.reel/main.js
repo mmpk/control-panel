@@ -29,6 +29,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
              var subt = this.templateObjects.substitution;
                  subt.addSwitchElement("key2", table) 
                  subt.addSwitchElement("key3", table) 
+                 subt.switchValue('key3')
                  console.log(subt.content)
             
              this.Data.forEach(function(d){
