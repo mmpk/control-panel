@@ -14,7 +14,9 @@ exports.TableView = Component.specialize(/** @lends TableView# */ {
             this.super();
             for(var i=0; i<100;i++){
                 var d = {"name" : "Name"+i "score" : 15 * i}
+                this.Data.push(d)
             }
+            console.log(this.Data)
         }
     },
     Data: {
