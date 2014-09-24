@@ -46,7 +46,7 @@
                 "value": "Text"
             },
             "bindings": {
-                "value": {"<-": "@list:iteration.object.name"}
+                "value": {"<-": "@list:iteration.object.score"}
             }
         },
         "list": {
@@ -67,6 +67,12 @@
             "prototype": "montage/ui/repetition.reel",
             "properties": {
                 "element": {"#": "repetition"}
+            }
+        },
+        "scroller": {
+            "prototype": "matte/ui/scroller.reel",
+            "properties": {
+                "element": {"#": "scroller"}
             }
         },
         "select": {
@@ -109,19 +115,21 @@
         <h1>
             TableView
         </h1>
-         <div class="container-fluid">
-            <ul data-montage-id="list" class="mgrid">
-                <li>
-                    <input data-montage-id="inputName" type="text">
-                    <input data-montage-id="inputScore" type="text">
-                    <select data-montage-id="select">
+        <div class="container">
+            <div data-montage-id="scroller">
+                <ul data-montage-id="list" class="mgrid">
+                    <li>
+                        <input data-montage-id="inputName" type="text">
+                        <input data-montage-id="inputScore" type="text">
+                        <select data-montage-id="select">
 
-                    </select>
-                    <input type="date" data-montage-id="date">
-                    <input type="checkbox" data-montage-id="checkbox">
-                    <button data-montage-id="toggleButton"></button>
-                </li>
-            </ul>
+                        </select>
+                        <input type="date" data-montage-id="date">
+                        <input type="checkbox" data-montage-id="checkbox">
+                        <button data-montage-id="toggleButton"></button>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </body>
