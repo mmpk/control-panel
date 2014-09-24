@@ -13,31 +13,6 @@
                 "element": {"#": "main"}
             }
         },
-        "Cell1": {
-            "prototype": "montage/ui/text.reel",
-            "properties": {
-                "element": {"#": "Cell1"},
-                "contenteditable": "true",
-                "dir": "ltr",
-                "draggable": "true",
-                "value": "HERRRRREEE"
-            }
-        },
-        "CellInput": {
-            "prototype": "digit/ui/text-field.reel",
-            "properties": {
-                "element": {"#": "CellInput"}
-            },
-            "bindings": {
-                "value": {"<->": "@toggleBtn.checked"}
-            }
-        },
-        "expander": {
-            "prototype": "ui/expander.reel",
-            "properties": {
-                "element": {"#": "expander"}
-            }
-        },
         "image": {
             "prototype": "digit/ui/image.reel",
             "properties": {
@@ -54,7 +29,6 @@
         "image2": {
             "prototype": "native/ui/image.reel",
             "properties": {
-                "element": {"#": "image2"},
                 "contenteditable": "true",
                 "dir": "ltr",
                 "draggable": "true",
@@ -90,13 +64,6 @@
             },
             "bindings": {
                 "switchValue": {"<-": "@navLeft.templateObjects.repetition.selection[0].title"}
-            }
-        },
-        "toggleBtn": {
-            "prototype": "ui/toggle-btn.reel",
-            "properties": {
-                "element": {"#": "toggleBtn"},
-                "value": "I'm toggleBtn"
             }
         },
         "Verx": {
@@ -243,17 +210,7 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div data-montage-id="expander"></div>
-                <img data-montage-id="image2" data-arg="key2">
-                <div data-montage-id="toggleBtn"></div>
-                <hr>
-                <p data-montage-id="Cell1">
 
-                </p>
-                <hr>
-                <div data-montage-id="CellInput">
-
-                </div>
             </div>
         </div>
     </div>

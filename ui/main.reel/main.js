@@ -25,16 +25,11 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         ]
     },
     templateDidLoad: {
-        value: function(){
-            var exp = this.templateObjects.expander;
-
-            console.log(document.body)
-            
+        value: function(){            
              var subt = this.templateObjects.substitution;
-             var img = this.templateObjects.image2;
-             subt.addSwitchElement("key2", img) 
-
-             subt.addSwitchElement("key3", exp) 
+                 subt.addSwitchElement("key2", table) 
+                 subt.addSwitchElement("key3", table) 
+                 console.log(subt.content)
             
              this.Data.forEach(function(d){
                  //subt.addSwitchElement(d.title, d.comp)
