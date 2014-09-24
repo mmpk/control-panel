@@ -1,15 +1,17 @@
 .ToggleBtn {
     height: 100%;
 }
-.ToggleBtn :after {
-    content: " + ";
-}
+
 .ToggleBtn > .label {
     vertical-align: middle;
 }
 
 .ToggleBtn.montage-Checkbox--checked {
-    background: #111;
+    background: #333;
+}
+/*
+.ToggleBtn :after {
+    content: " + ";
 }
 
 .ToggleBtn.montage-Checkbox--checked :after {
@@ -20,3 +22,8 @@
     content: " ";
 }
 
+*/
+
+.ToggleBtn.montage-Checkbox--checked .glyphicon {
+     transform: rotate(90deg);
+}
