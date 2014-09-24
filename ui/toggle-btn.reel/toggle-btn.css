@@ -1,14 +1,16 @@
 .ToggleBtn {
- 
+    vertical-align: middle;
+     width: 100%;
+    padding: 10px;
 }
 
 .ToggleBtn .glyphicon {
-    vertical-align: middle;
-    display: inline-block;
+     vertical-align: middle;
+     display: inline-block;
 }
 .ToggleBtn p.label {
-
-     display: inline-block;
+     vertical-align: middle;
+     display: inline;
 }
 
 .ToggleBtn.montage-Checkbox--checked {
