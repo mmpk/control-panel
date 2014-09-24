@@ -40,6 +40,18 @@
                 "isHidden": true
             }
         },
+        "inputText1": {
+            "prototype": "native/ui/input-text.reel",
+            "properties": {
+                "element": {"#": "inputText1"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true"
+            },
+            "bindings": {
+                "value": {"<-": "@t-rep:iteration.object.name"}
+            }
+        },
         "navLeft": {
             "prototype": "ui/nav-left.reel",
             "properties": {
@@ -61,6 +73,15 @@
             },
             "bindings": {
                 "switchValue": {"<-": "@navLeft.templateObjects.treeRep.selection.0.content.name"}
+            }
+        },
+        "t-rep": {
+            "prototype": "montage/ui/repetition.reel",
+            "properties": {
+                "element": {"#": "t-rep"}
+            },
+            "bindings": {
+                "content": {"<-": "@tableView.Data"}
             }
         },
         "tableView": {
@@ -213,8 +234,10 @@
                     <div data-montage-id="tableView" data-arg="Pluto"></div>
                 </div>
             </div>
-            <div class="col-md-3">
-
+            <div class="col-md-3 lefter">
+                <ul data-montage-id="t-rep">
+                    <li data-montage-id="inputText1"> </li>
+                </ul>
             </div>
         </div>
     </div>
