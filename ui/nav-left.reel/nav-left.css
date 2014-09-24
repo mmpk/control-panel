@@ -21,6 +21,6 @@
 }
 
 .dep {
-     background: blue;
+    visibility: hidden;
     float: left;
 }
