@@ -10,16 +10,6 @@
                 "element": {"#": "owner"}
             }
         },
-        "checkbox": {
-            "prototype": "matte/ui/input-checkbox.reel",
-            "properties": {
-                "element": {"#": "checkbox"},
-                "checked": true,
-                "contenteditable": "true",
-                "dir": "ltr",
-                "draggable": "true"
-            }
-        },
         "date": {
             "prototype": "matte/ui/input-date.reel",
             "properties": {
@@ -101,21 +91,20 @@
     </script>
 </head>
 <body>
-    <div data-montage-id="owner" class="TableView">
+    <div class="TableView" data-montage-id="owner">
         <h1>
             TableView
         </h1>
         <div data-montage-id="scroller">
             <div class="container">
-                <ul data-montage-id="list" class="mgrid">
+                <ul class="mgrid" data-montage-id="list">
                     <li>
                         <input data-montage-id="inputName" type="text">
                         <input data-montage-id="inputScore" type="text">
                         <select data-montage-id="select">
 
                         </select>
-                        <input type="date" data-montage-id="date">
-                        <input type="checkbox" data-montage-id="checkbox">
+                        <input data-montage-id="date" type="date">
                         <button data-montage-id="toggleButton"></button>
                     </li>
                 </ul>
