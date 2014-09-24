@@ -50,7 +50,7 @@
             }
         },
         "list": {
-            "prototype": "matte/ui/list.reel",
+            "prototype": "montage/ui/repetition.reel",
             "properties": {
                 "element": {"#": "list"},
                 "contentController": {"@": "rangeController"},
@@ -61,6 +61,12 @@
             "prototype": "montage/core/range-controller",
             "bindings": {
                 "content": {"<-": "@owner.Data"}
+            }
+        },
+        "repetition": {
+            "prototype": "montage/ui/repetition.reel",
+            "properties": {
+                "element": {"#": "repetition"}
             }
         },
         "select": {
@@ -97,10 +103,13 @@
 </head>
 <body>
     <div data-montage-id="owner" class="TableView">
+        <ul data-montage-id="repetition">
+            <li></li>
+        </ul>
         <h1>
             TableView
         </h1>
-        <ul data-montage-id="list">
+        <ul data-montage-id="list" class="mgrid">
             <li>
                 <input data-montage-id="inputName" type="text">
                 <input data-montage-id="inputScore" type="text">
