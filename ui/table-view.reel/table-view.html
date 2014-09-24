@@ -10,10 +10,20 @@
                 "element": {"#": "owner"}
             }
         },
-        "inputText": {
+        "inputName": {
             "prototype": "matte/ui/input-text.reel",
             "properties": {
-                "element": {"#": "inputText"},
+                "element": {"#": "inputName"},
+                "value": "Text"
+            },
+            "bindings": {
+                "value": {"<-": "@list:iteration.object.name"}
+            }
+        },
+        "inputScore": {
+            "prototype": "matte/ui/input-text.reel",
+            "properties": {
+                "element": {"#": "inputScore"},
                 "value": "Text"
             },
             "bindings": {
@@ -33,6 +43,15 @@
             "bindings": {
                 "content": {"<-": "@owner.Data"}
             }
+        },
+        "select": {
+            "prototype": "matte/ui/select.reel",
+            "properties": {
+                "element": {"#": "select"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true"
+            }
         }
     }
     </script>
@@ -44,8 +63,15 @@
         </h1>
         <ul data-montage-id="list">
             <li>
-                Item
-                <input data-montage-id="inputText" type="text">
+                <input data-montage-id="inputName" type="text">
+                <input data-montage-id="inputScore" type="text">
+                <select data-montage-id="select">
+                    <option value="">Please select a Country</option>
+                    <option value="USA" selected="true">United States of America</option>
+                    <option value="INR" >India</option>
+                    <option value="FR">France</option>
+                    <option value="GER">Germany</option>
+                </select>
             </li>
         </ul>
     </div>
