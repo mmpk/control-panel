@@ -34,7 +34,7 @@
             "prototype": "matte/ui/dynamic-element.reel",
             "properties": {
                 "element": { "#": "padding" },
-                "allowedTagNames": ["span"]
+                "allowedTagNames": ["p" ,"a"]
             },
             "bindings": {
                 "innerHTML": {"<-": "@treeRep:iteration.object.depth.range().map{'---'}.join('')"}
@@ -88,6 +88,12 @@
                 "content": {"<-": "@owner.parentComponent.root"}
             }
         },
+        "treeRange": {
+            "prototype": "montage/core/range-controller",
+            "bindings": {
+                "content": {"<-": "@treeController.iterations"}
+            }
+        },
         "treeRep": {
             "prototype": "montage/ui/repetition.reel",
             "properties": {
@@ -95,7 +101,7 @@
                 "isSelectionEnabled": true
             },
             "bindings": {
-                "content": {"<-": "@treeController.iterations"}
+                "contentController": {"<-": "@treeRange"}
             }
         }
     }
