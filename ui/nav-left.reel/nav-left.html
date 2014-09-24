@@ -31,13 +31,13 @@
             ]
         },
         "padding": {
-            "prototype": "matte/ui/dynamic-element.reel",
+            "prototype": "montage/ui/text.reel",
             "properties": {
-                "element": { "#": "padding" },
-                "allowedTagNames": ["p" ,"a"]
+                "element": {"#": "padding"},
+                "value": "Text"
             },
             "bindings": {
-                "innerHTML": {"<-": "@treeRep:iteration.object.depth.range().map{'---'}.join('')"}
+                "value": {"<-": "@treeRep:iteration.object.depth.range().map{'- -'}.join('')"}
             }
         },
         "repetition": {
@@ -88,12 +88,6 @@
                 "content": {"<-": "@owner.parentComponent.root"}
             }
         },
-        "treeRange": {
-            "prototype": "montage/core/range-controller",
-            "bindings": {
-                "content": {"<-": "@treeController.iterations"}
-            }
-        },
         "treeRep": {
             "prototype": "montage/ui/repetition.reel",
             "properties": {
@@ -101,7 +95,7 @@
                 "isSelectionEnabled": true
             },
             "bindings": {
-                "contentController": {"<-": "@treeRange"}
+                "content": {"<-": "@treeController.iterations"}
             }
         }
     }
