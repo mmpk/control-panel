@@ -34,11 +34,10 @@
             "prototype": "matte/ui/dynamic-element.reel",
             "properties": {
                 "element": { "#": "padding" },
-                "allowedTagNames": [ "p", "a" ],
-                "innerHTML": "<p>Test <a href='#'>Test 2</a></p>"
+                "allowedTagNames": [ "p", "a" ]
             },
             "bindings": {
-                "value": {"<-": "@treeRep:iteration.object.depth.range().map{'- -'}.join('')"}
+                "innerHTML": {"<-": "@treeRep:iteration.object.depth.range().map{'&nbsp;'}.join('')"}
             }
         },
         "repetition": {
