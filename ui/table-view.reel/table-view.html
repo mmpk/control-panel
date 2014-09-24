@@ -10,6 +10,22 @@
                 "element": {"#": "owner"}
             }
         },
+        "checkbox": {
+            "prototype": "matte/ui/input-checkbox.reel",
+            "properties": {
+                "element": {"#": "checkbox"},
+                "checked": true,
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true"
+            }
+        },
+        "date": {
+            "prototype": "matte/ui/input-date.reel",
+            "properties": {
+                "element": {"#": "date"}
+            }
+        },
         "inputName": {
             "prototype": "matte/ui/input-text.reel",
             "properties": {
@@ -58,6 +74,26 @@
             "bindings": {
                 "content": {"<-": "@list:iteration.object.sel"}
             }
+        },
+        "toggleButton": {
+            "prototype": "matte/ui/toggle-button.reel",
+            "properties": {
+                "element": {"#": "toggleButton"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "formenctype": "application/x-www-form-urlencoded",
+                "formmethod": "get",
+                "pressedLabel": "On",
+                "unpressedLabel": "Off",
+                "value": true
+            }
+        },
+        "tokenField": {
+            "prototype": "matte/ui/token-field.reel",
+            "properties": {
+                "element": {"#": "tokenField"}
+            }
         }
     }
     </script>
@@ -74,6 +110,10 @@
                 <select data-montage-id="select">
 
                 </select>
+                <input type="date" data-montage-id="date">
+                <input type="checkbox" data-montage-id="checkbox">
+                <input data-montage-id="tokenField">
+                <button data-montage-id="toggleButton"></button>
             </li>
         </ul>
     </div>
