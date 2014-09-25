@@ -40,6 +40,14 @@
                 "isHidden": true
             }
         },
+        "list": {
+            "prototype": "matte/ui/list.reel",
+            "properties": {
+                "element": {"#": "list"},
+                "contentController": {"@": "tRange"},
+                "isSelectionEnabled": true
+            }
+        },
         "navLeft": {
             "prototype": "ui/nav-left.reel",
             "properties": {
@@ -69,30 +77,20 @@
                 "element": {"#": "tableView"}
             }
         },
-        "text": {
+        "text1": {
             "prototype": "montage/ui/text.reel",
             "properties": {
-                "element": {"#": "text"},
+                "element": {"#": "text1"},
                 "value": "Text"
             },
             "bindings": {
-                "value": {"<-": "@trep:iteration.object"}
+                "value": {"<-": "@list:iteration.object.name"}
             }
         },
-        "trep": {
-            "prototype": "montage/ui/repetition.reel",
-            "properties": {
-                "element": {"#": "trep"},
-                "clonesChildComponents": true,
-                "content": [
-                    "AX",
-                    "RE",
-                    "VD",
-                    "OLCD",
-                    "M"
-                ],
-                "isSelectionEnabled": true,
-                "selection": "2"
+        "tRange": {
+            "prototype": "montage/core/range-controller",
+            "bindings": {
+                "content": {"<-": "@tableView.Data"}
             }
         },
         "Verx": {
@@ -240,10 +238,10 @@
                 </div>
             </div>
             <div class="col-md-3 lefter">
-                <ul data-montage-id="trep" class="table table-bordered">
-                    <p data-montage-id="text">
-
-                    </p>
+                <ul data-montage-id="list">
+                    <tr data-montage-id="text1">
+                        Item
+                    </tr>
                 </ul>
             </div>
         </div>
