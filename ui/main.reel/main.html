@@ -88,11 +88,13 @@
             "prototype": "matte/ui/token-field/token-field.reel",
             "properties": {
                 "element": {"#": "tokenField"},
+                "allowAdHocValues": "1",
                 "delegate": {"@": "owner"},
                 "identifier": "state",
                 "placeholder": "tel",
                 "textPropertyPath": "name",
-                "tokensController": {"@": "tRange"}
+                "tokensController": {"@": "tRange"},
+                "values": "1"
             },
             "bindings": {
                 "values": {"<->": "@owner.states"}
