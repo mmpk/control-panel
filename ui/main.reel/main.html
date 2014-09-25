@@ -16,8 +16,10 @@
         "button": {
             "prototype": "digit/ui/button.reel",
             "properties": {
+                "element": {"#": "button"},
+                "active": true,
                 "enabled": true,
-                "label": "Button1"
+                "label": "London"
             }
         },
         "image": {
@@ -119,7 +121,6 @@
 <body>
     <div class="Main" data-montage-skin="light" data-montage-id="main">
         <nav class="z-nav">
-            <button data-montage-id="button"> X </button>
             <div class="z-nav-toggle">
                 <span class="glyphicon glyphicon-list"></span>
             </div>
@@ -129,6 +130,7 @@
                 <div data-montage-id="navLeft">
 
                 </div>
+                <button data-montage-id="button"></button>
             </div>
             <div class="col-md-7">
                 <div data-montage-id="substitution">
