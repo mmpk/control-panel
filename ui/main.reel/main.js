@@ -85,55 +85,5 @@ exports.Main = Component.specialize(/** @lends Main# */ {
                     {"name": "Pluto"}
                 ]
                }
-    },
-        stateShouldGetSuggestions: {
-            value: function(tokenField, searchTerm) {
-                var results = [];
-                if(searchTerm) {
-                    var term = searchTerm.toLowerCase();
-                    if(this._cachedStates && this._cachedStates[term]) {
-                        results = this._cachedStates[term];
-                    } else {
-                        results = this.states.filter(function(item) {
-                            // @todo - memoize
-                            return (item.name.toLowerCase().indexOf(term) >= 0 || item.code.indexOf(term) >= 0);
-                        });
-                        if(this._cachedStates == null) {
-                            this._cachedStates = {};
-                        }
-                        this._cachedStates[term] = results;
-                    }
-                }
-                tokenField.suggestions = results;
-            }
-        },
-
-    // Return the represented object for the specified stringValue
-    stateGetRepresentedObject: {
-        value: function(stringValue) {
-            if(stringValue) {
-                stringValue = stringValue.trim().toLowerCase();
-                var i, len = states.length;
-                for(i=0; i<len; i++) {
-                    if( this.states[i].name.toLowerCase() === stringValue) {
-                        return  this.states[i];
-                    }
-                }
-            }
-            return null;
-        }
-    },
-
-    tagsShouldGetSuggestions: {
-        value: function(tokenField, searchTerm) {
-            var results = [];
-            if(searchTerm) {
-                var term = searchTerm.toLowerCase();
-                results = tags.filter(function(item) {
-                    return (item.toLowerCase().indexOf(term) >= 0);
-                });
-            }
-            tokenField.suggestions = results;
-        }
     }
 });
