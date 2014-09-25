@@ -2,10 +2,9 @@
 /* 
  * This file is reserved for your global style rules. 
  */
-
 html {
     font-family: sans-serif;
-    color: #333;
+    color: dodgerblue;
     
     /* Prevent iOS text size adjust after orientation change, without disabling user zoom. */
     -webkit-text-size-adjust: 100%;
@@ -28,6 +27,9 @@ body {
 @-webkit-keyframes mymove1 {
     from {width: 2.2em; font-size: 3.5em; opacity: 1;}
     to {width: 1.2em; font-size: 1.5em; opacity: 0;}
+}
+.z-nav  {
+    font-size: 1.5em;
 }
 
 .z-nav-toggle {
