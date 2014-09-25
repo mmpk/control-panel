@@ -13,6 +13,14 @@
                 "element": {"#": "main"}
             }
         },
+        "button": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "button"},
+                "enabled": true,
+                "label": "Button"
+            }
+        },
         "image": {
             "prototype": "digit/ui/image.reel",
             "properties": {
@@ -112,8 +120,11 @@
 <body>
     <div class="Main" data-montage-skin="light" data-montage-id="main">
         <nav class="z-nav">
-            <div class="az-nav-toggle"> <span class="glyphicon glyphicon-list"> <div class="z-nav-toggle"></div> </span> </div>
+            <div class="z-nav-toggle">
+                <span class="glyphicon glyphicon-list"></span>
+            </div>
         </nav>
+        <button data-montage-id="button"> </button>
         <div class="row">
             <div class="col-md-2">
                 <div data-montage-id="navLeft">
@@ -123,7 +134,9 @@
             <div class="col-md-7">
                 <div data-montage-id="substitution">
                     <img data-montage-id="image" data-arg="key1">
-                    <div data-montage-id="tableView" data-arg="Pluto"> </div>
+                    <div data-montage-id="tableView" data-arg="Pluto">
+
+                    </div>
                 </div>
             </div>
             <div class="col-md-3 lefter">
