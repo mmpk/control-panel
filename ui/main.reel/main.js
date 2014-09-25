@@ -94,7 +94,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
                     if(this._cachedStates && this._cachedStates[term]) {
                         results = this._cachedStates[term];
                     } else {
-                        results = states.filter(function(item) {
+                        results = this.states.filter(function(item) {
                             // @todo - memoize
                             return (item.name.toLowerCase().indexOf(term) >= 0 || item.code.indexOf(term) >= 0);
                         });
@@ -115,8 +115,8 @@ exports.Main = Component.specialize(/** @lends Main# */ {
                 stringValue = stringValue.trim().toLowerCase();
                 var i, len = states.length;
                 for(i=0; i<len; i++) {
-                    if(states[i].name.toLowerCase() === stringValue) {
-                        return states[i];
+                    if( this.states[i].name.toLowerCase() === stringValue) {
+                        return  this.states[i];
                     }
                 }
             }
