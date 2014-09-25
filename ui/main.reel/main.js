@@ -24,6 +24,15 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             { title: "key3",  comp: table  }
         ]
     },
+    States: {
+        value: [
+            {name: "Alaska", code: "AK"},
+            {name: "Arizona", code: "AZ"},
+            {name: "Arkansas", code: "AR"},
+            {name: "California", code: "CA"},
+            {name: "Colorado", code: "CO"}
+        ]
+    },
     templateDidLoad: {
         value: function(){            
              var subt = this.templateObjects.substitution;

@@ -85,9 +85,13 @@
             }
         },
         "tokenField": {
-            "prototype": "matte/ui/token-field.reel",
+            "prototype": "matte/ui/token-field/token-field.reel",
             "properties": {
-                "element": {"#": "tokenField"}
+                "element": {"#": "tokenField"},
+                "placeholder": "tel"
+            },
+            "bindings": {
+                "values": {"<->": "@owner.States"}
             }
         },
         "tRange": {
