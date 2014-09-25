@@ -80,7 +80,14 @@
         "toggleSwitch": {
             "prototype": "matte/ui/toggle-switch.reel",
             "properties": {
-                "element": {"#": "toggleSwitch"}
+                "element": {"#": "toggleSwitch"},
+                "value": "on"
+            }
+        },
+        "tokenField": {
+            "prototype": "matte/ui/token-field.reel",
+            "properties": {
+                "element": {"#": "tokenField"}
             }
         },
         "tRange": {
@@ -236,6 +243,7 @@
             <div class="col-md-3 lefter">
                 <ul data-montage-id="list">
                     <div data-montage-id="toggleSwitch"></div>
+                    <input data-montage-id="tokenField">
                 </ul>
             </div>
         </div>
