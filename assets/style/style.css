@@ -18,3 +18,9 @@ body {
 .selected {
     background: #e74c3c;
 }
+
+.z-nav {
+    position: absolute;
+    height: 5em;
+    background: #7f8c8d;
+}
