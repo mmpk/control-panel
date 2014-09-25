@@ -24,7 +24,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             { title: "key3",  comp: table  }
         ]
     },
-    States: {
+    states: {
         value: [
             {name: "Alaska", code: "AK"},
             {name: "Arizona", code: "AZ"},
