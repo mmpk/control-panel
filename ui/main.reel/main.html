@@ -63,19 +63,6 @@
                 "switchValue": {"<-": "@navLeft.templateObjects.treeRep.selection.0.content.name"}
             }
         },
-        "t-rep": {
-            "prototype": "montage/ui/repetition.reel",
-            "properties": {
-                "element": {"#": "t-rep"},
-                "content": [
-                    "AX",
-                    "RE",
-                    "VD",
-                    "OLCD",
-                    "M"
-                ]
-            }
-        },
         "tableView": {
             "prototype": "ui/table-view.reel",
             "properties": {
@@ -89,7 +76,20 @@
                 "value": "Text"
             },
             "bindings": {
-                "value": {"<-": "@t-rep:iteration.object"}
+                "value": {"<-": "@t-rep.content:iteration.object"}
+            }
+        },
+        "trep": {
+            "prototype": "montage/ui/repetition.reel",
+            "properties": {
+                "element": {"#": "trep"},
+                "content": [
+                    "AX",
+                    "RE",
+                    "VD",
+                    "OLCD",
+                    "M"
+                ]
             }
         },
         "Verx": {
@@ -237,8 +237,8 @@
                 </div>
             </div>
             <div class="col-md-3 lefter">
-                <ul data-montage-id="t-rep">
-                    <p data-montage-id="text"></p>
+                <ul data-montage-id="trep">
+                    <p data-montage-id="text"> </p>
                 </ul>
             </div>
         </div>
