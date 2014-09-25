@@ -19,41 +19,78 @@ body {
     background: #e74c3c;
 }
 
- .z-nav-toggle {
-       width: 20px;     
-     transition: width 0.4s cubic-bezier(0, 1.8, 1, 1.8); 
- }
-.z-nav-toggle:hover {
-    font-size: 2em;
-    color: yellow;
-    width: 340px;
-    
+/* Animation */
+@-webkit-keyframes mymove {
+    from {font-size: 1.2em;}
+    to {font-size: 3.2em;}
 }
 
+@keyframes mymove {
+    from {font-size: 1.2em;}
+    to {font-size: 3.2em;}
+}
+
+@-webkit-keyframes mymoveZ {
+    from {font-size: 1.2em;}
+    to {font-size: 3.2em;}
+}
+
+.z-nav {
+    overflow: hidden;
+
+}
+.z-nav-toggle {
+    border: 3px solid #ecf0f1; 
+    width: 50%;
+    height:0;
+    padding-bottom: 50%;
+    -moz-border-radius: 50%; 
+    -webkit-border-radius: 50%; 
+    border-radius: 50%;
+    background: #3E98db;
+      z-index: 100;
+    line-height: 1300%;
+    text-align:center;
+}
 @media (min-width: 768px) {
     .z-nav {
         position: fixed;
         right: 0;
         left: 0;
         z-index: 100;
-        height: 5em;
         background: #7f8c8d;
     }
-    
     .z-nav-toggle {
-        font-size: 3em;
+        font-size: 2.5em;
         color: #fff;
+        
+        -webkit-animation: mymoveZ 1s;  /* Chrome, Safari, Opera */
+        -webkit-animation-play-state: runing;  /* Chrome, Safari, Opera */
+        animation: mymoveZ 1s;
+        -webkit-animation-play-state: runing;
+        -webkit-animation-timing-function: cubic-bezier(0,3,1,5);
+         -webkit-animation-fill-mode: initial;
     }
 }
-
+/* Small */
 @media (max-width: 768px) {
     .z-nav {
         position: fixed;
         right: 0;
         left: 0;
         z-index: 100;
-        height: 5em;
+        height: 3.2em;
         background: #7f8c8d;
+    }
+    .z-nav-toggle {
+        font-size: 2.5em;
+        color: #fff;
+        -webkit-animation: mymove 1s;  /* Chrome, Safari, Opera */
+        -webkit-animation-play-state: runing;  /* Chrome, Safari, Opera */
+        animation: mymove 1s;
+        -webkit-animation-play-state: runing;
+        -webkit-animation-timing-function: cubic-bezier(0,3,1,5);
+         -webkit-animation-fill-mode: initial;
     }
 
 }
