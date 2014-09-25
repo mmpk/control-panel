@@ -78,6 +78,16 @@
                 "element": {"#": "tableView"}
             }
         },
+        "text": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "text"},
+                "value": "Text"
+            },
+            "bindings": {
+                "value": {"<-": "@t-rep:iteration.object.score"}
+            }
+        },
         "Verx": {
             "prototype": "digit/ui/text-field.reel",
             "properties": {
@@ -222,9 +232,9 @@
                     <div data-montage-id="tableView" data-arg="Pluto"></div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 lefter">
                 <ul data-montage-id="t-rep">
-
+                    <p data-montage-id="text"></p>
                 </ul>
             </div>
         </div>
