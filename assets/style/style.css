@@ -18,6 +18,9 @@ body {
     background: #e74c3c;
 }
 
+.conto {
+ margin-top: 100px;   
+}
 /* Animation */
 @-webkit-keyframes mymove {
     from {width: 1.2em; font-size: 1.5em;}
