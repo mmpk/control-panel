@@ -88,9 +88,10 @@
             "prototype": "matte/ui/token-field/token-field.reel",
             "properties": {
                 "element": {"#": "tokenField"},
+                "delegate": {"#": "main"},
                 "identifier": "state",
-                "textPropertyPath": "code",
-                "placeholder": "tel"
+                "placeholder": "tel",
+                "textPropertyPath": "code"
             },
             "bindings": {
                 "values": {"<->": "@owner.States"}
