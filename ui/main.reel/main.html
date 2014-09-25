@@ -69,6 +69,13 @@
                 "element": {"#": "tableView"}
             }
         },
+        "text": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "text"},
+                "value": "Text"
+            }
+        },
         "trep": {
             "prototype": "montage/ui/repetition.reel",
             "properties": {
@@ -79,7 +86,8 @@
                     "VD",
                     "OLCD",
                     "M"
-                ]
+                ],
+                "isSelectionEnabled": true
             }
         },
         "Verx": {
@@ -228,7 +236,7 @@
             </div>
             <div class="col-md-3 lefter">
                 <ul data-montage-id="trep">
-                   
+                    <p data-montage-id="text"></p>
                 </ul>
             </div>
         </div>
