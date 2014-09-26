@@ -11,7 +11,7 @@ var cal_days_labels = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
     cal_days_in_month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31],
     cal_current_date = new Date(); 
 
-var mc = this.templateObjects.monthController;
+var mc;
 /**
  * @class Calendar
  * @extends Component
@@ -25,7 +25,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     templateDidLoad: {
         value: function() {
             this.Calendar(cal_current_date.getMonth(), cal_current_date.getFullYear())
-           var mc = this.templateObjects.monthController
+            mc = this.templateObjects.monthController
                mc.select(mc.content[cal_current_date.getMonth()])
                 console.log("MC SELECTION")
                  console.log(this.getDays.length)
