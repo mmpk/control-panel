@@ -10,15 +10,6 @@
                 "element": {"#": "owner"}
             }
         },
-        "badge1": {
-            "prototype": "digit/ui/badge.reel",
-            "properties": {
-                "element": {"#": "badge1"}
-            },
-            "bindings": {
-                "value": {"<-": "@repetition:iteration.index"}
-            }
-        },
         "button": {
             "prototype": "digit/ui/button.reel",
             "properties": {
@@ -36,6 +27,10 @@
         },
         "monthController": {
             "prototype": "montage/core/range-controller",
+            "properties": {
+                "avoidsEmptySelection": true,
+                "selectAddedContent": true
+            },
             "bindings": {
                 "content": {"<-": "@owner.data"}
             }
@@ -48,7 +43,7 @@
                 "contentController": null
             },
             "bindings": {
-                "content": {"<-": "@monthController.selection.0.days"}
+                "content": {"<-": "@monthController.selection"}
             }
         },
         "text": {
@@ -59,6 +54,16 @@
             },
             "bindings": {
                 "value": {"<-": "@monthController.selection.0.month"}
+            }
+        },
+        "text2": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "text2"},
+                "value": "Text"
+            },
+            "bindings": {
+                "value": {"<-": "@monthController.selection:iteration.object.month"}
             }
         }
     }
@@ -71,7 +76,7 @@
             TTTTTTTTTTTT
         </p>
         <ul data-montage-id="repetition">
-            <li data-montage-id="badge1"></li>
+            <p data-montage-id="text2"></p>
         </ul>
     </div>
 </body>
