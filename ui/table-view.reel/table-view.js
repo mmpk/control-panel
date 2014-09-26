@@ -13,7 +13,7 @@ exports.TableView = Component.specialize(/** @lends TableView# */ {
         value: function TableView() {
             this.super();
             for(var i=0; i<100;i++){
-                var d = {name : "Name"+i,score : 15 * i, sel: ["what","s","going","on"+i,"remedy"]}
+                var d = {name : "Name"+i,score : 15 * i, sel: ["what","s","going","on"+i,"remedy"], date: Date()}
                 this.Data.push(d)
             }
         }

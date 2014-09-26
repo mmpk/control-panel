@@ -10,10 +10,44 @@
                 "element": {"#": "owner"}
             }
         },
+        "inputCheckbox": {
+            "prototype": "native/ui/input-checkbox.reel",
+            "properties": {
+                "element": {"#": "inputCheckbox"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true"
+            }
+        },
+        "inputDate": {
+            "prototype": "native/ui/input-date.reel",
+            "properties": {
+                "element": {"#": "inputDate"}
+            },
+            "bindings": {
+                "value": {"<-": "@repetition:iteration.object.date"}
+            }
+        },
+        "inputText": {
+            "prototype": "native/ui/input-text.reel",
+            "properties": {
+                "element": {"#": "inputText"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true"
+            }
+        },
         "rangeController": {
             "prototype": "montage/core/range-controller",
             "bindings": {
                 "content": {"<-": "@owner.Data"}
+            }
+        },
+        "repetition": {
+            "prototype": "montage/ui/repetition.reel",
+            "properties": {
+                "element": {"#": "repetition"},
+                "contentController": {"@": "rangeController"}
             }
         },
         "scroller": {
@@ -34,7 +68,13 @@
         </h1>
         <div data-montage-id="scroller">
             <div class="container">
-
+                <ul data-montage-id="repetition">
+                    <li>
+                        <div data-montage-id="inputText"></div>
+                        <div data-montage-id="inputDate"></div>
+                        <div data-montage-id="inputCheckbox"></div>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
