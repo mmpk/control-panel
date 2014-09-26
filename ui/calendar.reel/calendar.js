@@ -75,7 +75,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     },    
     onChangeMonth: {
         value: function (event) {
-            //var rep = this.templateObjects.repetition;           
+            var rep = this.templateObjects.repetition;           
             var month = cal_current_date.getMonth()
             var year  = cal_current_date.getFullYear()
             var days = new Date(year, month, 0).getDate()
