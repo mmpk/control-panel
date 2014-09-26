@@ -22,6 +22,12 @@
                 "label": "London"
             }
         },
+        "calendar": {
+            "prototype": "ui/calendar.reel",
+            "properties": {
+                "element": {"#": "calendar"}
+            }
+        },
         "image": {
             "prototype": "digit/ui/image.reel",
             "properties": {
@@ -113,7 +119,7 @@
                 </div>
             </div>
             <div class="col-md-7">
-                <input type="date" data-montage-id="inputDate"/>
+                <input type="date" data-montage-id="inputDate">
                 <div data-montage-id="substitution">
                     <img data-montage-id="image" data-arg="key1">
                     <div data-montage-id="tableView" data-arg="Pluto">
@@ -122,7 +128,7 @@
                 </div>
             </div>
             <div class="col-md-3 lefter">
-
+                <div data-montage-id="calendar"></div>
             </div>
         </div>
     </div>
