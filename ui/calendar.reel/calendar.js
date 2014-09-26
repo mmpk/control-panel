@@ -17,7 +17,7 @@ var cal_days_labels = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
 exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     constructor: {
         value: function Calendar() {
-            //this.super();   
+            this.super();   
         }
     },
     templateDidLoad: {
@@ -25,7 +25,10 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
             var self = this;
             var mc = this.templateObjects.monthController
             mc.select(mc.content[cal_current_date.getMonth()])
-            mc.observePath("selection.0", self.onChangeMonth) 
+            mc.observePath("selection.0", function(event){
+             var rep = this.templateObjects.repetition;
+                console.log(rep)
+            }) 
         }
     },
     data: {
