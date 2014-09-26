@@ -41,7 +41,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
             { month: 'June' , days: Array(30)},
             { month: 'July' , days: new Array(31)},
             { month: 'August' , days: new Array(31)},
-            { month: 'September' , days: [1,2,3,4,5,6,7,10]},
+            { month: 'September' , days: getDays(33)},
             { month: 'October' , days: new Array(31)},
             { month: 'November' , days: new Array(30)},
             { month: 'December' , days: new Array(31)}
@@ -49,14 +49,9 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     },  
     _days: { value: [1,2,3,4,5,6,7,10] },
     getDays: {
-        get: function() {
+        value: function(d) {
             console.log("GET DAYS")
-            return this._days
-        },
-        set: function(v) {
-            console.log("SET DAYS")
-            this._days = v.days
-             console.log(v.days)
+            return new Array(d)
         }
     },
     Calendar: {
