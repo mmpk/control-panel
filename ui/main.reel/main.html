@@ -49,6 +49,15 @@
                 "isHidden": true
             }
         },
+        "inputDate": {
+            "prototype": "native/ui/input-date.reel",
+            "properties": {
+                "element": {"#": "inputDate"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true"
+            }
+        },
         "navLeft": {
             "prototype": "ui/nav-left.reel",
             "properties": {
@@ -94,7 +103,9 @@
                 <span class="glyphicon glyphicon-list"></span>
             </div>
         </nav>
-        <div class="row" style="margin-top: 100px;"> CLEAR </div>
+        <div class="row" style="height: 100px;">
+            CLEAR
+        </div>
         <div class="row">
             <div class="col-md-2">
                 <div data-montage-id="navLeft">
@@ -102,6 +113,7 @@
                 </div>
             </div>
             <div class="col-md-7">
+                <div data-montage-id="inputDate"></div>
                 <div data-montage-id="substitution">
                     <img data-montage-id="image" data-arg="key1">
                     <div data-montage-id="tableView" data-arg="Pluto">
