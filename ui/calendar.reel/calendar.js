@@ -25,21 +25,23 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
             this.Calendar(cal_current_date.getMonth(), cal_current_date.getFullYear())
            var mc = this.templateObjects.monthController
                mc.select(mc.content[cal_current_date.getMonth()])
+                console.log("MC SELECTION")
+                 console.log(mc.selection)
         }
     },
     data: {
         value: [
             { month: "January" , days: 31},
-            { month: 'February' , days: 31},
+            { month: 'February' , days: 28},
             { month: 'March' , days: 31},
-            { month: 'April' , days: 31},
+            { month: 'April' , days: 30},
             { month: 'May' , days: 31},
-            { month: 'June' , days: 31},
+            { month: 'June' , days: 30},
             { month: 'July' , days: 31},
             { month: 'August' , days: 31},
-            { month: 'September' , days: 31},
+            { month: 'September' , days: 30},
             { month: 'October' , days: 31},
-            { month: 'November' , days: 31},
+            { month: 'November' , days: 30},
             { month: 'December' , days: 31}
             ]
     },                                                                              
