@@ -24,7 +24,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
         value: function() {
             this.Calendar(cal_current_date.getMonth(), cal_current_date.getFullYear())
             var mc = this.templateObjects.monthController
-            mc.addBeforeOwnPropertyChangeListener("selection", this.onChangeMonth) 
+            mc.addBeforeOwnPropertyChangeListener("selection.0", this.onChangeMonth) 
         }
     },
     data: {
@@ -69,7 +69,6 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     },
     onChangeMonth: {
         value: function (event) {
-            cc++;
             console.log("MMMMMMMMMMMMMM")
         }
     }
