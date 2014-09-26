@@ -16,7 +16,7 @@
                 "element": {"#": "badge1"}
             },
             "bindings": {
-                "value": {"<-": "@repetition:iteration.object.month"}
+                "value": {"<-": "@repetition:iteration.object.days"}
             }
         },
         "monthController": {
@@ -79,6 +79,9 @@
             "properties": {
                 "element": {"#": "repetition"},
                 "contentController": {"@": "monthController"}
+            },
+            "bindings": {
+                "content": {"<-": "@owner.getDays(@monthController.selection.0.days)"}
             }
         },
         "text": {
