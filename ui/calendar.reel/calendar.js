@@ -50,6 +50,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     },                                                                              
     getDays: {
         get: function() {
+            console.log("GET DAYS")
             var c = mc.selection[0].days
             return new Array(c)
         }
