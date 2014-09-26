@@ -81,8 +81,12 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     },    
     onChangeMonth: {
         value: function (event) {
-            console.log("MMMMMMMMMMMMMM")
-             console.log(event)
+             var rep = this.templateObjects.repetition;
+            
+            var month = (isNaN(month) || month == null) ? cal_current_date.getMonth() : month;
+            var year  = (isNaN(year) || year == null) ? cal_current_date.getFullYear() : year;
+            var days = cal_current_date(year, month, 0).getDate();
+            rep.content = new Array(days)
         }
     }
 });
