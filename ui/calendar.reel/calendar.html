@@ -37,13 +37,8 @@
         "monthController": {
             "prototype": "montage/core/range-controller",
             "bindings": {
+                "content": {"<-": "@owner.data"},
                 "selection": {"<-": "@owner.getDays"}
-            }
-        },
-        "rangeController": {
-            "prototype": "montage/core/range-controller",
-            "bindings": {
-                "content": {"<-": "@monthController.selection.0.days"}
             }
         },
         "repetition": {
@@ -54,7 +49,7 @@
                 "contentController": {"@": "rangeController"}
             },
             "bindings": {
-                "content": {"<-": "@monthController.selection"}
+                "content": {"<-": "@monthController.selection.0.days"}
             }
         },
         "text": {
