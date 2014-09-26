@@ -13,7 +13,6 @@
         "checkbox": {
             "prototype": "digit/ui/checkbox.reel",
             "properties": {
-                "element": {"#": "checkbox"},
                 "checked": true
             }
         },
@@ -42,6 +41,7 @@
         "treeController": {
             "prototype": "montage/core/tree-controller",
             "properties": {
+                "allExpanded": true,
                 "childrenPath": "children"
             },
             "bindings": {
@@ -71,7 +71,6 @@
                 <div data-montage-id="toggleBtn" class="nav-item">
 
                 </div>
-                <input type="checkbox" data-montage-id="checkbox" class="nav-item">
             </li>
         </ul>
     </div>
