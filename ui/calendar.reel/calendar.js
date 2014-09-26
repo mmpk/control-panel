@@ -10,6 +10,8 @@ var cal_days_labels = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
                          'October', 'November', 'December'],
     cal_days_in_month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31],
     cal_current_date = new Date(); 
+
+var mc = this.templateObjects.monthController;
 /**
  * @class Calendar
  * @extends Component
@@ -47,7 +49,6 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     },                                                                              
     getDays: {
         get: function() {
-            var mc = this.templateObjects.monthController;
             var c = mc.selection[0].days
             return new Array(c)
         }
