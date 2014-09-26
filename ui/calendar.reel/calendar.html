@@ -44,7 +44,7 @@
                 "isSelectionEnabled": true
             },
             "bindings": {
-                "content": {"<-": "@monthController.selection.0.days"}
+                "content": {"<-": "@monthController.selection"}
             }
         },
         "text": {
@@ -64,7 +64,7 @@
                 "value": "Text"
             },
             "bindings": {
-                "value": {"<-": "@repetition:iteration.index"}
+                "value": {"<-": "@repetition:iteration.object.days"}
             }
         }
     }
