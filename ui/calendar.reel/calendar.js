@@ -10,9 +10,6 @@ var cal_days_labels = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
                          'October', 'November', 'December'],
     cal_days_in_month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31],
     cal_current_date = new Date(); 
-
-var mc;
-var cc = 0;
 /**
  * @class Calendar
  * @extends Component
@@ -21,14 +18,15 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     constructor: {
         value: function Calendar() {
             this.super();
+            var mc = this.templateObjects.monthController
+            mc.addBeforeOwnPropertyChangeListener(name, this.onChangeMonth) 
              
         }
     },
     templateDidLoad: {
         value: function() {
             this.Calendar(cal_current_date.getMonth(), cal_current_date.getFullYear())
-           mc = this.templateObjects.monthController
-               mc.select(mc.content[cal_current_date.getMonth()])
+              // mc.select(mc.content[cal_current_date.getMonth()])
         }
     },
     data: {
@@ -64,7 +62,13 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
              console.log(this.year)
         }
     },
-
+    handleButtonAction: {
+        value: function (event) {
+            var mc = this.templateObjects.monthController
+                mc.select(mc.content[cal_current_date.getMonth()])
+            console.log("handleButtonAction")
+        }
+    },
     onChangeMonth: {
         value: function (event) {
             cc++;

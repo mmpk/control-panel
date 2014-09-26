@@ -10,16 +10,6 @@
                 "element": {"#": "owner"}
             }
         },
-        "actionEventListener": {
-            "prototype": "montage/core/event/action-event-listener",
-            "properties": {
-                "action": "onChangeMonth",
-                "handler": {"@": "owner"}
-            },
-            "_dev": {
-                "isHidden": true
-            }
-        },
         "button": {
             "prototype": "digit/ui/button.reel",
             "properties": {
@@ -43,14 +33,7 @@
             },
             "bindings": {
                 "content": {"<-": "@owner.data"}
-            },
-            "listeners": [
-                {
-                    "type": "addBeforeOwnPropertyChangeListener",
-                    "useCapture": false,
-                    "listener": {"@": "actionEventListener"}
-                }
-            ]
+            }
         },
         "repetition": {
             "prototype": "montage/ui/repetition.reel",
