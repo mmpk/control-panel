@@ -60,5 +60,11 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
              console.log(cal_months_labels[this.month])
              console.log(this.year)
         }
-    },
+    },,
+
+    handleButtonAction: {
+        value: function (event) {
+        }
+    }
+
 });

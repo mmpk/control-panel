@@ -19,6 +19,21 @@
                 "value": {"<-": "@repetition:iteration.index"}
             }
         },
+        "button": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "button"},
+                "enabled": true,
+                "label": "Button"
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "useCapture": false,
+                    "listener": {"@": "owner"}
+                }
+            ]
+        },
         "monthController": {
             "prototype": "montage/core/range-controller",
             "properties": {
@@ -104,6 +119,7 @@
 </head>
 <body>
     <div data-montage-id="owner" class="Calendar">
+        <button data-montage-id="button"></button>
         <p data-montage-id="text">
             TTTTTTTTTTTT
         </p>
