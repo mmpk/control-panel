@@ -37,10 +37,10 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
             { month: 'March' , days: new Array(31)},
             { month: 'April' , days: new Array(30)},
             { month: 'May' , days: new Array(31)},
-            { month: 'June' , days: new Array(30)},
+            { month: 'June' , days: Array(30)},
             { month: 'July' , days: new Array(31)},
             { month: 'August' , days: new Array(31)},
-            { month: 'September' , days: new Array(30)},
+            { month: 'September' , days: Array(30)},
             { month: 'October' , days: new Array(31)},
             { month: 'November' , days: new Array(30)},
             { month: 'December' , days: new Array(31)}
