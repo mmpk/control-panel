@@ -95,10 +95,18 @@
                 ]
             }
         },
+        "rangeController": {
+            "prototype": "montage/core/range-controller",
+            "bindings": {
+                "content": {"<-": "@monthController.selection"}
+            }
+        },
         "repetition": {
             "prototype": "montage/ui/repetition.reel",
             "properties": {
-                "element": {"#": "repetition"}
+                "element": {"#": "repetition"},
+                "clonesChildComponents": true,
+                "contentController": {"@": "rangeController"}
             }
         },
         "text": {
