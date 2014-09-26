@@ -28,8 +28,6 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
             this.Calendar(cal_current_date.getMonth(), cal_current_date.getFullYear())
            mc = this.templateObjects.monthController
                mc.select(mc.content[cal_current_date.getMonth()])
-                console.log("MC SELECTION")
-                 console.log(this.getDays.length)
         }
     },
     data: {
