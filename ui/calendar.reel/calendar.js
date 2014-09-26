@@ -65,12 +65,10 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
         }
     },
 
-    handleButtonAction: {
+    onChangeMonth: {
         value: function (event) {
             cc++;
-            var rep = this.templateObjects.repetition;
-             mc.select(mc.content[0])
-            console.log(rep.content)
+            console.log("MMMMMMMMMMMMMM")
         }
     }
 
