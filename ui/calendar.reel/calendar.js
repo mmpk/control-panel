@@ -24,7 +24,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
         value: function() {
             var mc = this.templateObjects.monthController
             mc.select(mc.content[cal_current_date.getMonth()])
-            mc.observePath("selection.0", this.onChangeMonth("say")) 
+            mc.observePath("selection.0", this.onChangeMonth) 
         }
     },
     data: {
@@ -75,7 +75,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     },    
     onChangeMonth: {
         value: function (event, a) {
-            var self = this;
+            console.log(a)
             
             var rep = self.templateObjects.repetition;           
             var month = cal_current_date.getMonth()
