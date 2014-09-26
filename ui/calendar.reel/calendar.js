@@ -55,8 +55,8 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
         },
         set: function(v) {
             console.log("SET DAYS")
-            this._days = v
-             console.log(v)
+            this._days = v.days
+             console.log(v.days)
         }
     },
     Calendar: {
