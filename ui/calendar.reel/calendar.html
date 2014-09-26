@@ -16,7 +16,9 @@
                 "element": {"#": "badge1"}
             },
             "bindings": {
-                "value": {"<-": "@repetition:iteration.object"}
+                "value": {
+                    "<-": "@repetition:iteration.object.0 + \"5\""
+                }
             }
         },
         "button": {
