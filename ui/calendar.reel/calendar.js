@@ -26,8 +26,8 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
             
         }
     },
-    constructor: {
-        value: function Calendar(month, year) {
+    Calendar: {
+        value: function(month, year) {
              console.log("Calendar:")
             this.month = (isNaN(month) || month == null) ? cal_current_date.getMonth() : month;
             this.year  = (isNaN(year) || year == null) ? cal_current_date.getFullYear() : year;
