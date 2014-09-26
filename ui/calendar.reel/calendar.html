@@ -10,10 +10,25 @@
                 "element": {"#": "owner"}
             }
         },
-        "button": {
+        "max_month_btn": {
             "prototype": "digit/ui/button.reel",
             "properties": {
-                "element": {"#": "button"},
+                "element": {"#": "max_month_btn"},
+                "enabled": true,
+                "label": "Button"
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "useCapture": false,
+                    "listener": {"@": "owner"}
+                }
+            ]
+        },
+        "min_month_btn": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "min_month_btn"},
                 "enabled": true,
                 "label": "Button"
             },
@@ -72,10 +87,11 @@
 </head>
 <body>
     <div data-montage-id="owner" class="Calendar">
-        <button data-montage-id="button"></button>
+        <button data-montage-id="min_month_btn"></button>
         <p data-montage-id="text">
             TTTTTTTTTTTT
         </p>
+        <button data-montage-id="max_month_btn"></button>
         <ul data-montage-id="repetition">
             <p data-montage-id="text2">
 

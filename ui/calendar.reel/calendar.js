@@ -74,6 +74,11 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
         value: function (event) {
             console.log("MMMMMMMMMMMMMM")
         }
+    },
+
+    handleMax_month_btnAction: {
+        value: function (event) {
+        }
     }
 
 });
