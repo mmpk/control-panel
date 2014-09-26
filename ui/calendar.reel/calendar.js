@@ -32,7 +32,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
             this.month = (isNaN(month) || month == null) ? cal_current_date.getMonth() : month;
             this.year  = (isNaN(year) || year == null) ? cal_current_date.getFullYear() : year;
             this.html = '';
-             console.log(this.month)
+             console.log(cal_months_labels[this.month])
              console.log(this.year)
         }
     },
