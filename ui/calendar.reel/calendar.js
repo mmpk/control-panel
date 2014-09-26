@@ -47,7 +47,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
             { month: 'December' , days: new Array(31)}
             ]
     },  
-    _days: { value: null },
+    _days: { value: new Array(50) },
     getDays: {
         get: function() {
             console.log("GET DAYS")
