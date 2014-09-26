@@ -24,7 +24,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
         value: function() {
             this.Calendar(cal_current_date.getMonth(), cal_current_date.getFullYear())
             var mc = this.templateObjects.monthController
-            mc.addOwnPropertyChangeListener("selection", this, this.onChangeMonth) 
+            mc.observePath("selection", this.onChangeMonth) 
         }
     },
     data: {
