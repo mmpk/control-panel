@@ -63,9 +63,9 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     handleButtonAction: {
         value: function (event) {
             var mc = this.templateObjects.monthController
-            var idx = mc.content.indexOf(mc.selection.0)
+            var idx = mc.content.indexOf(mc.selection[0])
                 mc.select(mc.content[idx+1])
-            console.log(mc.selection.0.month)
+            console.log(mc.selection[0]month)
         }
     },
     onChangeMonth: {
