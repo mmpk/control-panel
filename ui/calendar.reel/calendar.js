@@ -22,6 +22,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     },
     templateDidLoad: {
         value: function() {
+            var self = this;
             var mc = this.templateObjects.monthController
             mc.select(mc.content[cal_current_date.getMonth()])
             mc.observePath("selection.0", this.onChangeMonth) 
@@ -77,7 +78,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
         value: function (event, a) {
             console.log(event)
             
-            //var rep = self.templateObjects.repetition;           
+            var rep = self.templateObjects.repetition;           
             var month = cal_current_date.getMonth()
             var year  = cal_current_date.getFullYear()
             var days = new Date(year, month, 0).getDate()
