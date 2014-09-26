@@ -82,6 +82,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     onChangeMonth: {
         value: function (event) {
             console.log("MMMMMMMMMMMMMM")
+             console.log(event)
         }
     }
 });
