@@ -33,7 +33,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     },
     data: {
         value: [
-            { month: "January" , days: new Array(31)},
+            { month: "January" , days: [1,2,3]},
             { month: 'February' , days: new Array(28)},
             { month: 'March' , days: new Array(31)},
             { month: 'April' , days: new Array(30)},
@@ -41,7 +41,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
             { month: 'June' , days: Array(30)},
             { month: 'July' , days: new Array(31)},
             { month: 'August' , days: new Array(31)},
-            { month: 'September' , days: Array(30)},
+            { month: 'September' , days: [1,2,3,4,5,6,7,10]},
             { month: 'October' , days: new Array(31)},
             { month: 'November' , days: new Array(30)},
             { month: 'December' , days: new Array(31)}
@@ -74,7 +74,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
         value: function (event) {
             cc++;
             var rep = this.templateObjects.repetition;
-             mc.select(mc.content[5])
+             mc.select(mc.content[0])
             console.log(rep.content)
         }
     }
