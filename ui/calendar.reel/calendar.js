@@ -74,6 +74,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
         value: function (event) {
             cc++;
             var rep = this.templateObjects.repetition;
+            rep.content = mc.selection[0].days
             console.log(rep.content)
         }
     }
