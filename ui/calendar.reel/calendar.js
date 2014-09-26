@@ -12,6 +12,7 @@ var cal_days_labels = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
     cal_current_date = new Date(); 
 
 var mc;
+var cc = 0;
 /**
  * @class Calendar
  * @extends Component
@@ -64,8 +65,9 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
 
     handleButtonAction: {
         value: function (event) {
+            c++;
             var rep = this.templateObjects.repetition;
-            rep.content = [1,2,3,4,5,6,7]
+            rep.content = [1,2,3,4,5,6,7, cc]
             console.log(rep.content)
         }
     }
