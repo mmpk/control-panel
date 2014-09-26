@@ -77,17 +77,17 @@
                         "month": "January",
                         "days": 31
                     }
-                    ]
+                ]
             }
         },
         "repetition": {
             "prototype": "montage/ui/repetition.reel",
             "properties": {
                 "element": {"#": "repetition"},
-                "contentController": null
+                "contentController": {"@": "monthController"}
             },
             "bindings": {
-                "content": {"<-": "@owner.getDays"}
+                "content": {"<-": "@monthController.selection.0.days"}
             }
         },
         "text": {
