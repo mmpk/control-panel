@@ -43,7 +43,7 @@
                 "contentController": null
             },
             "bindings": {
-                "content": {"<-": "@monthController.selection"}
+                "content": {"<-": "@monthController.selection.0.days"}
             }
         },
         "text": {
@@ -63,7 +63,9 @@
                 "value": "Text"
             },
             "bindings": {
-                "value": {"<-": "@repetition:iteration.object.month"}
+                "value": {
+                    "<-": "@repetition:iteration.object.0 + \"xxx\""
+                }
             }
         }
     }
