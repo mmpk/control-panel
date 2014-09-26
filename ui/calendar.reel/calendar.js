@@ -17,7 +17,7 @@ var cal_days_labels = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
 exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     constructor: {
         value: function Calendar() {
-            this.super();   
+            //this.super();   
         }
     },
     templateDidLoad: {
