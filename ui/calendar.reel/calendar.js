@@ -17,16 +17,14 @@ var cal_days_labels = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
 exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     constructor: {
         value: function Calendar() {
-            this.super();
-            var mc = this.templateObjects.monthController
-            mc.addBeforeOwnPropertyChangeListener(name, this.onChangeMonth) 
-             
+            this.super();            
         }
     },
     templateDidLoad: {
         value: function() {
             this.Calendar(cal_current_date.getMonth(), cal_current_date.getFullYear())
-              // mc.select(mc.content[cal_current_date.getMonth()])
+            var mc = this.templateObjects.monthController
+            mc.addBeforeOwnPropertyChangeListener(name, this.onChangeMonth) 
         }
     },
     data: {
