@@ -74,7 +74,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
         }
     },    
     onChangeMonth: {
-        value: function (event) {
+        value: function (event, a) {
             var self = this;
             
             var rep = self.templateObjects.repetition;           
