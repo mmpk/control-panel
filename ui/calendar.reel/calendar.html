@@ -39,8 +39,9 @@
             "prototype": "montage/ui/repetition.reel",
             "properties": {
                 "element": {"#": "repetition"},
-                "clonesChildComponents": true,
-                "contentController": null
+                "clonesChildComponents": false,
+                "contentController": null,
+                "isSelectionEnabled": true
             },
             "bindings": {
                 "content": {"<-": "@monthController.selection.0.days"}
@@ -63,9 +64,7 @@
                 "value": "Text"
             },
             "bindings": {
-                "value": {
-                    "<-": "@repetition:iteration.object.0 + \"xxx\""
-                }
+                "value": {"<-": "@repetition:iteration.index"}
             }
         }
     }
