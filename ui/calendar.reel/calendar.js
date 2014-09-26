@@ -61,24 +61,27 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
              console.log(this.year)
         }
     },
-    handleButtonAction: {
+    handleMin_month_btnAction: {
         value: function (event) {
             var mc = this.templateObjects.monthController
             var idx = mc.content.indexOf(mc.selection[0])
             console.log(idx)
-                mc.select(mc.content[idx+1])
+                mc.select(mc.content[idx-1])
             console.log(mc.selection[0].month)
         }
     },
+    handleMax_month_btnAction: {
+        value: function (event) {
+            var mc = this.templateObjects.monthController
+            var idx = mc.content.indexOf(mc.selection[0])
+            console.log(idx)
+            mc.select(mc.content[idx+1])
+            console.log(mc.selection[0].month)
+        }
+    },    
     onChangeMonth: {
         value: function (event) {
             console.log("MMMMMMMMMMMMMM")
         }
-    },
-
-    handleMax_month_btnAction: {
-        value: function (event) {
-        }
     }
-
 });
