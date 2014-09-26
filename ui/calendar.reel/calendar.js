@@ -22,7 +22,6 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     },
     templateDidLoad: {
         value: function() {
-            this.Calendar(cal_current_date.getMonth(), cal_current_date.getFullYear())
             var mc = this.templateObjects.monthController
             mc.select(mc.content[cal_current_date.getMonth()])
             mc.observePath("selection.0", this.onChangeMonth) 
@@ -53,7 +52,6 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     },
     Calendar: {
         value: function(month, year) {
-             console.log("Calendar:")
             this.month = (isNaN(month) || month == null) ? cal_current_date.getMonth() : month;
             this.year  = (isNaN(year) || year == null) ? cal_current_date.getFullYear() : year;
             this.html = '';
