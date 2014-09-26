@@ -26,7 +26,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
            var mc = this.templateObjects.monthController
                mc.select(mc.content[cal_current_date.getMonth()])
                 console.log("MC SELECTION")
-                 console.log(this.getDays().length)
+                 console.log(this.getDays.length)
         }
     },
     data: {
@@ -46,7 +46,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
             ]
     },                                                                              
     getDays: {
-        value: function() {
+        get: function() {
             var mc = this.templateObjects.monthController;
             var c = mc.selection[0].days
             return new Array(c)
