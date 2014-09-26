@@ -34,25 +34,23 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     },
     data: {
         value: [
-            { month: "January" , days: 31},
-            { month: 'February' , days: 28},
-            { month: 'March' , days: 31},
-            { month: 'April' , days: 30},
-            { month: 'May' , days: 31},
-            { month: 'June' , days: 30},
-            { month: 'July' , days: 31},
-            { month: 'August' , days: 31},
-            { month: 'September' , days: 30},
-            { month: 'October' , days: 31},
-            { month: 'November' , days: 30},
-            { month: 'December' , days: 31}
+            { month: "January" , days: new Array(31))},
+            { month: 'February' , days: new Array(28)},
+            { month: 'March' , days: new Array(31)},
+            { month: 'April' , days: new Array(30)},
+            { month: 'May' , days: new Array(31)},
+            { month: 'June' , days: new Array(30)},
+            { month: 'July' , days: new Array(31)},
+            { month: 'August' , days: new Array(31)},
+            { month: 'September' , days: new Array(30)},
+            { month: 'October' , days: new Array(31)},
+            { month: 'November' , days: new Array(30)},
+            { month: 'December' , days: new Array(31)}
             ]
     },                                                                              
     getDays: {
         get: function() {
             console.log("GET DAYS")
-            var c = mc.selection[0].days
-            return new Array(c)
         }
     },
     Calendar: {
