@@ -16,9 +16,7 @@
                 "element": {"#": "badge1"}
             },
             "bindings": {
-                "value": {
-                    "<-": "@repetition:iteration.object.0 + \"5\""
-                }
+                "value": {"<-": "@repetition:iteration.object.0 + 5"}
             }
         },
         "button": {
@@ -103,7 +101,7 @@
                 "element": {"#": "repetition"}
             },
             "bindings": {
-                "content": {"<-": "@monthController.selection.0.days"}
+                "content": {"<->": "@monthController.selection.0.days"}
             }
         },
         "text": {
