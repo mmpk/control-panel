@@ -66,7 +66,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
         value: function (event) {
             var rep = this.templateObjects.repetition;
             mc.select(mc.content[5])
-            console.log(new Array(30))
+            console.log(new Array(30).length)
         }
     }
 
