@@ -27,7 +27,10 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
             mc.select(mc.content[cal_current_date.getMonth()])
             mc.observePath("selection.0", function(event){
              var rep = self.templateObjects.repetition;
-                console.log(rep)
+                var month = cal_current_date.getMonth()
+                var year  = cal_current_date.getFullYear()
+                var days = new Date(year, month, 0).getDate()
+                rep.content = new Array(days)
             }) 
         }
     },
