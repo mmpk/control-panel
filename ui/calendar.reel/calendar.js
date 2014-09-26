@@ -73,8 +73,8 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     handleButtonAction: {
         value: function (event) {
             cc++;
-            var rep = this.templateObjects.rangeController;
-            rep.content = [1,2,3,4,5,6,7, cc]
+            var rep = this.templateObjects.repetition;
+            //rep.content = [1,2,3,4,5,6,7, cc]
             console.log(rep.content)
         }
     }
