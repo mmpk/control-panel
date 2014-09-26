@@ -18,7 +18,6 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     constructor: {
         value: function Calendar() {
             this.super();   
-            var self = this;
         }
     },
     templateDidLoad: {
@@ -75,7 +74,8 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
         }
     },    
     onChangeMonth: {
-        value: function (event, a) {
+        value: function (event) {
+            var self = this;
             console.log(event)
             
             var rep = self.templateObjects.repetition;           
