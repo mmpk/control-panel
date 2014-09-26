@@ -23,7 +23,8 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     templateDidLoad: {
         value: function() {
             this.Calendar(cal_current_date.getMonth(), cal_current_date.getFullYear())
-            
+           var mc = this.template.object.monthController
+               mc.select(mc.content[cal_current_date.getMonth()]
         }
     },
     data: {
