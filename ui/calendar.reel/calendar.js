@@ -46,12 +46,8 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     },                                                                              
     getDays: {
         get: function(d) {
-            var array = [];
-            for(var i=0; i<d; i++){
-            
-            }
-        },
-
+            return new Array(d)
+        }
     },
     Calendar: {
         value: function(month, year) {
