@@ -28,7 +28,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     },
     data: {
         value: [
-            { month: 'January' , days: 31},
+            { month: "January" , days: 31},
             { month: 'February' , days: 31},
             { month: 'March' , days: 31},
             { month: 'April' , days: 31},
