@@ -35,6 +35,9 @@
                 "contenteditable": "true",
                 "dir": "ltr",
                 "draggable": "true"
+            },
+            "bindings": {
+                "value": {"<-": "@repetition:iteration.index"}
             }
         },
         "rangeController": {
@@ -70,9 +73,9 @@
             <div class="container">
                 <ul data-montage-id="repetition">
                     <li>
-                        <input type="date" data-montage-id="inputText"></input>
-                        <input type="text" data-montage-id="inputDate"></input>
-                        <input type="checkbox" data-montage-id="inputCheckbox"></input>
+                        <input type="date" data-montage-id="inputText">
+                        <input type="text" data-montage-id="inputDate">
+                        <input type="checkbox" data-montage-id="inputCheckbox">
                     </li>
                 </ul>
             </div>

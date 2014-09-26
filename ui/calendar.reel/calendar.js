@@ -26,6 +26,33 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
             
         }
     },
+    data: {
+        value: [
+            { month: 'January' , days: 31},
+            { month: 'February' , days: 31},
+            { month: 'March' , days: 31},
+            { month: 'April' , days: 31},
+            { month: 'May' , days: 31},
+            { month: 'June' , days: 31},
+            { month: 'July' , days: 31},
+            { month: 'August' , days: 31},
+            { month: 'September' , days: 31},
+            { month: 'October' , days: 31},
+            { month: 'November' , days: 31},
+            { month: 'December' , days: 31}
+            ]
+
+        }
+    },                                                                              
+    getDays: {
+        get: function(d) {
+            var array = [];
+            for(var i=0; i<d; i++){
+            
+            }
+        },
+
+    },
     Calendar: {
         value: function(month, year) {
              console.log("Calendar:")
