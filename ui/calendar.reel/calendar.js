@@ -41,7 +41,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
             { month: 'June' , days: Array(30)},
             { month: 'July' , days: new Array(31)},
             { month: 'August' , days: new Array(31)},
-            { month: 'September' , days: getDays(33)},
+            { month: 'September' , days: this.getDays(33)},
             { month: 'October' , days: new Array(31)},
             { month: 'November' , days: new Array(30)},
             { month: 'December' , days: new Array(31)}
