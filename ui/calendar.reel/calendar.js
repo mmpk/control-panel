@@ -41,8 +41,6 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
             { month: 'November' , days: 31},
             { month: 'December' , days: 31}
             ]
-
-        }
     },                                                                              
     getDays: {
         get: function(d) {
