@@ -17,12 +17,12 @@ var cal_days_labels = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
 exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     constructor: {
         value: function Calendar() {
-            this.super();            
+            this.super();   
+            var self = this;
         }
     },
     templateDidLoad: {
         value: function() {
-            var self = this;
             var mc = this.templateObjects.monthController
             mc.select(mc.content[cal_current_date.getMonth()])
             mc.observePath("selection.0", this.onChangeMonth) 
