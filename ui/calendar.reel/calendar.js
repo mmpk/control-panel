@@ -25,7 +25,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
             var self = this;
             var mc = this.templateObjects.monthController
             mc.select(mc.content[cal_current_date.getMonth()])
-            mc.observePath("selection.0", this.onChangeMonth) 
+            mc.observePath("selection.0", self.onChangeMonth) 
         }
     },
     data: {
