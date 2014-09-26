@@ -10,43 +10,6 @@
                 "element": {"#": "owner"}
             }
         },
-        "date": {
-            "prototype": "matte/ui/input-date.reel",
-            "properties": {
-                "element": {"#": "date"}
-            }
-        },
-        "inputName": {
-            "prototype": "matte/ui/input-text.reel",
-            "properties": {
-                "element": {"#": "inputName"},
-                "contenteditable": "true",
-                "dir": "ltr",
-                "draggable": "true",
-                "value": "Text"
-            },
-            "bindings": {
-                "value": {"<-": "@list:iteration.object.name"}
-            }
-        },
-        "inputScore": {
-            "prototype": "matte/ui/input-text.reel",
-            "properties": {
-                "element": {"#": "inputScore"},
-                "value": "Text"
-            },
-            "bindings": {
-                "value": {"<-": "@list:iteration.object.score"}
-            }
-        },
-        "list": {
-            "prototype": "montage/ui/repetition.reel",
-            "properties": {
-                "element": {"#": "list"},
-                "contentController": {"@": "rangeController"},
-                "isSelectionEnabled": true
-            }
-        },
         "rangeController": {
             "prototype": "montage/core/range-controller",
             "bindings": {
@@ -60,32 +23,6 @@
                 "axis": "horizontal",
                 "displayScrollbars": "horizontal"
             }
-        },
-        "select": {
-            "prototype": "matte/ui/select.reel",
-            "properties": {
-                "element": {"#": "select"},
-                "contenteditable": "true",
-                "dir": "ltr",
-                "draggable": "true"
-            },
-            "bindings": {
-                "content": {"<-": "@list:iteration.object.sel"}
-            }
-        },
-        "toggleButton": {
-            "prototype": "matte/ui/toggle-button.reel",
-            "properties": {
-                "element": {"#": "toggleButton"},
-                "contenteditable": "true",
-                "dir": "ltr",
-                "draggable": "true",
-                "formenctype": "application/x-www-form-urlencoded",
-                "formmethod": "get",
-                "pressedLabel": "On",
-                "unpressedLabel": "Off",
-                "value": true
-            }
         }
     }
     </script>
@@ -97,17 +34,7 @@
         </h1>
         <div data-montage-id="scroller">
             <div class="container">
-                <ul class="mgrid" data-montage-id="list">
-                    <li>
-                        <input data-montage-id="inputName" type="text">
-                        <input data-montage-id="inputScore" type="text">
-                        <select data-montage-id="select">
 
-                        </select>
-                        <input data-montage-id="date" type="date">
-                        <button data-montage-id="toggleButton"></button>
-                    </li>
-                </ul>
             </div>
         </div>
     </div>
