@@ -10,6 +10,15 @@
                 "element": {"#": "owner"}
             }
         },
+        "badge1": {
+            "prototype": "digit/ui/badge.reel",
+            "properties": {
+                "element": {"#": "badge1"}
+            },
+            "bindings": {
+                "value": {"<-": "@repetition:iteration.object.month"}
+            }
+        },
         "monthController": {
             "prototype": "montage/core/range-controller",
             "properties": {
@@ -65,11 +74,21 @@
                 ]
             }
         },
+        "repetition": {
+            "prototype": "montage/ui/repetition.reel",
+            "properties": {
+                "element": {"#": "repetition"},
+                "contentController": {"@": "monthController"}
+            }
+        },
         "text": {
             "prototype": "digit/ui/text.reel",
             "properties": {
                 "element": {"#": "text"},
                 "value": "Text"
+            },
+            "bindings": {
+                "value": {"<-": "@monthController.selection.0.month"}
             }
         }
     }
@@ -77,7 +96,12 @@
 </head>
 <body>
     <div data-montage-id="owner" class="Calendar">
-        <p data-montage-id="text">TTTTTTTTTTTT</p>
+        <p data-montage-id="text">
+            TTTTTTTTTTTT
+        </p>
+        <ul data-montage-id="repetition">
+            <li data-montage-id="badge1"></li>
+        </ul>
     </div>
 </body>
 </html>
