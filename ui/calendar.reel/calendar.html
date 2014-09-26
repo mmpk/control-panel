@@ -16,7 +16,7 @@
                 "element": {"#": "badge1"}
             },
             "bindings": {
-                "value": {"<-": "@repetition:iteration.object.0 + 5"}
+                "value": {"<-": "@monthController.selection.0.days"}
             }
         },
         "button": {
@@ -99,9 +99,6 @@
             "prototype": "montage/ui/repetition.reel",
             "properties": {
                 "element": {"#": "repetition"}
-            },
-            "bindings": {
-                "content": {"<->": "@monthController.selection.0.days"}
             }
         },
         "text": {
