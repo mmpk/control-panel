@@ -79,7 +79,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
             var self = this;
             console.log(event)
             
-            var rep = this.templateObjects.repetition;           
+            var rep = document.templateObjects.repetition;           
             var month = cal_current_date.getMonth()
             var year  = cal_current_date.getFullYear()
             var days = new Date(year, month, 0).getDate()
