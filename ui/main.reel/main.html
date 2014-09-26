@@ -49,14 +49,6 @@
                 "isHidden": true
             }
         },
-        "list": {
-            "prototype": "matte/ui/list.reel",
-            "properties": {
-                "element": {"#": "list"},
-                "contentController": {"@": "tRange"},
-                "isSelectionEnabled": true
-            }
-        },
         "navLeft": {
             "prototype": "ui/nav-left.reel",
             "properties": {
@@ -86,29 +78,6 @@
                 "element": {"#": "tableView"}
             }
         },
-        "toggleSwitch": {
-            "prototype": "matte/ui/toggle-switch.reel",
-            "properties": {
-                "element": {"#": "toggleSwitch"},
-                "value": "on"
-            }
-        },
-        "tokenField": {
-            "prototype": "matte/ui/token-field/token-field.reel",
-            "properties": {
-                "element": {"#": "tokenField"},
-                "allowAdHocValues": "1",
-                "delegate": {"@": "owner"},
-                "identifier": "state",
-                "placeholder": "tel",
-                "textPropertyPath": "name",
-                "tokensController": {"@": "tRange"},
-                "values": "1"
-            },
-            "bindings": {
-                "values": {"<->": "@owner.states"}
-            }
-        },
         "tRange": {
             "prototype": "montage/core/range-controller",
             "bindings": {
@@ -120,12 +89,12 @@
 </head>
 <body>
     <div class="Main" data-montage-skin="light" data-montage-id="main">
-        <nav class="z-nav">
+        <nav class="z-nav conto">
             <div class="z-nav-toggle">
                 <span class="glyphicon glyphicon-list"></span>
             </div>
         </nav>
-        <div class="row conto">
+        <div class="row">
             <div class="col-md-2">
                 <div data-montage-id="navLeft">
 
@@ -140,10 +109,7 @@
                 </div>
             </div>
             <div class="col-md-3 lefter">
-                <input data-montage-id="tokenField">
-                <ul data-montage-id="list">
-                    <div data-montage-id="toggleSwitch"></div>
-                </ul>
+
             </div>
         </div>
     </div>
