@@ -65,7 +65,6 @@
         "slot": {
             "prototype": "montage/ui/slot.reel",
             "properties": {
-                "element": {"#": "slot"},
                 "content": "xxx"
             },
             "bindings": {
@@ -92,6 +91,13 @@
                 "classList.has('breaker')": {"<-": "@repetition:iteration.index == 6 || @repetition:iteration.index == 12 || @repetition:iteration.index == 18 || @repetition:iteration.index == 24"},
                 "value": {"<-": "@repetition:iteration.index"}
             }
+        },
+        "text3": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "text3"},
+                "value": "Text"
+            }
         }
     }
     </script>
@@ -104,7 +110,7 @@
         </p>
         <button data-montage-id="max_month_btn" class="inline"></button>
         <ul data-montage-id="repetition" class="rep">
-            <div data-montage-id="slot"></div>
+            <p data-montage-id="text3"></p>
             <p data-montage-id="text2" class="inline">
 
             </p>
