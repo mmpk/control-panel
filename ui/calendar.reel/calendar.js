@@ -23,7 +23,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     enterDocument: {
         value: function(firstTime) {
              console.log("ENTER")
-             var x = this.document.getElementById("min_btn");
+             var x = document
             console.log(x)
         }
     },
