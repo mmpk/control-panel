@@ -4,11 +4,11 @@
 }
 
 .rep {
-    display: table;
+    display: inline-table;
     border: 3px solid orange;
 }
 .inline {
-    display: table-cell;
+    display: inline-block;
     border: 1px solid;
     width: 35px; height: 35px;
 }
@@ -16,5 +16,5 @@
 .breaker:after {
     content: "";
     background: blue;
-     display: table-row;
+     display: table-cell;
 }
