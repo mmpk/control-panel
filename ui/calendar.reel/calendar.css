@@ -14,7 +14,6 @@
 }
 
 .breaker {
-    content: "";
     background: blue;
     display: table-row;
 }
