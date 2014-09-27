@@ -23,7 +23,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     enterDocument: {
         value: function(firstTime) {
              console.log("ENTER")
-            console.log(this.document)
+            console.log(this.templateObjects = documentPart.objects;)
         }
     },
     templateDidLoad: {
