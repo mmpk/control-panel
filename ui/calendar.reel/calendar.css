@@ -8,13 +8,12 @@
     border: 3px solid orange;
 }
 .inline {
-    display: table-row;
+    display: inline-table;
     border: 1px solid;
-    width: 35px; height: 35px
-    align: center;
+    width: 35px; height: 35px;
 }
 
 .breaker {
     background: blue;
-    
+    display: table-row;
 }
