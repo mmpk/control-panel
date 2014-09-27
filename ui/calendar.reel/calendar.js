@@ -22,9 +22,6 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     },
     enterDocument: {
         value: function(firstTime) {
-            var body;
-
-            this.super(firstTime);
              console.log("ENTER")
             console.log(firstTime)
         }
