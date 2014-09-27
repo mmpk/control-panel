@@ -23,13 +23,13 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     enterDocument: {
         value: function(firstTime) {
              console.log("ENTER")
+             var x = this.document.getElementById("min_btn");
+            console.log(x)
         }
     },
     templateDidLoad: {
         value: function() {
             var self = this;
-            var x = document.getElementById("min_btn");
-            console.log(x)
             var mc = this.templateObjects.monthController
             mc.select(mc.content[cal_current_date.getMonth()])
             mc.observePath("selection.0", function(event){
