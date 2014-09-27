@@ -27,7 +27,9 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
         }
     },
     templateDidLoad: {
-        value: function() {
+        value: function(firstTime) {
+                         console.log("templateDidLoad")
+                         console.log(firstTime)
             var self = this;
             var mc = this.templateObjects.monthController
             mc.select(mc.content[cal_current_date.getMonth()])
