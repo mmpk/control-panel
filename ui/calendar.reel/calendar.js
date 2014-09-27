@@ -28,12 +28,12 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     },
     templateDidLoad: {
         value: function() {
-           // var self = this;
+            var self = this;
             var mc = this.templateObjects.monthController
             mc.select(mc.content[cal_current_date.getMonth()])
             mc.observePath("selection.0", function(event){
                 
-             var rep = this.templateObjects.repetition;
+             var rep = self.templateObjects.repetition;
                 var month = cal_current_date.getMonth()
                 var year  = cal_current_date.getFullYear()
                 var days = new Date(year, month, 0).getDate()

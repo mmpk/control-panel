@@ -4,5 +4,13 @@
 }
 
 .inline {
-    display: inline-block;
+    display: table-cell;
+    border: 1px solid;
+    width: 25px;
+}
+
+.breaker:after {
+     content: "c";
+     display: table-row;
+    clear: right;
 }

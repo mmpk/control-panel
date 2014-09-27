@@ -79,6 +79,7 @@
                 "value": "Text"
             },
             "bindings": {
+                "classList.has('breaker')": {"<-": "@repetition:iteration.index == 6 || @repetition:iteration.index == 12 || @repetition:iteration.index == 18 || @repetition:iteration.index == 24"},
                 "value": {"<-": "@repetition:iteration.index"}
             }
         }
@@ -92,7 +93,7 @@
 
         </p>
         <button data-montage-id="max_month_btn" class="inline"></button>
-        <ul data-montage-id="repetition">
+        <ul data-montage-id="repetition" class="rep">
             <p data-montage-id="text2" class="inline">
 
             </p>
