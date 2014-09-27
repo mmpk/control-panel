@@ -15,5 +15,5 @@
 
 .breaker {
     background: red;
-    display: run-in;
+    display: table-row;
 }
