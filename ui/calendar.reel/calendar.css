@@ -4,16 +4,18 @@
 }
 
 .rep {
-    display: table;
+    display: block;
     border: 3px solid orange;
 }
 .inline {
-    display: table-cell;
+    display: inline-block;
     border: 1px solid;
     width: 25px; height: 25px;
+    float: left;
 }
 
 .breaker {
     background: red;
-    display: table-row;
+    display: block;
+    clear: both;
 }
