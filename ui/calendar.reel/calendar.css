@@ -10,10 +10,10 @@
 .inline {
     display: table-cell;
     border: 1px solid;
-    width: 35px; height: 35px;
+    width: 25px; height: 25px;
 }
 
 .breaker {
     background: red;
-    display: table-row;
+    display: run-in;
 }
