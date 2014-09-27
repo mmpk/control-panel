@@ -62,6 +62,16 @@
                 "content": {"<-": "@monthController.selection.0.days"}
             }
         },
+        "slot": {
+            "prototype": "montage/ui/slot.reel",
+            "properties": {
+                "element": {"#": "slot"},
+                "content": "xxx"
+            },
+            "bindings": {
+                "classList.has('breaker')": {"<-": "@repetition:iteration.index == 6 || @repetition:iteration.index == 12 || @repetition:iteration.index == 18 || @repetition:iteration.index == 24"}
+            }
+        },
         "text": {
             "prototype": "digit/ui/text.reel",
             "properties": {
@@ -94,8 +104,10 @@
         </p>
         <button data-montage-id="max_month_btn" class="inline"></button>
         <ul data-montage-id="repetition" class="rep">
-            <p data-montage-id="text2" class="inline"> </p>
-            <div> </div>
+            <div data-montage-id="slot"></div>
+            <p data-montage-id="text2" class="inline">
+
+            </p>
         </ul>
     </div>
 </body>
