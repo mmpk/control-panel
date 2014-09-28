@@ -27,7 +27,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
              //var b = document.querySelector("#max_month_btn").addEventListener("mousedown ", this, false)
         }
     },
-    captureMousedown : {
+    handleMousedown : {
         value: function(v) {
             console.log(v.target.id)
             var mc = this.templateObjects.monthController
