@@ -29,7 +29,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     },
     handleClick: {
         value: function(v) {
-            console.log("minMonth")
+            console.log(v)
             var mc = this.templateObjects.monthController
             var idx = mc.content.indexOf(mc.selection[0])
             mc.select(mc.content[idx-1])
