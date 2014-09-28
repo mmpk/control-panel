@@ -23,7 +23,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     enterDocument: {
         value: function(firstTime) {
              console.log("ENTER")
-             var x = document
+             var x = document.querySelector(".cal_top_bar");
             console.log(x)
         }
     },
