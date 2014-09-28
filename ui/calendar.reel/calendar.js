@@ -46,12 +46,12 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
                 var month = cal_current_date.getMonth()
                 var year  = cal_current_date.getFullYear()
                 var days = new Date(year, month, 0).getDate()
+                 console.log(days)
                 var arr = []
                 for(var i=0;i<days;i++){
                     arr.push(i)
                 }
-                rep.content = arr
-                console.log(rep.content)
+                rep.content = arr               
             }) 
         }
     },
