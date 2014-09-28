@@ -26,7 +26,8 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
              var a = document.querySelector("#month_minus").addEventListener("mouseup", this, false);
              var b = document.querySelector("#month_plus").addEventListener("mouseup", this, false);
             console.log("LOCATION:") 
-            console.log(this.element)
+            console.log(window.location.host)
+            console.log(this.element.parrentNode)
         }
     },
     handleMouseup : {
