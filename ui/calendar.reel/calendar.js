@@ -23,11 +23,11 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     enterDocument: {
         value: function(firstTime) {
              var _this = this;
-             var a = document.querySelector("#min_month_btn").addEventListener("onmouseup ", this, false);
-             var b = document.querySelector("#max_month_btn").addEventListener("onmouseup ", this, false)
+             var a = document.querySelector("#min_month_btn").addEventListener("mouseup ", this, false);
+             var b = document.querySelector("#max_month_btn").addEventListener("mouseup ", this, false)
         }
     },
-    handleOnmouseup : {
+    handleMouseup : {
         value: function(v) {
             console.log(v.target.id)
             var mc = this.templateObjects.monthController
