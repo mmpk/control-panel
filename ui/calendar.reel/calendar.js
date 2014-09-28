@@ -37,15 +37,6 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
             console.log(mc.selection[0].month)
         }
     },
-    maxMonth: {
-        value: function(v) {
-            console.log("minMonth")
-            var mc = this.templateObjects.monthController
-            var idx = mc.content.indexOf(mc.selection[0])
-            mc.select(mc.content[idx+1])
-            console.log(mc.selection[0].month)
-        }
-    },
     templateDidLoad: {
         value: function() {
             var self = this;

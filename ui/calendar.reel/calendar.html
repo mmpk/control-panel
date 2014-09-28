@@ -10,36 +10,6 @@
                 "element": {"#": "owner"}
             }
         },
-        "max_month_btn": {
-            "prototype": "digit/ui/button.reel",
-            "properties": {
-                "element": {"#": "max_month_btn"},
-                "enabled": true,
-                "label": ">>>"
-            },
-            "listeners": [
-                {
-                    "type": "action",
-                    "useCapture": false,
-                    "listener": {"@": "owner"}
-                }
-            ]
-        },
-        "min_month_btn": {
-            "prototype": "digit/ui/button.reel",
-            "properties": {
-                "element": {"#": "min_month_btn"},
-                "enabled": true,
-                "label": "<<<"
-            },
-            "listeners": [
-                {
-                    "type": "action",
-                    "useCapture": false,
-                    "listener": {"@": "owner"}
-                }
-            ]
-        },
         "monthController": {
             "prototype": "montage/core/range-controller",
             "properties": {
@@ -91,20 +61,33 @@
             "bindings": {
                 "classList.has('breaker')": {"<-": "@repetition:iteration.index == 6 || @repetition:iteration.index == 13 || @repetition:iteration.index == 20 || @repetition:iteration.index == 27"}
             }
+        },
+        "yearInput": {
+            "prototype": "native/ui/input-number.reel",
+            "properties": {
+                "element": {"#": "yearInput"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "value": "2003"
+            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="owner" class="Calendar">
+        <input type="number" data-montage-id="yearInput"/>
         <div class="cal_top_bar">
-            <div id="min_month_btn"> '<' </div>
-            <button data-montage-id="min_month_btn" class="dum"></button>
+            <div id="min_month_btn">
+                '<'
+            </div>
             <p data-montage-id="text" class="dum">
 
             </p>
-            <button data-montage-id="max_month_btn" class="dum"></button>
-            <div id="max_month_btn"> '>' </div>
+            <div id="max_month_btn">
+                '>'
+            </div>
         </div>
         <ul data-montage-id="repetition" class="rep">
             <p data-montage-id="text2" class="inline" id="jeki">
