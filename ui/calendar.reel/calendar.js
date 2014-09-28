@@ -34,7 +34,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
             (v.target.id == 'min_month_btn') ? (idx--) : (idx++);
             mc.select(mc.content[idx])
             
-            var rep = self.templateObjects.repetition;
+            var rep = this.templateObjects.repetition;
             var month = cal_current_date.getMonth()
             var year  = cal_current_date.getFullYear()
             var days = new Date(year, idx, 0).getDate()
