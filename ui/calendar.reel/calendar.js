@@ -24,7 +24,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
         value: function(firstTime) {
              console.log("ENTER")
              var x = document.querySelector(".cal_top_bar");
-            console.log(this.getElementId())
+            console.log(this.getElementById("repetition"))
         }
     },
     templateDidLoad: {
