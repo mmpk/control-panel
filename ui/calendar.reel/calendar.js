@@ -23,12 +23,26 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     enterDocument: {
         value: function(firstTime) {
              console.log("ENTER")
-             var x = document.querySelector("#min_month_btn").addEventListener("click", this.minMonth);
+             var a = document.querySelector("#min_month_btn").addEventListener("click", this.minMonth);
+             var b = document.querySelector("#max_month_btn").addEventListener("click", this.maxMonth)
         }
     },
     minMonth: {
         value: function(v) {
             console.log("minMonth")
+            var mc = this.templateObjects.monthController
+            var idx = mc.content.indexOf(mc.selection[0])
+            mc.select(mc.content[idx-1])
+            console.log(mc.selection[0].month)
+        }
+    },
+    maxMonth: {
+        value: function(v) {
+            console.log("minMonth")
+            var mc = this.templateObjects.monthController
+            var idx = mc.content.indexOf(mc.selection[0])
+            mc.select(mc.content[idx+1])
+            console.log(mc.selection[0].month)
         }
     },
     templateDidLoad: {
