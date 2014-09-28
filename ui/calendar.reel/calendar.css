@@ -6,6 +6,12 @@
   display: inline-table;  
 }
 
+.Calendar ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
 .rep {
     display: table;
     border: 3px solid orange;
