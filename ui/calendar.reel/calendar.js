@@ -23,8 +23,12 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     enterDocument: {
         value: function(firstTime) {
              console.log("ENTER")
-             var x = document.querySelector(".cal_top_bar");
-            console.log(document.getElementById("jeki"))
+             var x = document.querySelector("#min_month_btn").addEventListener("click", this.minMonth);
+        }
+    },
+    minMonth: {
+        value: function(v) {
+            console.log("minMonth")
         }
     },
     templateDidLoad: {
