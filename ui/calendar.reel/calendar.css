@@ -1,6 +1,6 @@
 .Calendar {
     height: 30px;
-    border: 3px solid yellow;
+    border: 1px solid yellow;
 }
 .cal_top_bar {
   display: inline-table;  
@@ -13,8 +13,8 @@
 }
 
 .rep {
-    display: inline-table;
-    border: 3px solid orange;
+    display: table;
+    border: 1px solid orange;
 }
 .inline {
     text-align: center;
@@ -28,12 +28,19 @@
 
 .breaker {
     background: red;
-    clear: both;
+    float: left;
+    clear: left;
 }
 
-#min_month_btn, #max_month_btn {
+#min_month_btn {
      width: 20px;
      height: 20px;
-     background: red;
+     background: #3498db;
     float: left;
+}
+#max_month_btn {
+    width: 20px;
+    height: 20px;
+    background: #3498db;
+    float: right;
 }
