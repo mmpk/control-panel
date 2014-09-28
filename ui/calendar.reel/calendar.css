@@ -44,3 +44,15 @@
     background: #3498db;
     float: right;
 }
+#year_minus {
+    width: 20px;
+    height: 20px;
+    background: #3498db;
+    float: left;
+}
+#year_plus {
+    width: 20px;
+    height: 20px;
+    background: #3498db;
+    float: right;
+}
