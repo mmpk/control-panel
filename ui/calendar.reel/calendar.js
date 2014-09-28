@@ -29,12 +29,10 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     },
     handleMouseup : {
         value: function(v) {
-            console.log(v.target.id)
             var mc = this.templateObjects.monthController
             var idx = mc.content.indexOf(mc.selection[0]);
             (v.target.id == 'min_month_btn') ? (idx--) : (idx++);
             mc.select(mc.content[idx])
-            console.log(mc.selection[0].month)
         }
     },
     templateDidLoad: {
@@ -73,47 +71,12 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
             { month: 'December' , days: new Array(31)}
             ]
     },  
-    _days: { value: [1,2,3,4,5,6,7,10] },
-    getDays: {
-        value: function(d) {
-            console.log("GET DAYS")
-            return new Array(d)
-        }
-    },
+
     Calendar: {
         value: function(month, year) {
             this.month = (isNaN(month) || month == null) ? cal_current_date.getMonth() : month;
             this.year  = (isNaN(year) || year == null) ? cal_current_date.getFullYear() : year;
             this.html = '';
-        }
-    },
-    handleMin_month_btnAction: {
-        value: function (event) {
-            var mc = this.templateObjects.monthController
-            var idx = mc.content.indexOf(mc.selection[0])
-                mc.select(mc.content[idx-1])
-            console.log(mc.selection[0].month)
-        }
-    },
-    handleMax_month_btnAction: {
-        value: function (event) {
-            var mc = this.templateObjects.monthController
-            var idx = mc.content.indexOf(mc.selection[0])
-            mc.select(mc.content[idx+1])
-            console.log(mc.selection[0].month)
-        }
-    },    
-    onChangeMonth: {
-        value: function (event) {
-            var self = this;
-            console.log(event)
-            
-            var rep = document.templateObjects.repetition;           
-            var month = cal_current_date.getMonth()
-            var year  = cal_current_date.getFullYear()
-            var days = new Date(year, month, 0).getDate()
-            console.log(days)
-            //rep.content = new Array(days)
         }
     }
 });
