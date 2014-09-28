@@ -24,3 +24,10 @@
     background: red;
     clear: both;
 }
+
+#min_month_btn, #max_month_btn {
+     width: 20px;
+     height: 20px;
+     background: red;
+    float: left;
+}
