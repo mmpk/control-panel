@@ -14,6 +14,9 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             this.super();
         }
     },
+    Window: {
+        value: window
+    },
     Data: {
         value: [
             { title: "PARENTNODE", comp: table },
