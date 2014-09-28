@@ -13,7 +13,7 @@
 }
 
 .rep {
-    display: table;
+    display: inline-table;
     border: 3px solid orange;
 }
 .inline {
