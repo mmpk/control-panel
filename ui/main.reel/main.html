@@ -55,13 +55,13 @@
                 "isHidden": true
             }
         },
-        "inputDate": {
-            "prototype": "native/ui/input-date.reel",
+        "inputText": {
+            "prototype": "native/ui/input-text.reel",
             "properties": {
-                "element": {"#": "inputDate"},
-                "contenteditable": "true",
-                "dir": "ltr",
-                "draggable": "true"
+                "element": {"#": "inputText"}
+            },
+            "bindings": {
+                "value": {"<-": "document.URL"}
             }
         },
         "navLeft": {
@@ -114,12 +114,12 @@
         </div>
         <div class="row">
             <div class="col-md-2">
+                <input type="text" data-montage-id="inputText"/>
                 <div data-montage-id="navLeft">
 
                 </div>
             </div>
             <div class="col-md-7">
-                <input type="date" data-montage-id="inputDate">
                 <div data-montage-id="substitution">
                     <img data-montage-id="image" data-arg="key1">
                     <div data-montage-id="tableView" data-arg="Pluto">
