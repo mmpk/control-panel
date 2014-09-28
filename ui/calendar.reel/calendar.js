@@ -31,8 +31,8 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
         value: function(v) {
             console.log(v.target.id)
             var mc = this.templateObjects.monthController
-            var idx = mc.content.indexOf(mc.selection[0])
-            (v.target.id == 'min_month_btn') ? (idx--) : (idx++)
+            var idx = mc.content.indexOf(mc.selection[0]);
+            (v.target.id == 'min_month_btn') ? (idx--) : (idx++);
             mc.select(mc.content[idx])
             console.log(mc.selection[0].month)
         }
