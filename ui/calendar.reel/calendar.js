@@ -24,12 +24,12 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
         value: function(firstTime) {
              var _this = this;
              var a = document.querySelector("#min_month_btn").addEventListener("click", this, false);
-             var b = document.querySelector("#max_month_btn").addEventListener("click", this.maxMonth, false)
+             var b = document.querySelector("#max_month_btn").addEventListener("click", this.maxMonth, true)
         }
     },
     handleClick: {
         value: function(v) {
-            console.log(v.event.target.id)
+            console.log(v.target.id)
             var mc = this.templateObjects.monthController
             var idx = mc.content.indexOf(mc.selection[0])
             mc.select(mc.content[idx-1])
