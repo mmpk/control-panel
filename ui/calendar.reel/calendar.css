@@ -1,15 +1,20 @@
 .Calendar {
     background: #eee;
 }
-.cal_top_bar {
-  display: inline-table;  
-}
-
 .Calendar ul {
     list-style-type: none;
     padding: 0px;
     margin: 0px;
 }
+
+.cal_top_bar {
+    display: inline-block;
+}
+.cal_top_bar > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
 
 .rep {
     display: table;
@@ -23,6 +28,7 @@
 }
 .inline:hover {
      background: #3498db;
+     color: #fff;
 }
 .dum {
     float: left;
@@ -35,29 +41,28 @@
 }
 
 #month_minus {
-     width: 20px;
-     height: 20px;
-     background: #3498db;
     float: left;
+    background: #3498db;
+    color: #fff;
+    font-weight: bold;
 }
 #month_plus {
-    width: 20px;
-    height: 20px;
     background: #3498db;
-    float: left;
+    color: #fff;
+    font-weight: bold;
 }
 #year_minus {
-    width: 20px;
-    height: 20px;
+    margin-left: 2px;
     background: #3498db;
-    float: left;
+    color: #fff;
+    font-weight: bold;
 }
 #year_plus {
-    width: 20px;
-    height: 20px;
     background: #3498db;
-    float: left;
+    color: #fff;
+    font-weight: bold;
 }
 .year_input{
-   width: 50px; 
+    float: left;
+    width: 50px;
 }
