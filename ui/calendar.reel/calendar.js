@@ -30,7 +30,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
              
              var a1 = document.querySelector("#month_minus").addEventListener("mouseup", this, false);
              var a2 = document.querySelector("#month_plus").addEventListener("mouseup", this, false);
-             this.templateObjects.yearInput.element.addEventListener("change", this.fillDays, false);
+             this.templateObjects.yearInput.element.addEventListener("change", this.fillDays);
              console.log("LOCATION:");
              console.log(window.location.host);   
              var b = document.querySelector(".iwraper").addEventListener("mousedown", this, false);
