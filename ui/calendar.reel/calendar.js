@@ -34,8 +34,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
             var rep = this.templateObjects.repetition;
             var month = cal_current_date.getMonth()
             var year  = cal_current_date.getFullYear()
-            var days = new Date(year, idx+1, 0).getDate()
-            console.log(idx+"  "+cal_months_labels[idx] +"   "+days)
+            var days = new Date(year, 1, 0).getDate()
             var arr = []
             for(var i=0;i<days;i++){
                 arr.push(i)
