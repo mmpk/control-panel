@@ -28,10 +28,10 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
              var mc = this.templateObjects.monthController
              mc.select(mc.content[this.date.getMonth()])
              
-             var a1 = document.querySelectorAll("#month_minus").addEventListener("mouseup", this, false);
-             var a2 = document.querySelectorAll("#month_plus").addEventListener("mouseup", this, false);
-             var a3 = document.querySelectorAll("#year_plus").addEventListener("mouseup", this, false);
-             var a4 = document.querySelectorAll("#year_minus").addEventListener("mouseup", this, false);
+             var a1 = document.querySelector("#month_minus").addEventListener("mouseup", this, false);
+             var a2 = document.querySelector("#month_plus").addEventListener("mouseup", this, false);
+             var a3 = document.querySelector("#year_plus").addEventListener("mouseup", this, false);
+             var a4 = document.querySelector("#year_minus").addEventListener("mouseup", this, false);
              console.log("LOCATION:");
              console.log(window.location.host);   
              var b = document.querySelector(".iwraper").addEventListener("mousedown", this, false);
