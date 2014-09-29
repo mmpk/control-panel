@@ -53,7 +53,9 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     },
     handleMousedown : {
         value: function(v) {
-            var mc = this.templateObjects.monthController
+            
+        }
+
     },
     data: {
         value: [
