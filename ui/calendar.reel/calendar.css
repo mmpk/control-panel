@@ -65,9 +65,3 @@
 .year_input{
     width: 50px;
 }
-
-.digit-TextField :after{
-     content: "A";
-     width: 15px; height: 15px;
-     background: #3498db;
-}
