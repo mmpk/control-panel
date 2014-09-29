@@ -28,9 +28,9 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
              var mc = this.templateObjects.monthController
              mc.select(mc.content[this.date.getMonth()])
              
-             var a = document.querySelectorAll("#month_minus,#month_plus,#year_plus,#year_minus").forEach(function(v){
+             document.querySelectorAll("#month_minus,#month_plus,#year_plus,#year_minus").forEach(function(v){
                 // v.addEventListener("mouseup", this, false);
-                  console.log(a);
+                  console.log(v);
              })
              console.log("LOCATION:");
              console.log(window.location.host);   
