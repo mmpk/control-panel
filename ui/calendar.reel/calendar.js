@@ -43,17 +43,8 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
             var idx = mc.content.indexOf(mc.selection[0]);
             (v.target.id == 'min_month_btn') ? (idx--) : (idx++);
             mc.select(mc.content[idx])
-            
-            var rep = this.templateObjects.repetition;
-            var month = cal_current_date.getMonth()
-            var year  = cal_current_date.getFullYear()
-            var days = new Date(year, idx+1, 0).getDate()
-            console.log(idx+"  "+cal_months_labels[idx] +"   "+days)
-            var arr = []
-            for(var i=0;i<days;i++){
-                arr.push(i)
-            }
-            rep.content = arr  
+            console.log(idx);
+            this.fillDays
         }
     },
     handleMousedown : {
@@ -66,8 +57,10 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     fillDays: {
         value: function(){
             console.log("fillDays")
+            var mc = this.templateObjects.monthController
+            
             var rep = this.templateObjects.repetition;
-            var month = this.date.getMonth()
+            var month =  mc.content.indexOf(mc.selection[0]);
             var year  = this.templateObjects.yearInput
                // this.date.getFullYear()
             var days = new Date(year, 1, 0).getDate()
