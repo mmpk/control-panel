@@ -29,6 +29,7 @@
 .inline:hover {
      background: #3498db;
      color: #fff;
+     border-radius: 50%;
 }
 .dum {
     float: left;
