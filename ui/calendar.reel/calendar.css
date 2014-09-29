@@ -1,7 +1,7 @@
-.Calendar {
+.Cal {
     background: #eee;
 }
-.Calendar ul {
+.Cal ul {
     list-style-type: none;
     padding: 0px;
     margin: 0px;
@@ -64,4 +64,13 @@
 }
 .year_input{
     width: 50px;
+}
+.iwraper {
+     border: 1px solid #3498db;
+     border-radius: 0.5em;
+     display: inline-block;    
+}
+.iwraper > span {
+    padding: 0 10px 0 0; 
+    color: #3498db;
 }

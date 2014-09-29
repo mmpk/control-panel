@@ -20,26 +20,18 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
             this.super();   
         }
     },
+    date: {
+        value: new Date()
+    },
     enterDocument: {
         value: function(firstTime) {
              var _this = this;
              var a = document.querySelector("#month_minus").addEventListener("mouseup", this, false);
              var b = document.querySelector("#month_plus").addEventListener("mouseup", this, false);
-            console.log("LOCATION:");
-            console.log(window.location.host);
-            console.log(this.element.parrentNode)
-            
+             console.log("LOCATION:");
+             console.log(window.location.host);   
              var b = document.querySelector(".iwraper").addEventListener("mousedown", this, false);
-            
-            var rep = this.templateObjects.repetition;
-            var month = cal_current_date.getMonth()
-            var year  = cal_current_date.getFullYear()
-            var days = new Date(year, 1, 0).getDate()
-            var arr = []
-            for(var i=0;i<days;i++){
-                arr.push(i)
-            }
-            rep.content = arr
+             this.fillDays()
         }
     },
     handleMouseup : {
@@ -56,7 +48,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
             console.log(idx+"  "+cal_months_labels[idx] +"   "+days)
             var arr = []
             for(var i=0;i<days;i++){
-                arr.push(i)
+                arr.push(i+1)
             }
             rep.content = arr  
         }
@@ -67,6 +59,19 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
              over.show()
         }
 
+    },
+    fillDays: {
+        value: function(){
+            var rep = this.templateObjects.repetition;
+            var month = this.date.getMonth()
+            var year  = this.getFullYear()
+            var days = new Date(year, 1, 0).getDate()
+            var arr = []
+            for(var i=0;i<days;i++){
+                arr.push(i+1)
+            }
+            rep.content = arr
+        }
     },
     data: {
         value: [
