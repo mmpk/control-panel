@@ -65,6 +65,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     },
     fillDays: {
         value: function(){
+            console.log("fillDays")
             var rep = this.templateObjects.repetition;
             var month = this.date.getMonth()
             var year  = this.templateObjects.yearInput
