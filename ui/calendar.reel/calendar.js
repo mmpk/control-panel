@@ -18,8 +18,6 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     constructor: {
         value: function Calendar() {
             this.super(); 
-            var mc = this.templateObjects.monthController
-            mc.select(mc.content[this.date.getMonth()])
         }
     },
     date: {
@@ -27,7 +25,9 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     },
     enterDocument: {
         value: function(firstTime) {
-             var _this = this;
+             var mc = this.templateObjects.monthController
+             mc.select(mc.content[this.date.getMonth()])
+             
              var a = document.querySelector("#month_minus").addEventListener("mouseup", this, false);
              var b = document.querySelector("#month_plus").addEventListener("mouseup", this, false);
              console.log("LOCATION:");
