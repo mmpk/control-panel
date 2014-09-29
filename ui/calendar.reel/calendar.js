@@ -30,7 +30,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
              
              var a1 = document.querySelector("#month_minus").addEventListener("mouseup", this, false);
              var a2 = document.querySelector("#month_plus").addEventListener("mouseup", this, false);
-             this.templateObjects.yearInput.element.addEventListener("change", this.fillDays);
+             this.templateObjects.yearInput.element.addEventListener("change", this.fillDays, false);
              console.log("LOCATION:");
              console.log(window.location.host);   
              var b = document.querySelector(".iwraper").addEventListener("mousedown", this, false);
@@ -41,7 +41,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
         value: function(v) {
             var mc = this.templateObjects.monthController
             var idx = mc.content.indexOf(mc.selection[0]);
-            (v.target.id == 'min_month_btn') ? (idx--) : (idx++);
+            (v.target.id == 'month_minus') ? (idx--) : (idx++);
             mc.select(mc.content[idx])
             console.log(idx);
             this.fillDays
@@ -57,10 +57,10 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     fillDays: {
         value: function(){
             console.log("fillDays")
-            var mc = this.templateObjects.monthController
-            
+            var mc = this.templateObjects.monthController            
             var rep = this.templateObjects.repetition;
             var month =  mc.content.indexOf(mc.selection[0]);
+            
             var year  = this.templateObjects.yearInput
                // this.date.getFullYear()
             var days = new Date(year, 1, 0).getDate()
