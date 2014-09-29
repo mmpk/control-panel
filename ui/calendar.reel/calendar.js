@@ -63,7 +63,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
             
             var year  = this.templateObjects.yearInput
                // this.date.getFullYear()
-            var days = new Date(year, 1, 0).getDate()
+            var days = new Date(year, month, 0).getDate()
             var arr = []
             for(var i=1;i<days;i++){
                 arr.push(i)
