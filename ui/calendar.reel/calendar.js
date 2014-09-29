@@ -34,7 +34,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
              console.log("LOCATION:");
              console.log(window.location.host);   
              var b = document.querySelector(".iwraper").addEventListener("mousedown", this, false);
-             this.fillDays
+             this.fillDays()
         }
     },
     handleMouseup : {
@@ -44,7 +44,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
             (v.target.id == 'month_minus') ? (idx--) : (idx++);
             mc.select(mc.content[idx])
             console.log(idx);
-            this.fillDays
+            this.fillDays()
         }
     },
     handleMousedown : {
@@ -57,7 +57,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     fillDays: {
         value: function(){
             console.log("fillDays")
-            var mc = this.templateObjects.monthController            
+            //var mc = this.templateObjects.monthController            
             var rep = this.templateObjects.repetition;
             var month =  mc.content.indexOf(mc.selection[0]);
             
