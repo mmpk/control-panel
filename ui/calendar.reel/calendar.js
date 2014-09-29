@@ -28,6 +28,8 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
             console.log("LOCATION:");
             console.log(window.location.host);
             console.log(this.element.parrentNode)
+            
+             var b = document.querySelector(".iwraper").addEventListener("mousedown", this, false);
         }
     },
     handleMouseup : {
@@ -48,6 +50,10 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
             }
             rep.content = arr  
         }
+    },
+    handleMousedown : {
+        value: function(v) {
+            var mc = this.templateObjects.monthController
     },
     data: {
         value: [
