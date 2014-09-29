@@ -32,7 +32,8 @@
         "overlay": {
             "prototype": "montage/ui/overlay.reel",
             "properties": {
-                "element": {"#": "overlay"}
+                "element": {"#": "overlay"},
+                "anchor": {"@": "owner"}
             }
         },
         "repetition": {
@@ -98,52 +99,53 @@
 
             </span>
         </div>
-        <div data-montage-id="overlay"></div>
-        <div class="cal_top_bar">
-            <div id="month_minus">
-                −
+        <div data-montage-id="overlay">
+            <div class="cal_top_bar">
+                <div id="month_minus">
+                    −
+                </div>
+                <p data-montage-id="text"></p>
+                <div id="month_plus">
+                    +
+                </div>
+                <div id="year_minus">
+                    −
+                </div>
+                <input type="number" data-montage-id="yearInput" class="year_input">
+                <div id="year_plus">
+                    +
+                </div>
             </div>
-            <p data-montage-id="text"></p>
-            <div id="month_plus">
-                +
+            <div class="rep">
+                <div class="inline">
+                    пн
+                </div>
+                <div class="inline">
+                    вт
+                </div>
+                <div class="inline">
+                    ср
+                </div>
+                <div class="inline">
+                    чт
+                </div>
+                <div class="inline">
+                    пт
+                </div>
+                <div class="inline">
+                    сб
+                </div>
+                <div class="inline">
+                    вс
+                </div>
             </div>
-            <div id="year_minus">
-                −
-            </div>
-            <input type="number" data-montage-id="yearInput" class="year_input">
-            <div id="year_plus">
-                +
-            </div>
-        </div>
-        <div class="rep">
-            <div class="inline">
-                пн
-            </div>
-            <div class="inline">
-                вт
-            </div>
-            <div class="inline">
-                ср
-            </div>
-            <div class="inline">
-                чт
-            </div>
-            <div class="inline">
-                пт
-            </div>
-            <div class="inline">
-                сб
-            </div>
-            <div class="inline">
-                вс
-            </div>
-        </div>
-        <ul data-montage-id="repetition" class="rep">
-            <p data-montage-id="text2" class="inline">
+            <ul data-montage-id="repetition" class="rep">
+                <p data-montage-id="text2" class="inline">
 
-            </p>
-            <p data-montage-id="text3" class="dum"></p>
-        </ul>
+                </p>
+                <p data-montage-id="text3" class="dum"></p>
+            </ul>
+        </div>
     </div>
 </body>
 </html>

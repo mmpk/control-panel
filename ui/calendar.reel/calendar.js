@@ -53,7 +53,8 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     },
     handleMousedown : {
         value: function(v) {
-            
+             var over = this.templateObjects.overlay;
+             over.show()
         }
 
     },
