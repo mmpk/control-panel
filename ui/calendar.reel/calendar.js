@@ -30,8 +30,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
              
              var a1 = document.querySelector("#month_minus").addEventListener("mouseup", this, false);
              var a2 = document.querySelector("#month_plus").addEventListener("mouseup", this, false);
-             var a3 = document.querySelector("#year_plus").addEventListener("mouseup", this, false);
-             var a4 = document.querySelector("#year_minus").addEventListener("mouseup", this, false);
+
              console.log("LOCATION:");
              console.log(window.location.host);   
              var b = document.querySelector(".iwraper").addEventListener("mousedown", this, false);
@@ -68,7 +67,8 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
         value: function(){
             var rep = this.templateObjects.repetition;
             var month = this.date.getMonth()
-            var year  = this.date.getFullYear()
+            //var year  = this.date.getFullYear()
+            var year =  this.templateObjects.yearInput.value
             var days = new Date(year, 1, 0).getDate()
             var arr = []
             for(var i=1;i<days;i++){
