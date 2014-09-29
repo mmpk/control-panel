@@ -28,8 +28,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
              var mc = this.templateObjects.monthController
              mc.select(mc.content[this.date.getMonth()])
              
-             var a = document.querySelector("#month_minus").addEventListener("mouseup", this, false);
-             var b = document.querySelector("#month_plus").addEventListener("mouseup", this, false);
+             var a = document.querySelector("#month_minus,#month_plus,#year_plus,#year_minus").addEventListener("mouseup", this, false);
              console.log("LOCATION:");
              console.log(window.location.host);   
              var b = document.querySelector(".iwraper").addEventListener("mousedown", this, false);
@@ -50,7 +49,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
             console.log(idx+"  "+cal_months_labels[idx] +"   "+days)
             var arr = []
             for(var i=0;i<days;i++){
-                arr.push(i+1)
+                arr.push(i)
             }
             rep.content = arr  
         }
@@ -69,7 +68,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
             var year  = this.date.getFullYear()
             var days = new Date(year, 1, 0).getDate()
             var arr = []
-            for(var i=0;i<days;i++){
+            for(var i=1;i<days;i++){
                 arr.push(i)
             }
             rep.content = arr
