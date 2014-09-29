@@ -34,7 +34,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
              console.log("LOCATION:");
              console.log(window.location.host);   
              var b = document.querySelector(".iwraper").addEventListener("mousedown", this, false);
-             this.fillDays()
+             this.fillDays
         }
     },
     handleMouseup : {
