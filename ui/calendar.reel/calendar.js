@@ -55,7 +55,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
 
     },
     fillDays: {
-        value: function(){
+        value: function(v){
             //var mc = this.templateObjects.monthController;          
             var rep = this.templateObjects.repetition;
             var month = 3
