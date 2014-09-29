@@ -66,18 +66,8 @@
     width: 50px;
 }
 
-.digit-TextField {
-    outline: none;
-    box-sizing: border-box;
-    font-size: 100%; /* Override UA style. */
-    width: 10em;
-    height: 2.5em;
-    padding: 0 .5em;
-    vertical-align: middle;
-    color: inherit;
-    border: 1px solid;
-    border-radius: .25em;
-    background-color: transparent;
-    -webkit-tap-highlight-color: transparent;
-    -webkit-appearance: none; /* Removes inner shadow on iOS. */
+.digit-TextField :after{
+     content: "A";
+     width: 15px; height: 15px;
+     background: #3498db;
 }
