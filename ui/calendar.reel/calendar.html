@@ -10,6 +10,15 @@
                 "element": {"#": "owner"}
             }
         },
+        "dateField": {
+            "prototype": "digit/ui/text-field.reel",
+            "properties": {
+                "element": {"#": "dateField"},
+                "enabled": false,
+                "placeholderValue": "Text",
+                "value": "19-09-2009"
+            }
+        },
         "monthController": {
             "prototype": "montage/core/range-controller",
             "properties": {
@@ -77,16 +86,22 @@
 </head>
 <body>
     <div data-montage-id="owner" class="Calendar">
+        <input data-montage-id="dateField" type="text">
         <div class="cal_top_bar">
-            
-            <div id="month_minus">&minus;</div>         
-            <p data-montage-id="text"></p>            
-            <div id="month_plus"> &plus;</div>
-            
-            <div id="year_minus"> &minus;</div>
-               <input type="number" data-montage-id="yearInput" class="year_input">
-            <div id="year_plus"> &plus;</div>
-            
+            <div id="month_minus">
+                −
+            </div>
+            <p data-montage-id="text"></p>
+            <div id="month_plus">
+                +
+            </div>
+            <div id="year_minus">
+                −
+            </div>
+            <input type="number" data-montage-id="yearInput" class="year_input">
+            <div id="year_plus">
+                +
+            </div>
         </div>
         <div class="rep">
             <div class="inline">
