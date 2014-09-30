@@ -30,7 +30,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
              
              var a1 = document.querySelector("#month_minus").addEventListener("mouseup", this, false);
              var a2 = document.querySelector("#month_plus").addEventListener("mouseup", this, false);
-             this.templateObjects.yearInput.element.addEventListener("onchange", this, false);
+             this.templateObjects.yearInput.element.addEventListener("change", this, false);
              console.log("LOCATION:");
              console.log(window.location.host);   
              var b = document.querySelector(".iwraper").addEventListener("mousedown", this, false);
@@ -54,9 +54,9 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
         }
 
     },
-    handleOnchange : {
+    handleChange : {
         value: function(v) {
-            this.fillDays
+            this.fillDays()
         }
 
     },
