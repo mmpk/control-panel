@@ -29,18 +29,6 @@
                 "content": {"<-": "@owner.data"}
             }
         },
-        "monthInput": {
-            "prototype": "native/ui/input-text.reel",
-            "properties": {
-                "element": {"#": "monthInput"},
-                "contenteditable": "true",
-                "dir": "ltr",
-                "draggable": "true"
-            },
-            "bindings": {
-                "value": {"<-": "@monthController.selection.0.month"}
-            }
-        },
         "overlay": {
             "prototype": "montage/ui/overlay.reel",
             "properties": {
@@ -106,7 +94,6 @@
                 <div id="month_minus">
                     −
                 </div>
-                <input data-montage-id="monthInput">
                 <div id="month_plus">
                     +
                 </div>
