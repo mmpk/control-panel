@@ -29,6 +29,19 @@
                 "content": {"<-": "@owner.data"}
             }
         },
+        "monthInput": {
+            "prototype": "digit/ui/text-field.reel",
+            "properties": {
+                "element": {"#": "monthInput"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "placeholderValue": "Text"
+            },
+            "bindings": {
+                "value": {"<-": "@monthController.selection.0.month"}
+            }
+        },
         "overlay": {
             "prototype": "montage/ui/overlay.reel",
             "properties": {
@@ -46,16 +59,6 @@
             },
             "bindings": {
                 "content": {"<-": "@monthController.selection.0.days"}
-            }
-        },
-        "text": {
-            "prototype": "digit/ui/text.reel",
-            "properties": {
-                "element": {"#": "text"},
-                "value": "Text"
-            },
-            "bindings": {
-                "value": {"<-": "@monthController.selection.0.month"}
             }
         },
         "text2": {
@@ -104,13 +107,11 @@
                 <div id="month_minus">
                     −
                 </div>
-                <p data-montage-id="text"></p>
+                <input data-montage-id="monthInput" type="text">
                 <div id="month_plus">
                     +
                 </div>
-
                 <input type="number" data-montage-id="yearInput" class="year_input">
-
             </div>
             <div class="rep">
                 <div class="inline">
