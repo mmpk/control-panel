@@ -78,9 +78,6 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
                 arr.push(i)
             }
             rep.content = arr
-            
-           // var df = this.templateObjects.dateField  
-               // df.value = days+'-'+month+'-'+year
         }
     },
     data: {
