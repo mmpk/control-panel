@@ -63,12 +63,12 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     fillDays: {
         value: function(v){  
             console.log("FILL");
-            var mc = this.templateObjects.monthController;          
-            var rep = this.templateObjects.repetition;
-            var month = mc.content.indexOf(mc.selection[0]);         
+            var mc = this.templateObjects.monthController;         
+            var rep = this.templateObjects.repetition
+            var month = mc.content.indexOf(mc.selection[0])        
             var year  = this.templateObjects.yearInput.value
             
-            var day = rep.selectedIndexes
+            var day = rep.selectedIndexes[0]
              console.log(day)
              
             var days = new Date(year, month, 0).getDate()
@@ -77,9 +77,8 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
                 arr.push(i)
             }
             rep.content = arr
-            console.log(days+' '+year);
             
-            var df = this.templateObjects.dateField;  
+            var df = this.templateObjects.dateField  
                 df.value = days+'-'+month+'-'+year
         }
     },
