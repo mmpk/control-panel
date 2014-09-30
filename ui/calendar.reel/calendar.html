@@ -10,18 +10,21 @@
                 "element": {"#": "owner"}
             }
         },
+        "dateConv": {
+            "prototype": "montage/core/converter/date-converter",
+            "properties": {
+                "pattern": "DDD-MMM-yyyy"
+            }
+        },
         "dateField": {
             "prototype": "native/ui/input-text.reel",
             "properties": {
                 "element": {"#": "dateField"},
-                "converter":  {"@": "dateConv"},
+                "converter": {"@": "dateConv"},
                 "enabled": true,
                 "placeholderValue": "Text",
                 "value": "19-09-2009"
             }
-        },
-        "dateConv": {
-            "prototype": "montage/core/converter/date-converter"
         },
         "monthController": {
             "prototype": "montage/core/range-controller",
