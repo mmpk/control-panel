@@ -67,6 +67,10 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
             var rep = this.templateObjects.repetition;
             var month = mc.content.indexOf(mc.selection[0]);         
             var year  = this.templateObjects.yearInput.value
+            
+            var day = rep.selectedIndexes
+             console.log(day)
+             
             var days = new Date(year, month, 0).getDate()
             var arr = []
             for(var i=1;i<days;i++){
@@ -76,7 +80,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
             console.log(days+' '+year);
             
             var df = this.templateObjects.dateField;  
-                df.value = Date()
+                df.value = days+'-'+month+'-'+year
         }
     },
     data: {
