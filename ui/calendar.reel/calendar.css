@@ -65,6 +65,9 @@
 .year_input{
     width: 50px;
 }
+.month_input{
+    width: 50px;
+}
 .iwraper {
      border: 1px solid #3498db;
      border-radius: 0.5em;
