@@ -74,6 +74,9 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
             }
             rep.content = arr
             console.log(days+' '+year);
+            
+            var df = this.templateObjects.dateField;  
+            
         }
     },
     data: {
