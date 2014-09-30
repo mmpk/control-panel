@@ -76,7 +76,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
             console.log(days+' '+year);
             
             var df = this.templateObjects.dateField;  
-            
+                df.value = Date()
         }
     },
     data: {
@@ -94,13 +94,5 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
             { month: 'November' , days: new Array(30)},
             { month: 'December' , days: new Array(31)}
             ]
-    },  
-
-    Calendar: {
-        value: function(month, year) {
-            this.month = (isNaN(month) || month == null) ? cal_current_date.getMonth() : month;
-            this.year  = (isNaN(year) || year == null) ? cal_current_date.getFullYear() : year;
-            this.html = '';
-        }
     }
 });
