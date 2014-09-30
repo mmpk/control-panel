@@ -11,7 +11,7 @@
             }
         },
         "dateField": {
-            "prototype": "digit/ui/text-field.reel",
+            "prototype": "native/ui/text-field.reel",
             "properties": {
                 "element": {"#": "dateField"},
                 "enabled": true,
@@ -30,13 +30,12 @@
             }
         },
         "monthInput": {
-            "prototype": "digit/ui/text-field.reel",
+            "prototype": "native/ui/input-text.reel",
             "properties": {
                 "element": {"#": "monthInput"},
                 "contenteditable": "true",
                 "dir": "ltr",
-                "draggable": "true",
-                "placeholderValue": "Text"
+                "draggable": "true"
             },
             "bindings": {
                 "value": {"<-": "@monthController.selection.0.month"}
@@ -107,7 +106,7 @@
                 <div id="month_minus">
                     −
                 </div>
-                <input data-montage-id="monthInput" type="text">
+                <div data-montage-id="monthInput"></div>
                 <div id="month_plus">
                     +
                 </div>
