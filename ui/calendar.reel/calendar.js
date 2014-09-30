@@ -68,7 +68,8 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
             var month = mc.content.indexOf(mc.selection[0])        
             var year  = this.templateObjects.yearInput.value
             
-            var day = rep.selectedIndexes[0]
+            rep.selectedIndexes[0] = this.Date.getDate()
+            var day =  rep.selectedIndexes[0]
              console.log(day)
              
             var days = new Date(year, month, 0).getDate()
