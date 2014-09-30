@@ -27,6 +27,9 @@
                 "enabled": true,
                 "placeholderValue": "Text",
                 "value": "19-09-2009"
+            },
+            "bindings": {
+                "value": {"<-": "@repetition.selection.0+'-'+@monthController.selection.0.month+'-'+@yearInput.value"}
             }
         },
         "monthController": {
@@ -42,7 +45,10 @@
         "monthInput": {
             "prototype": "native/ui/input-text.reel",
             "properties": {
-                "element": {"#": "monthInput"}
+                "element": {"#": "monthInput"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true"
             },
             "bindings": {
                 "value": {"<-": "@monthController.selection.0.month"}
