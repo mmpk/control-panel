@@ -85,7 +85,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
              
             var days = new Date(year, month, 0).getDate()
             var arr = []
-            for(var i=1;i<days;i++){
+            for(var i=0;i<days;i++){
                 arr.push(i)
             }
             rep.content = arr
