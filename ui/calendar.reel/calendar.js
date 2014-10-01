@@ -104,7 +104,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
             { month: 'December' , days: new Array(31)}
             ]
     },
-    handleKeydown: {
+    handleKeyDown: {
         value: function(event) {
              console.log("KEY-PRESS:")
              console.log(event.identifier)
