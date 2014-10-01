@@ -77,7 +77,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
         value: function(v){  
             var mc = this.templateObjects.monthController;         
             var rep = this.templateObjects.repetition
-            var month = mc.content.indexOf(mc.selection[0])        
+            var month = mc.content.indexOf(mc.selection[0]) + 1       
             var year  = this.templateObjects.yearInput.value
             
             rep.selectedIndexes[0] = this.date.getDate()
