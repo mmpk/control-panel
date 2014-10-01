@@ -44,7 +44,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
              this.fillDays()
              
              /* Composer */
-             var ov = this.templateObjects.overlay.element.addEventListener("keypress", this, false);
+             var ov = this.templateObjects.overlay.element.addEventListener("keydown", this, false);
         }
     },
     handleMouseup : {
@@ -104,7 +104,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
             { month: 'December' , days: new Array(31)}
             ]
     },
-    handleKeypress: {
+    handleKeydown: {
         value: function(event) {
              console.log("KEY-PRESS:")
              console.log(event.identifier)
