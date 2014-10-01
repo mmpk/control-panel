@@ -51,17 +51,6 @@
     color: #fff;
     font-weight: bold;
 }
-#year_minus {
-    margin-left: 2px;
-    background: #3498db;
-    color: #fff;
-    font-weight: bold;
-}
-#year_plus {
-    background: #3498db;
-    color: #fff;
-    font-weight: bold;
-}
 .year_input{
     width: 50px;
 }
