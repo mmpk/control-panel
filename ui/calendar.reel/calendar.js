@@ -43,7 +43,6 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
             var idx = mc.content.indexOf(mc.selection[0]);
             (v.target.id == 'month_minus') ? (idx--) : (idx++);
             mc.select(mc.content[idx])
-            console.log(idx);
             this.fillDays()
         }
     },
@@ -62,7 +61,6 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     },
     fillDays: {
         value: function(v){  
-            console.log("FILL");
             var mc = this.templateObjects.monthController;         
             var rep = this.templateObjects.repetition
             var month = mc.content.indexOf(mc.selection[0])        
@@ -70,7 +68,6 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
             
             rep.selectedIndexes[0] = this.date.getDate()
             var day =  rep.selectedIndexes[0]
-             console.log(day)
              
             var days = new Date(year, month, 0).getDate()
             var arr = []
