@@ -123,7 +123,9 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
                          rep.selection.rangeController.select(rep.content[rep.selectedIndexes[0]-7])
                      break;
                  case "Down":
-                         rep.selection.rangeController.select(rep.content[rep.selectedIndexes[0]+7])
+                         if(rep.selectedIndexes[0] < 23){
+                             rep.selection.rangeController.select(rep.content[rep.selectedIndexes[0]+7])
+                         }
                      break;
              }
         }
