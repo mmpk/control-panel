@@ -37,8 +37,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
             
              var yInput = this.templateObjects.yearInput
                  yInput.value = this.date.getFullYear()
-             var mInput = this.templateObjects.monthInput
-                 mInput.value = this.date.getMonth()
+
              this.fillDays()
         }
     },
