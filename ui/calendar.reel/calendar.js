@@ -39,8 +39,6 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
                  yInput.value = this.date.getFullYear()
 
              this.fillDays()
-
-               console.log(@dateField);
         }
     },
     handleMouseup : {
