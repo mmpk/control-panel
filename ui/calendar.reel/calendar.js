@@ -42,7 +42,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
              
               console.log("VALIDATE:");
               var vd = this.templateObjects.dateConv
-               console.log(vd.validator.validate("2004.6-17k"));
+               console.log(vd.validator.validate("2004/6-17"));
         }
     },
     handleMouseup : {
