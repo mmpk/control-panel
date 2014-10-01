@@ -1,6 +1,8 @@
 .wrap{
-border: 3px solid red;
-width: 500px; height: 800px
+border: 1px dotted;
+width: 500px; height: 800px;
+background: #eee;
+    text-align: center;
 }
 .Cal {
     background: #eee;
