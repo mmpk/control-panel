@@ -44,7 +44,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
              this.fillDays()
              
              /* Composer */
-             var ov = this.templateObjects.owner.element.addEventListener("keydown", function(v){ console.log("KEY-DOWN:") });
+             var rep = this.templateObjects.repetition.element.addEventListener("keydown", function(v){ console.log("KEY-DOWN:") });
         }
     },
     handleMouseup : {
