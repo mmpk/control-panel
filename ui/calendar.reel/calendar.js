@@ -40,7 +40,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
 
              this.fillDays()
 
-               console.log(this.@dateField);
+               console.log(@dateField);
         }
     },
     handleMouseup : {
