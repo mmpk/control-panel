@@ -1,5 +1,6 @@
-.Calendar div{
+.wrap{
 border: 3px solid red;
+width: 500px; height: 800px
 }
 .Cal {
     background: #eee;
