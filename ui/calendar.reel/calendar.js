@@ -44,7 +44,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
              this.fillDays()
              
              /* Composer */
-            KeyComposer.createKey(this, "command+z shift control", "undo").addEventListener("keyPress", this);
+            KeyComposer.createKey(this, "command+z, shift, control", "undo").addEventListener("keyPress", this);
         }
     },
     handleMouseup : {
