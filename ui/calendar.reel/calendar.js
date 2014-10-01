@@ -44,7 +44,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
              this.fillDays()
              
              /* Composer */
-             var rep = this.templateObjects.repetition.element.addEventListener("keydown", function(v){ console.log("KEY-DOWN:") });
+             //var rep = this.templateObjects.repetition.element.addEventListener("keydown", function(v){ console.log("KEY-DOWN:") });
         }
     },
     handleMouseup : {
@@ -104,7 +104,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
             { month: 'December' , days: new Array(31)}
             ]
     },
-    handleKeyDown: {
+    handleKeyPress: {
         value: function(event) {
              console.log("KEY-PRESS:")
              console.log(event.identifier)
