@@ -20,6 +20,13 @@
 .rep {
     display: table;
 }
+.days > div {
+    text-align: center;
+    width: 25px; height: 25px;
+    float: left;
+    background: #e3e3e3;
+
+}
 .inline {
     text-align: center;
     width: 25px; height: 25px;
