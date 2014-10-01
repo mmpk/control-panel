@@ -23,6 +23,9 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     date: {
         value: new Date()
     },
+    _keyComposer: {
+        value: null
+    },
     enterDocument: {
         value: function(firstTime) {
              var mc = this.templateObjects.monthController
