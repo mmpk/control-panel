@@ -3,12 +3,14 @@ border: 1px dotted;
 width: 500px; height: 800px;
 background: #eee;
     text-align: center;
+    padding: 50px;
 }
 .Cal {
     background: #eee;
     border: 3px solid #3498db;
     border-radius: 0.335em;
     padding: 2px;
+    display: table;
 }
 .Cal ul {
     list-style-type: none;
