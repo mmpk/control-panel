@@ -3,7 +3,7 @@
  * @requires montage/ui/component
  */
 var Component = require("montage/ui/component").Component;
-var KeyComposer = require("montage/composer/key-composer").KeyComposer,
+var KeyComposer = require("montage/composer/key-composer").KeyComposer;
 var cal_days_labels = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
     cal_months_labels = ['January', 'February', 'March', 'April',
                          'May', 'June', 'July', 'August', 'September',
@@ -111,7 +111,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     },
     handleKeyPress: {
         value: function(event) {
-             console.log("KEY-PRESS:");
+             console.log("KEY-PRESS:")
              console.log(event.identifier)
         }
     }
