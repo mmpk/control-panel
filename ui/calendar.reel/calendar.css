@@ -41,16 +41,15 @@
     clear: left;
 }
 
-#month_minus {
+.mon_btn {
     background: #3498db;
     color: #fff;
     font-weight: bold;
+    width: 16px;
+    height: 100%;
+    text-align: center;
 }
-#month_plus {
-    background: #3498db;
-    color: #fff;
-    font-weight: bold;
-}
+
 .year_input{
     width: 50px;
 }
