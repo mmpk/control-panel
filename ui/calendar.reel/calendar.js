@@ -111,19 +111,19 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     handleKeyPress: {
         value: function(event) {
              console.log("KEY-PRESS:")
-             var range = this.templateObjects.repetition.selection.rangeController
+             var rep = this.templateObjects.repetition
              switch (event.identifier) {
                  case "Left":
-                         range.select(rep.content[rep.selectedIndexes[0]-1])
+                         rep.selection.rangeController.select(rep.content[rep.selectedIndexes[0]-1])
                      break;
                  case "Right":
-                         range.select(rep.content[rep.selectedIndexes[0]+1])
+                         rep.selection.rangeController.select(rep.content[rep.selectedIndexes[0]+1])
                      break;
                  case "Up":
-                         range.select(rep.content[rep.selectedIndexes[0]-7])
+                         rep.selection.rangeController.select(rep.content[rep.selectedIndexes[0]-7])
                      break;
                  case "Down":
-                     range.select(rep.content[rep.selectedIndexes[0]+7])
+                         rep.selection.rangeController.select(rep.content[rep.selectedIndexes[0]+7])
                      break;
              }
         }
