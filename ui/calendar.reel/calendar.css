@@ -1,5 +1,7 @@
 .Cal {
     background: #eee;
+    border: 1px solid #3498db;
+    border-radius: 0.335em;
 }
 .Cal ul {
     list-style-type: none;
@@ -8,17 +10,15 @@
 }
 
 .cal_top_bar {
-    display: inline-block;
+    display: inline-table;
 }
 .cal_top_bar > * {
-    display: inline-block;
-    vertical-align: middle;
+    display: inline-table;
+    vertical-align: middle;   
 }
-
 
 .rep {
     display: table;
-    border: 1px solid #3498db;
 }
 .inline {
     text-align: center;
@@ -45,16 +45,17 @@
     background: #3498db;
     color: #fff;
     font-weight: bold;
-    width: 16px;
-    height: 100%;
+    padding: 3px;
     text-align: center;
+    cursor:pointer;
+    margin: 0px;
 }
 
 .year_input{
     width: 50px;
 }
 .month_input{
-    width: 90px;
+    width: 100px;
 }
 .iwraper {
      border: 1px solid #3498db;
