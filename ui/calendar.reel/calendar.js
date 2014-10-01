@@ -79,7 +79,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
                 arr.push(i)
             }
             rep.content = arr
-            rep.selection[0] = rep.content[this.date.getDate()]
+            rep.select(rep.content[this.date.getDate()])
             console.log(rep.selection)
         }
     },
