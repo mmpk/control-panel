@@ -117,7 +117,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
                          rep.selection.rangeController.select(rep.content[rep.selectedIndexes[0]-1])
                      break;
                  case "Right":
-                         if(rep.selectedIndexes[0] != rep.content.length){
+                         if(rep.selectedIndexes[0] != rep.content.length-1){
                              rep.selection.rangeController.select(rep.content[rep.selectedIndexes[0]+1])
                          }
                      break;
