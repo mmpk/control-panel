@@ -10,6 +10,20 @@
                 "element": {"#": "owner"}
             }
         },
+        "myShortcut": {
+            "prototype": "montage/ui/composer/key-composer",
+            "properties": {
+                "keys": "z + a + shift",
+                "identifier": "dsel",
+                "component": {"@": "example"}
+            },
+            "listeners": [
+                {
+                    "type": "keyPress",
+                    "listener": {"@": "owner"}
+                }
+                ]
+        },
         "dateConv": {
             "prototype": "montage/core/converter/date-converter",
             "properties": {
@@ -151,7 +165,7 @@
                         </div>
                     </div>
                 </div>
-                <ul data-montage-id="repetition" class="rep" tabindex="1">
+                <ul data-montage-id="repetition" class="rep">
                     <p data-montage-id="text2" class="inline">
 
                     </p>
