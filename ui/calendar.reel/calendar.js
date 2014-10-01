@@ -44,6 +44,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
              this.fillDays()
              
              /* Composer */
+             var ov = this.templateObjects.overlay.addEventListener("keyPress", this);
         }
     },
     handleMouseup : {
