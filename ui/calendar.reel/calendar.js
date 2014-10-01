@@ -39,6 +39,10 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
                  yInput.value = this.date.getFullYear()
 
              this.fillDays()
+             
+              console.log("VALIDATE:");
+              var vd = this.templateObjects.dateConv
+               console.log(vd);
         }
     },
     handleMouseup : {
