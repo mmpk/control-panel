@@ -44,12 +44,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
              this.fillDays()
              
              /* Composer */
-            this._keyComposer = new KeyComposer();
-            this._keyComposer.component = this;
-            this._keyComposer.keys = "escape";
-            this._keyComposer.identifier = "escape";
-            this.addComposer(this._keyComposer);
-            this._keyComposer.element = window;
+            KeyComposer.createKey(this, "command+z", "undo").addEventListener("keyPress", this);
         }
     },
     handleMouseup : {
