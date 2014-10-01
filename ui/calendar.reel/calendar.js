@@ -114,7 +114,9 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
              var rep = this.templateObjects.repetition
              switch (event.identifier) {
                  case "Left":
-                         rep.selection.rangeController.select(rep.content[rep.selectedIndexes[0]-1])
+                         if(rep.selectedIndexes[0] != 0{
+                             rep.selection.rangeController.select(rep.content[rep.selectedIndexes[0]-1])
+                             }
                      break;
                  case "Right":
                          if(rep.selectedIndexes[0] != rep.content.length-1){
