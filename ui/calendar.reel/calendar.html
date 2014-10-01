@@ -59,7 +59,14 @@
             "properties": {
                 "element": {"#": "overlay"},
                 "anchor": {"#": "dateField"}
-            }
+            },
+            "listeners": [
+                {
+                    "type": "keyPress",
+                    "useCapture": false,
+                    "listener": {"@": "owner"}
+                }
+            ]
         },
         "repetition": {
             "prototype": "montage/ui/repetition.reel",
