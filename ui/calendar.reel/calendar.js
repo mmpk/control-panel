@@ -3,7 +3,7 @@
  * @requires montage/ui/component
  */
 var Component = require("montage/ui/component").Component;
-
+var KeyComposer = require("montage/composer/key-composer").KeyComposer,
 var cal_days_labels = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
     cal_months_labels = ['January', 'February', 'March', 'April',
                          'May', 'June', 'July', 'August', 'September',
@@ -39,6 +39,14 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
                  yInput.value = this.date.getFullYear()
 
              this.fillDays()
+             
+             /* Composer */
+            this._keyComposer = new KeyComposer();
+            this._keyComposer.component = this;
+            this._keyComposer.keys = "escape";
+            this._keyComposer.identifier = "escape";
+            this.addComposer(this._keyComposer);
+            this._keyComposer.element = window;
         }
     },
     handleMouseup : {
@@ -97,5 +105,11 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
             { month: 'November' , days: new Array(30)},
             { month: 'December' , days: new Array(31)}
             ]
+    },
+    handleKeyPress: {
+        value: function(event) {
+             console.log("KEY-PRESS:");
+             console.log(event.identifier)
+        }
     }
 });
