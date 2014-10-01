@@ -45,7 +45,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
              
              /* Composer */
              var Overlay = this.templateObjects.overlay;
-             KeyComposer.createKey(Overlay, "left", "Left").addEventListener("keyPress", this);
+             KeyComposer.createKey(Overlay, "left,up", "Left").addEventListener("keyPress", this);
         }
     },
     handleMouseup : {
