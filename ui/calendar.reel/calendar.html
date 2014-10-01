@@ -59,14 +59,7 @@
             "properties": {
                 "element": {"#": "overlay"},
                 "anchor": {"#": "dateField"}
-            },
-            "listeners": [
-                {
-                    "type": "keyPress",
-                    "useCapture": false,
-                    "listener": {"@": "owner"}
-                }
-            ]
+            }
         },
         "repetition": {
             "prototype": "montage/ui/repetition.reel",
@@ -122,7 +115,7 @@
 
                 </span>
             </div>
-            <div data-montage-id="overlay" class="Cal">
+            <div data-montage-id="overlay" class="Cal" tabindex="1">
                 <div class="cal_top_bar">
                     <div id="month_minus" class="mon_btn">
                         −
