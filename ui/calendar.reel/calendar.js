@@ -34,6 +34,9 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
              console.log("LOCATION:");
              console.log(window.location.host);   
              var b = document.querySelector(".iwraper").addEventListener("mousedown", this, false);
+            
+             var yInput = this.templateObjects.yearInput
+                 yInput.value = this.date.getFullYear()
              this.fillDays()
         }
     },
