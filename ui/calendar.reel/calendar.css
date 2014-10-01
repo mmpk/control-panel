@@ -1,7 +1,11 @@
+.Calendar div{
+border: 3px solid red;
+}
 .Cal {
     background: #eee;
-    border: 1px solid #3498db;
+    border: 3px solid #3498db;
     border-radius: 0.335em;
+    padding: 2px;
 }
 .Cal ul {
     list-style-type: none;
@@ -11,15 +15,13 @@
 
 .cal_top_bar {
     display: inline-table;
+    overflow: hidden;
 }
 .cal_top_bar > * {
     display: inline-table;
     vertical-align: middle;   
 }
 
-.rep {
-    display: table;
-}
 .days > div {
     text-align: center;
     width: 25px; height: 25px;
@@ -32,12 +34,16 @@
     width: 25px; height: 25px;
     float: left;
     margin: 0px;
+    cursor:pointer;
 }
 .inline:hover {
-     background: #3498db;
+     background: #c3c3c3;
      color: #fff;
 }
-
+.inline.selected {
+    background: #3498db;
+    color: #fff;
+}
 .dum {
     float: left;
 }
@@ -66,10 +72,11 @@
 }
 .iwraper {
      border: 1px solid #3498db;
-     border-radius: 0.5em;
+     background: #eee;
+     border-radius: 0.335em;
      display: inline-block;    
 }
 .iwraper > span {
-    padding: 0 10px 0 0; 
+    padding: 0 5px 0 0; 
     color: #3498db;
 }
