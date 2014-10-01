@@ -10,7 +10,7 @@ background: #eee;
     border: 3px solid #3498db;
     border-radius: 0.335em;
     padding: 2px;
-    display: table;
+     text-align: center;
 }
 .Cal ul {
     list-style-type: none;
@@ -19,7 +19,7 @@ background: #eee;
 }
 
 .cal_top_bar {
-    display: inline-table;
+    display: flex;
     overflow: hidden;
 }
 .cal_top_bar > * {
@@ -70,10 +70,10 @@ background: #eee;
 }
 
 .year_input{
-    width: 50px;
+    width: 10%;
 }
 .month_input{
-    width: 100px;
+    width: 80px;
 }
 .iwraper {
      border: 1px solid #3498db;

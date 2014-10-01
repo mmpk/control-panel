@@ -25,6 +25,8 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     },
     enterDocument: {
         value: function(firstTime) {
+             var mc = this.templateObjects.monthController
+             mc.select(mc.content[this.date.getMonth()])
              
              var a1 = document.querySelector("#month_minus").addEventListener("mouseup", this, false);
              var a2 = document.querySelector("#month_plus").addEventListener("mouseup", this, false);
@@ -35,9 +37,6 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
             
              var yInput = this.templateObjects.yearInput
                  yInput.value = this.date.getFullYear()
-                 
-             var mc = this.templateObjects.monthController
-                 mc.select(mc.content[this.date.getMonth()])
 
              this.fillDays()
         }
