@@ -31,8 +31,8 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
              var mc = this.templateObjects.monthController
                  mc.select(mc.content[this.date.getMonth()])
              
-             var a1 = document.querySelector("#month_minus").addEventListener("click", this, false);
-             var a2 = document.querySelector("#month_plus").addEventListener("click", this, false);
+             var a1 = document.querySelector("#month_minus").addEventListener("click touchstart", this, false);
+             var a2 = document.querySelector("#month_plus").addEventListener("click touchstart", this, false);
              this.templateObjects.yearInput.element.addEventListener("change", this, false);
              console.log("LOCATION:");
              console.log(window.location.host);   
