@@ -53,7 +53,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
              KeyComposer.createKey(Overlay, "down", "Down").addEventListener("keyPress", this);
         }
     },
-    handleMouseup, handleTouchstart: {
+    handleMouseup : {
         value: function(v) {
             var mc = this.templateObjects.monthController
             var idx = mc.content.indexOf(mc.selection[0]);
@@ -62,13 +62,9 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
             this.fillDays()
         }
     },
-    handleTouchstartAAA : {
+    handleTouchstart : {
         value: function(v) {
-            var mc = this.templateObjects.monthController
-            var idx = mc.content.indexOf(mc.selection[0]);
-            (v.target.id == 'month_minus') ? (idx--) : (idx++);
-            mc.select(mc.content[idx])
-            this.fillDays()
+                this.handleMouseup(v)
         }
     },
     handleMousedown : {
