@@ -18,7 +18,7 @@ exports.Tab = Component.specialize(/** @lends Tab# */ {
         value: function(firstTime) {
             var glyph = this.templateObjects.glyph
             console.log("glyph")
-            console.log(glyph)
+            console.log(this.label)
         }
     }
 });
