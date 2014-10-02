@@ -17,6 +17,7 @@ exports.Tab = Component.specialize(/** @lends Tab# */ {
     enterDocument: {
         value: function(firstTime) {
             var glyph = this.templateObjects.glyph
+            console.log("glyph")
             console.log(glyph)
         }
     }
