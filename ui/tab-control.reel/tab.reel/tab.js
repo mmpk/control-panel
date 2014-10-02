@@ -13,5 +13,11 @@ exports.Tab = Component.specialize(/** @lends Tab# */ {
         value: function Tab() {
             this.super();
         }
+    },
+    enterDocument: {
+        value: function(firstTime) {
+            var glyph = this.templateObjects.glyph
+            console.log(glyph)
+        }
     }
 });
