@@ -85,6 +85,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
                     },
                     {"name": "key1"},
                     {"name": "HTML"},
+                    {"name": "calendar"},
                     {"name": "Pluto"}
                 ]
                }

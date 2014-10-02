@@ -28,6 +28,12 @@
                 "element": {"#": "calendar"}
             }
         },
+        "calendar2": {
+            "prototype": "ui/calendar.reel",
+            "properties": {
+                "element": {"#": "calendar2"}
+            }
+        },
         "image": {
             "prototype": "digit/ui/image.reel",
             "properties": {
@@ -106,13 +112,14 @@
         <div class="row">
             <div class="col-md-2">
                 <div class="left-col">
-                <div data-montage-id="navLeft">
+                    <div data-montage-id="navLeft">
 
-                </div>
+                    </div>
                 </div>
             </div>
             <div class="col-md-7">
                 <div data-montage-id="substitution">
+                    <div data-montage-id="calendar2" data-arg="calendar"></div>
                     <img data-montage-id="image" data-arg="key1">
                     <div data-montage-id="tableView" data-arg="Pluto">
                         <button data-montage-id="button"></button>
