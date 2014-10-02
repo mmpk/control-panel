@@ -31,8 +31,8 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
              var mc = this.templateObjects.monthController
                  mc.select(mc.content[this.date.getMonth()])
              
-             var a1 = document.querySelector("#month_minus").addEventListener("mouseup", this, false);
-             var a2 = document.querySelector("#month_plus").addEventListener("mouseup", this, false);
+             var a1 = document.querySelector("#month_minus").addEventListener("click", this, false);
+             var a2 = document.querySelector("#month_plus").addEventListener("click", this, false);
              this.templateObjects.yearInput.element.addEventListener("change", this, false);
              console.log("LOCATION:");
              console.log(window.location.host);   
@@ -51,7 +51,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
              KeyComposer.createKey(Overlay, "down", "Down").addEventListener("keyPress", this);
         }
     },
-    handleMouseup : {
+    handleClick : {
         value: function(v) {
             var mc = this.templateObjects.monthController
             var idx = mc.content.indexOf(mc.selection[0]);

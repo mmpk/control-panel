@@ -7,7 +7,7 @@ background: #fff;
 }
 .Cal {
     background: #f3f3f3;
-    border: 1px solid #3498db;
+    border: 1px solid #ccc;
     border-radius: 0.335em;
     padding: 2px;
      text-align: center;
@@ -26,7 +26,9 @@ background: #fff;
     display: inline-table;
     vertical-align: middle;   
 }
-
+.days {
+    display: flex;
+}
 .days > div {
     text-align: center;
     width: 25px; height: 25px;
