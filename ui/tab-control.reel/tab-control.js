@@ -18,6 +18,7 @@ exports.TabControl = Component.specialize(/** @lends TabControl# */ {
     },
     enterDocument: {
         value: function(firstTime) {
+            console.log(nav)
             var rep = this.templateObjects.repetition
             var subt = this.templateObjects.substitution;
                 subt.addSwitchElement("Plus", table)
