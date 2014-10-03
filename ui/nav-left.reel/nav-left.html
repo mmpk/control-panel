@@ -35,9 +35,10 @@
         "treeController": {
             "prototype": "montage/core/tree-controller",
             "properties": {
-                "allExpanded": true,
+                "allExpanded": false,
                 "childrenPath": "children",
-                "initiallyExpanded": false
+                "initiallyExpanded": false,
+                "noneExpanded": true
             },
             "bindings": {
                 "content": {"<-": "@owner.parentComponent.root"}
