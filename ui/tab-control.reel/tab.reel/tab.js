@@ -16,8 +16,7 @@ exports.Tab = Component.specialize(/** @lends Tab# */ {
     },
     enterDocument: {
         value: function() {
-            var glyph = document.querySelector("#tab-glyph")
-                glyph.classList.add('glyphicon-' + this._glyph)
+
         }
     },
     _glyph: { value: null },
@@ -26,6 +25,8 @@ exports.Tab = Component.specialize(/** @lends Tab# */ {
         set: function(value) {
             this._glyph = value
             //this.needsDraw = true;
+                        var glyph = document.querySelector("#tab-glyph")
+                        glyph.classList.add('glyphicon-' + this._glyph)
         }
     },
     draw: {
