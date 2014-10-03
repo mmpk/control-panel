@@ -16,11 +16,10 @@ exports.Tab = Component.specialize(/** @lends Tab# */ {
     },
     enterDocument: {
         value: function() {
-                        var glyph = document.querySelector(".glyphicon")
-                        glyph.classList.add('glyphicon-list')
-                        console.log("glyph")
-                        console.log(glyph)
-                        this.needsDraw = true;
+            var glyph = document.querySelector("#tab-glyph")
+            glyph.classList.add('selected')  
+            glyph.classList.add('glyphicon-signal')
+                        //this.needsDraw = true;
         }
     },
     _glyph: { value: null },
