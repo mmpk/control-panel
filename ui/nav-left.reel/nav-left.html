@@ -10,12 +10,6 @@
                 "element": {"#": "owner"}
             }
         },
-        "checkbox": {
-            "prototype": "digit/ui/checkbox.reel",
-            "properties": {
-                "checked": true
-            }
-        },
         "padding": {
             "prototype": "montage/ui/text.reel",
             "properties": {
@@ -42,7 +36,8 @@
             "prototype": "montage/core/tree-controller",
             "properties": {
                 "allExpanded": true,
-                "childrenPath": "children"
+                "childrenPath": "children",
+                "initiallyExpanded": true
             },
             "bindings": {
                 "content": {"<-": "@owner.parentComponent.root"}
