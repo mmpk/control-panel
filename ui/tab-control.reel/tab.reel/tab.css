@@ -1,12 +1,13 @@
 .Tab {
     display: inline-block;
     border: 3px solid #3498db;
-    border-bottom-style:none;
+    border-bottom-color: #eee;
     border-top-left-radius: 0.5em;
     border-top-right-radius: 0.5em;
     color: #3498db;
     padding: 0.5em;
     cursor: pointer;
+    z-index: 10;
 }
 .Tab.selected {
     border: 3px solid #fff;
