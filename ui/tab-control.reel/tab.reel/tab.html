@@ -16,13 +16,20 @@
                 "element": {"#": "label"},
                 "value": "Text"
             }
+        },
+        "glyph": {
+            "prototype": "montage/ui/base/abstract-control",
+            "properties": {
+                "element": {"#": "glyph"},
+                "value": "Text"
+            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="owner" class="Tab">
-        <span id="glyph" class="glyphicon"></span>
+        <span data-montage-id="glyph" class="glyphicon"></span>
         <p data-montage-id="label"></p>
     </div>
 </body>
