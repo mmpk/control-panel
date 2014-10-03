@@ -31,7 +31,7 @@ exports.Tab = Component.specialize(/** @lends Tab# */ {
     _label: { value: null },                             
     label: {
         set: function(value) {
-            console.log("SET")
+            console.log("SET "+value)
             this._label = value
         },
         get: function() {
