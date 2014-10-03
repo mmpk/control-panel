@@ -21,7 +21,7 @@ exports.TabControl = Component.specialize(/** @lends TabControl# */ {
             var rep = this.templateObjects.repetition
             var subt = this.templateObjects.substitution;
                 subt.addSwitchElement("Plus", table)
-                subt.addSwitchElement("Minus",  document.createElement("h1").innerHTML = "MMMMMMMMM")
+                subt.addSwitchElement("Minus",  document.createElement("DIV").appendChild(document.createTextNode("CLICK ME"));)
                 subt.addSwitchElement("List", cal)
             /*
             this.Tabs.forEach(function(d){
