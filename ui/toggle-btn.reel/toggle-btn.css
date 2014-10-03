@@ -20,7 +20,6 @@
 
 .ToggleBtn.montage--disabled {
     border-left: 5px solid #2c3e50;
-    color: red;
 }
 .ToggleBtn.montage--disabled .glyphicon {
     display: none;
@@ -29,4 +28,8 @@
 
 .ToggleBtn.montage-Checkbox--checked .glyphicon {
      transform: rotate(90deg);
+}
+
+.ToggleBtn.root {
+    background: #e67e22;
 }
