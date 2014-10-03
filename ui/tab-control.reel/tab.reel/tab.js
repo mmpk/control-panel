@@ -15,11 +15,8 @@ exports.Tab = Component.specialize(/** @lends Tab# */ {
             
                         this.defineBindings({
                             // classList management
-                            "classList.has('montage--disabled')": {
-                                "<-": "!enabled"
-                            },
-                            "classList.has('montage--active')": {
-                                "<-": "active"
+                            "classList.has('selected')": {
+                                "<-": "true"
                             }
                         });
         }
