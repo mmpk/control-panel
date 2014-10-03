@@ -22,7 +22,7 @@ exports.Tab = Component.specialize(/** @lends Tab# */ {
         }
     },
     _glyph: { value: null },
-                                   
+    label: { value: "LALALAa" },                              
     glyph: {
         set: function(value) {
             this._glyph = value
