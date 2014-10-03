@@ -23,8 +23,10 @@ exports.TabControl = Component.specialize(/** @lends TabControl# */ {
     Tabs: {
         value: [
             {"icon":"plus","label":"Plus"},
-            {"icon":"minus","label":"Minus"}
-            
+            {"icon":"minus","label":"Minus"},
+            {"icon":"list","label":"List"},
+            {"icon":"signal","label":"Signal"},
+            {"icon":"calendar","label":"Calendar"}
             ]
     }
 });
