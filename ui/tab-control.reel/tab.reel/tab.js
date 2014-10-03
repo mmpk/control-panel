@@ -18,13 +18,13 @@ exports.Tab = Component.specialize(/** @lends Tab# */ {
         value: function(firstTime) {
             var glyph = document.querySelector(".glyphicon")
             console.log("glyph")
-            console.log(this.label)
         }
     },
     glyph: {
         set: function(value) {
             var glyph = document.querySelector(".glyphicon")
-                glyph.classList.addClass('glyphicon-'+value)
+               // glyph.classList.addClass('glyphicon-'+value)
+                 console.log(glyph)
         }
     }
 });
