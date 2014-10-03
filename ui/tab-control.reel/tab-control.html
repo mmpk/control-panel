@@ -43,23 +43,12 @@
                 "glyph": {"<-": "@repetition:iteration.object.icon"},
                 "label": {"<-": "@repetition:iteration.object.label"}
             }
-        },
-        "textField": {
-            "prototype": "digit/ui/text-field.reel",
-            "properties": {
-                "element": {"#": "textField"},
-                "placeholderValue": "Text"
-            },
-            "bindings": {
-                "value": {"<-": "@repetition.selection.0.label"}
-            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="owner" class="TabControl">
-        <input data-montage-id="textField" type="text">
         <ul data-montage-id="repetition">
             <div data-montage-id="tab"></div>
         </ul>
