@@ -33,7 +33,7 @@ exports.Tab = Component.specialize(/** @lends Tab# */ {
     },
     draw: {
         value: function() {         
-            var glyph = document.querySelector(".glyphicon")
+            var glyph = document.querySelector("#tab-glyph")
                 glyph.classList.add('selected')  
                 glyph.classList.add('glyphicon-signal')
         }
