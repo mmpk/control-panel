@@ -10,7 +10,7 @@
     cursor: pointer;
 }
 .Tab.selected {
-    border: 3px solid #fff;
+    
     border-bottom-style:none;
     background: #3498db;
     color: #fff;

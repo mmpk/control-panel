@@ -5,6 +5,7 @@
 .tab-bar {
     z-index: 10;
     position: relative; 
+    overflow: hidden;
      
 }
 .subt {
