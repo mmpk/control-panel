@@ -16,10 +16,17 @@
                 "element": {"#": "repetition"},
                 "content": [
                     ""
-                ]
+                ],
+                "isSelectionEnabled": true
             },
             "bindings": {
                 "content": {"<-": "@owner.Tabs"}
+            }
+        },
+        "substitution": {
+            "prototype": "montage/ui/substitution.reel",
+            "properties": {
+                "element": {"#": "substitution"}
             }
         },
         "tab": {
@@ -42,6 +49,7 @@
         <ul data-montage-id="repetition">
             <div data-montage-id="tab"></div>
         </ul>
+        <div data-montage-id="substitution" class="subt"></div>
     </div>
 </body>
 </html>
