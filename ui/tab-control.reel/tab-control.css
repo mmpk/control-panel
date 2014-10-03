@@ -1,11 +1,12 @@
 .TabControl {
-
+    margin: 0;
+    padding: 0;
 }
 
 .subt {
      border: 3px solid #3498db;
      border-radius: 0.5em;
      height: 300px;
-     margin-top: -12px;
+     margin-top: -13px;
      padding: 0;
 }
