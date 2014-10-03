@@ -27,7 +27,7 @@ exports.Tab = Component.specialize(/** @lends Tab# */ {
     glyph: {
         set: function(value) {
             this._glyph = value
-            this.needsDraw = true;
+            //this.needsDraw = true;
         }
     },
     draw: {
