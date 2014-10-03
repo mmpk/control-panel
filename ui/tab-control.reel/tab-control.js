@@ -4,7 +4,7 @@
  */
 var Component = require("montage/ui/component").Component;
 var table = require("ui/table-view.reel").TableView;
-var nav = require("ui/nav-left.reel").NavLeft;
+var nav = require("ui/nav-left.reel");
 var cal = require("ui/calendar.reel").Calendar;
 /**
  * @class TabControl
@@ -18,7 +18,7 @@ exports.TabControl = Component.specialize(/** @lends TabControl# */ {
     },
     enterDocument: {
         value: function(firstTime) {
-            console.log(cal_months_labels)
+            console.log(nav)
             var rep = this.templateObjects.repetition
             var subt = this.templateObjects.substitution;
                 subt.addSwitchElement("Plus", table)
