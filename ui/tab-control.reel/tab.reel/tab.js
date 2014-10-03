@@ -21,12 +21,20 @@ exports.Tab = Component.specialize(/** @lends Tab# */ {
                
         }
     },
-    _glyph: { value: null },
-    label: { value: "LALALAa" },                              
+    _glyph: { value: null },                             
     glyph: {
         set: function(value) {
             this._glyph = value
             //this.needsDraw = true;
+        }
+    },
+    _label: { value: null },                             
+    label: {
+        set: function(value) {
+            this._label = value
+        },
+        get: function(value) {
+           return this._label
         }
     },
     draw: {
