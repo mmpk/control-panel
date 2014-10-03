@@ -20,7 +20,7 @@ exports.Tab = Component.specialize(/** @lends Tab# */ {
                         glyph.element.defineBindings({
                             // classList management
                             "classList.has('glyphicon-signal')": {
-                                "<-": "!enabled"
+                                "<-": "true"
                             }
                         });
             
