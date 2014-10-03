@@ -16,10 +16,7 @@ exports.Tab = Component.specialize(/** @lends Tab# */ {
     },
     enterDocument: {
         value: function(firstTime) {
-            var glyph = document.querySelector(".glyphicon")
-                glyph.classList.add('glyphicon-'+ this._glyph)
-                        console.log("glyph")
-                        console.log(glyph.classList)
+            this.needsDraw = true;
             
         }
     },
@@ -28,6 +25,14 @@ exports.Tab = Component.specialize(/** @lends Tab# */ {
     glyph: {
         set: function(value) {
             this._glyph = value
+        }
+    },
+    draw: {
+        value: function() {
+            var glyph = document.querySelector(".glyphicon")
+            glyph.classList.add('glyphicon-'+ this._glyph)
+            console.log("glyph")
+            console.log(glyph.classList)
         }
     }
 });
