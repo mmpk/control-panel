@@ -18,6 +18,7 @@ exports.NavLeft = Component.specialize(/** @lends NavLeft# */ {
     templateDidLoad: {
         value: function(){            
             var tre = this.templateObjects.treeController;
+            tre.nodes[0].expanded = true
             console.log("TREE")
             console.log(tre.nodes[0])
         }
