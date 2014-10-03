@@ -20,5 +20,11 @@ exports.Tab = Component.specialize(/** @lends Tab# */ {
             console.log("glyph")
             console.log(this.label)
         }
+    },
+    glyph: {
+        set: function(value) {
+            var glyph = document.querySelector(".glyphicon")
+                glyph.addClass('glyphicon-'+value)
+        }
     }
 });
