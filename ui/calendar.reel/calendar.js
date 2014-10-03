@@ -93,7 +93,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
 
             var arr = []
             for(var i=0;i<days;i++){
-                arr.push(i)
+                arr.push(i+1)
             }
             rep.content = arr
             rep.selection.rangeController.select(rep.content[this.date.getDate()]-1)

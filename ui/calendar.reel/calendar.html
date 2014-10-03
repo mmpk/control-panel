@@ -10,20 +10,6 @@
                 "element": {"#": "owner"}
             }
         },
-        "myShortcut": {
-            "prototype": "montage/composer/key-composer",
-            "properties": {
-                "keys": "backspace+left+right+up+down",
-                "identifier": "dsel",
-                "component": {"@": "overlay"}
-            },
-            "listeners": [
-                {
-                    "type": "keyPress",
-                    "listener": {"@": "owner"}
-                }
-                ]
-        },
         "dateConv": {
             "prototype": "montage/core/converter/date-converter",
             "properties": {
@@ -68,6 +54,20 @@
                 "value": {"<-": "@monthController.selection.0.month"}
             }
         },
+        "myShortcut": {
+            "prototype": "montage/composer/key-composer",
+            "properties": {
+                "component": {"@": "overlay"},
+                "identifier": "dsel",
+                "keys": "backspace+left+right+up+down"
+            },
+            "listeners": [
+                {
+                    "type": "keyPress",
+                    "listener": {"@": "owner"}
+                }
+            ]
+        },
         "overlay": {
             "prototype": "montage/ui/overlay.reel",
             "properties": {
@@ -91,6 +91,9 @@
             "prototype": "montage/ui/text.reel",
             "properties": {
                 "element": {"#": "text2"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
                 "value": "-"
             },
             "bindings": {
