@@ -16,7 +16,7 @@ exports.Tab = Component.specialize(/** @lends Tab# */ {
     },
     enterDocument: {
         value: function(firstTime) {
-            this.needsDraw = true;
+            
             
         }
     },
@@ -25,6 +25,7 @@ exports.Tab = Component.specialize(/** @lends Tab# */ {
     glyph: {
         set: function(value) {
             this._glyph = value
+            this.needsDraw = true;
         }
     },
     draw: {
