@@ -12,6 +12,16 @@ exports.Tab = Component.specialize(/** @lends Tab# */ {
     constructor: {
         value: function Tab() {
             this.super();
+            
+                        this.defineBindings({
+                            // classList management
+                            "classList.has('montage--disabled')": {
+                                "<-": "!enabled"
+                            },
+                            "classList.has('montage--active')": {
+                                "<-": "active"
+                            }
+                        });
         }
     },
     enterDocument: {
