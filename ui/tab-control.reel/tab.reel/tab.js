@@ -20,6 +20,7 @@ exports.Tab = Component.specialize(/** @lends Tab# */ {
                         glyph.classList.add('glyphicon-list')
                         console.log("glyph")
                         console.log(glyph)
+                        this.needsDraw = true;
         }
     },
     _glyph: { value: null },
