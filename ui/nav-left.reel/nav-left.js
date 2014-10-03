@@ -15,6 +15,13 @@ exports.NavLeft = Component.specialize(/** @lends NavLeft# */ {
             this.super();
         }
     },
+    templateDidLoad: {
+        value: function(){            
+            var tre = this.templateObjects.treeController;
+            console.log("TREE")
+            console.log(tre)
+        }
+    },
     Data: {
         value: [
             { display_name: "Prezenter", comp: prez },
