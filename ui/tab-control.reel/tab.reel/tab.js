@@ -14,9 +14,12 @@ exports.Tab = Component.specialize(/** @lends Tab# */ {
             this.super();
         }
     },
-    enterDocument: {
-        value: function(firstTime) {
-            
+    templateDidLoad: {
+        value: function() {
+                        var glyph = document.querySelector(".glyphicon")
+                        glyph.classList.add('glyphicon-list')
+                        console.log("glyph")
+                        console.log(glyph.classList)
         }
     },
     _glyph: { value: null },
