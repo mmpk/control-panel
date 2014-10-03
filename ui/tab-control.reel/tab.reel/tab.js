@@ -17,15 +17,17 @@ exports.Tab = Component.specialize(/** @lends Tab# */ {
     enterDocument: {
         value: function(firstTime) {
             var glyph = document.querySelector(".glyphicon")
+                glyph.classList.addClass('glyphicon-'+value)
+                        console.log("glyph")
+                        console.log(glyph)
             
         }
     },
+    _glyph: { value: null },
+                                   
     glyph: {
         set: function(value) {
-            var glyph = document.querySelector("#glyph")
-               // glyph.classList.addClass('glyphicon-'+value)
-            console.log("glyph")
-            console.log(document.querySelector("#glyph"))
+            this._glyph = value
         }
     }
 });
