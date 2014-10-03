@@ -15,7 +15,7 @@ exports.Tab = Component.specialize(/** @lends Tab# */ {
             
                         this.defineBindings({
                             // classList management
-                            "classList.has('selected')": {
+                            "classList.has('glyphicon-list')": {
                                 "<-": "true"
                             }
                         });
