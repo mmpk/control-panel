@@ -17,7 +17,7 @@ exports.Tab = Component.specialize(/** @lends Tab# */ {
     enterDocument: {
         value: function(firstTime) {
             var glyph = document.querySelector(".glyphicon")
-                        glyph.element.defineBindings({
+                        glyph.defineBindings({
                             // classList management
                             "classList.has('glyphicon-signal')": {
                                 "<-": "true"
