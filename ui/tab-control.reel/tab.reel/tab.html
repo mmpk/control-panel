@@ -10,17 +10,20 @@
                 "element": {"#": "owner"}
             }
         },
+        "glyph": {
+            "prototype": "montage/ui/base/abstract-control",
+            "properties": {
+                "element": {"#": "glyph"}
+            },
+            "bindings": {
+                "classList.has('selected')": {"<-": "true"}
+            }
+        },
         "label": {
             "prototype": "montage/ui/text.reel",
             "properties": {
                 "element": {"#": "label"},
                 "value": "Text"
-            }
-        },
-        "glyph": {
-            "prototype": "montage/ui/base/abstract-control",
-            "properties": {
-                "element": {"#": "glyph"}
             }
         }
     }
