@@ -3,7 +3,7 @@
  * @requires montage/ui/component
  */
 var Component = require("montage/ui/component").Component;
-
+var table = require("ui/table-view.reel").TableView;
 /**
  * @class TabControl
  * @extends Component
@@ -20,8 +20,8 @@ exports.TabControl = Component.specialize(/** @lends TabControl# */ {
             var subt = this.templateObjects.substitution;
 
             this.Tabs.forEach(function(d){
-                            console.log('This is '+d.label+' to'+d.icon)
-                subt.addSwitchElement(d.label, 'This is '+d.label+' to'+d.icon)
+                console.log('This is '+d.label+' to'+d.icon)
+                subt.addSwitchElement(d.label, table)
             })
                 
         }
