@@ -16,13 +16,6 @@ exports.Tab = Component.specialize(/** @lends Tab# */ {
     },
     enterDocument: {
         value: function(firstTime) {
-            var glyph = document.querySelector(".glyphicon")
-                        glyph.defineBindings({
-                            // classList management
-                            "classList.has('glyphicon-signal')": {
-                                "<-": "true"
-                            }
-                        });
             
         }
     },
@@ -37,7 +30,7 @@ exports.Tab = Component.specialize(/** @lends Tab# */ {
     draw: {
         value: function() {
             var glyph = document.querySelector(".glyphicon")
-            glyph.classList.add('glyphicon-'+ this._glyph)
+            glyph.element.classList.add('glyphicon-'+ this._glyph)
             console.log("glyph")
             console.log(glyph.classList)
         }
