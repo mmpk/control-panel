@@ -2,11 +2,18 @@
 
 }
 
+.tab-bar {
+    z-index: 10;
+    position: relative; 
+     
+}
 .subt {
      border: 3px solid #3498db;
      border-radius: 0.5em;
      height: 300px;
-     margin-top: -12px;
+     top: -13px;
      padding: 0;
-     z-index: 100;
+     overflow: hidden; 
+     position: relative; 
+     z-index: 5;
 }
