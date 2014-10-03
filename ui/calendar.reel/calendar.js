@@ -36,8 +36,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
              var a1t = document.querySelector("#month_minus").addEventListener("touchstart", this, false);
              var a2t = document.querySelector("#month_plus").addEventListener("touchstart", this, false);
              this.templateObjects.yearInput.element.addEventListener("change", this, false);
-             console.log("LOCATION:");
-             console.log(window.location.host);   
+ 
              var b = document.querySelector(".iwraper").addEventListener("mousedown", this, false);
             
              var yInput = this.templateObjects.yearInput
@@ -91,7 +90,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
             var day =  rep.selectedIndexes[0]
              
             var days = new Date(year, month, 0).getDate()
-            console.log(month +" > "+ days)
+
             var arr = []
             for(var i=0;i<days;i++){
                 arr.push(i)
@@ -118,7 +117,6 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     },
     handleKeyPress: {
         value: function(event) {
-             console.log("KEY-PRESS:")
              var rep = this.templateObjects.repetition
              switch (event.identifier) {
                  case "Left":
