@@ -50,8 +50,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         }
     },
     root: {
-        value: {"name": "Biosphere",
-                children: [
+        value: [
                     {"name": "Animals",
                      children: [
                          {"name": "Turtles"},
@@ -88,6 +87,6 @@ exports.Main = Component.specialize(/** @lends Main# */ {
                     {"name": "calendar"},
                     {"name": "Pluto"}
                 ]
-               }
+               
     }
 });
