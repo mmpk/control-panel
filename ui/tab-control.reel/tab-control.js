@@ -20,7 +20,6 @@ exports.TabControl = Component.specialize(/** @lends TabControl# */ {
             var subt = this.templateObjects.substitution;
 
             this.Tabs.forEach(function(d){
-                console.log('This is '+d.label+' to'+d.icon)
                 subt.addSwitchElement(d.label, table)
             })
                 
