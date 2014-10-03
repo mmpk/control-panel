@@ -14,6 +14,9 @@
     "prototype": "montage/core/meta/module-blueprint",
     "properties": {
       "name": null,
+      "blueprintModule": {
+        "%": "ui/tab-control.reel/tab-control.meta"
+      },
       "parent": {"@": "blueprint_component_reference"},
       "propertyBlueprintGroups": {
         "TabControl": []

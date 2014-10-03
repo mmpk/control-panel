@@ -10,12 +10,28 @@
                 "element": {"#": "owner"}
             }
         },
+        "repetition": {
+            "prototype": "montage/ui/repetition.reel",
+            "properties": {
+                "element": {"#": "repetition"},
+                "content": [
+                    ""
+                ]
+            },
+            "bindings": {
+                "content": {"<-": "@owner.Tabs"}
+            }
+        },
         "tab": {
             "prototype": "ui/tab-control.reel/tab.reel",
             "properties": {
                 "element": {"#": "tab"},
                 "glyph": "list",
                 "label": "List"
+            },
+            "bindings": {
+                "glyph": {"<-": "@repetition:iteration.object.icon"},
+                "label": {"<-": "@repetition:iteration.object.label"}
             }
         }
     }
@@ -23,7 +39,9 @@
 </head>
 <body>
     <div data-montage-id="owner" class="TabControl">
-        <div data-montage-id="tab"></div>
+        <ul data-montage-id="repetition">
+            <div data-montage-id="tab"></div>
+        </ul>
     </div>
 </body>
 </html>
