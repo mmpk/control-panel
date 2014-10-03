@@ -12,13 +12,6 @@ exports.Tab = Component.specialize(/** @lends Tab# */ {
     constructor: {
         value: function Tab() {
             this.super();
-            
-                        this.defineBindings({
-                            // classList management
-                            "classList.has('glyphicon-list')": {
-                                "<-": "true"
-                            }
-                        });
         }
     },
     enterDocument: {
@@ -31,15 +24,17 @@ exports.Tab = Component.specialize(/** @lends Tab# */ {
     glyph: {
         set: function(value) {
             this._glyph = value
-            this.needsDraw = true;
+            //this.needsDraw = true;
         }
     },
     draw: {
         value: function() {
+            /*
             var glyph = document.querySelector(".glyphicon")
             glyph.classList.add('glyphicon-'+ this._glyph)
             console.log("glyph")
             console.log(glyph.classList)
+            */
         }
     }
 });
