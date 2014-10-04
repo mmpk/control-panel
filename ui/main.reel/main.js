@@ -37,7 +37,8 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         ]
     },
     templateDidLoad: {
-        value: function(){            
+        value: function(){   
+            /*
              var subt = this.templateObjects.substitution;
                  subt.addSwitchElement("key1", table) 
                  subt.addSwitchElement("Me", table) 
@@ -47,6 +48,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
              this.Data.forEach(function(d){
                  //subt.addSwitchElement(d.title, d.comp)
              })
+             */
         }
     },
     root: {
