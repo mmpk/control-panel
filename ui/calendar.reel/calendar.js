@@ -27,7 +27,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
         value: null
     },
     enterDocument: {
-        value: function(firstTime) {
+        value: function(firstTime) { console.log("KALENDARRR")
              var mc = this.templateObjects.monthController
                  mc.select(mc.content[this.date.getMonth()])
              
