@@ -3,7 +3,7 @@
  * @requires montage/ui/component
  */
 var Component = require("montage/ui/component").Component;
-var table = require("ui/table-view.reel").TableView;
+
 /**
  * @class Main
  * @extends Component
@@ -16,25 +16,6 @@ exports.Main = Component.specialize(/** @lends Main# */ {
     },
     Window: {
         value: window
-    },
-    Data: {
-        value: [
-            { title: "PARENTNODE", comp: table },
-            { title: "Tables",    comp: table },
-            { title: "Coding",    comp: table  },
-            { title: "key1",  comp: table  },
-            { title: "key2",   comp: table  },
-            { title: "key3",  comp: table  }
-        ]
-    },
-    states: {
-        value: [
-            {name: "Alaska", code: "AK"},
-            {name: "Arizona", code: "AZ"},
-            {name: "Arkansas", code: "AR"},
-            {name: "California", code: "CA"},
-            {name: "Colorado", code: "CO"}
-        ]
     },
     templateDidLoad: {
         value: function(){   
