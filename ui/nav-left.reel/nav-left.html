@@ -30,9 +30,7 @@
                 "checked": {"<->": "@treeRep:iteration.object.expanded"},
                 "classList.has('root')": {"<-": "@treeRep:iteration.index == 0"},
                 "enabled": {"<-": "@treeRep:iteration.object.children.length != 0 && @treeRep:iteration.index != 0"},
-                "value": {
-                    "<-": "@treeRep:iteration.object.junctions.map{[\"before\", this]}.toMap()"
-                }
+                "value": {"<-": "@treeRep:iteration.object.content.name"}
             }
         },
         "treeController": {
