@@ -20,7 +20,7 @@ exports.NavLeft = Component.specialize(/** @lends NavLeft# */ {
             var tre = this.templateObjects.treeController;
             tre.nodes[0].expanded = true
             console.log("TREE")
-            console.log(tre.nodes[1].junction)
+            console.log(tre.nodes[1].junctions)
         }
     },
     Data: {
