@@ -32,4 +32,5 @@
 
 .ToggleBtn.root {
     background: #e67e22;
+    display: none;
 }
