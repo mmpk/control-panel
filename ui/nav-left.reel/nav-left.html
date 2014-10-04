@@ -31,7 +31,7 @@
                 "classList.has('root')": {"<-": "@treeRep:iteration.index == 0"},
                 "enabled": {"<-": "@treeRep:iteration.object.children.length != 0 && @treeRep:iteration.index != 0"},
                 "value": {
-                    "<-": "@treeRep:iteration.object.map(function (iteration) {return iteration.junctions.map(function (junction) { return @owner.ASCII[junction]}).join(\"\")"
+                    "<-": "@treeRep:iteration.object.junctions.map(function (iteration) {return iteration.junctions.map(function (junction) { return @owner.ASCII[junction]}).join(\"\")"
                 }
             }
         },
