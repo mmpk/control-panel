@@ -1,6 +1,7 @@
 .Main {}
 .keye {
- 
+     padding: 50px;
+     color: orange;
 }
 .left-col {
     background: #eee;
