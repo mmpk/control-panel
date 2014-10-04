@@ -43,7 +43,7 @@ exports.NavLeft = Component.specialize(/** @lends NavLeft# */ {
             "after": "   "
         }
     },
-  
+   // map(function (iteration) {return iteration.junctions.map(function (junction) { return @owner.ASCII[junction]}).join("")    
     handleButtonAction: {
         value: function(v) {
             var p =  this.classList.toggle('flip');
