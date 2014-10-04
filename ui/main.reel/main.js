@@ -50,37 +50,28 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         }
     },
     root: {
-        value: {"name": "Biosphere",
+        value: {"name": "Root",
                 children: [
-                    {"name": "Animals",
+                    {"name": "Demos",
                      children: [
-                         {"name": "Turtles"},
-                         {"name": "Cats"},
-                         {"name": "Dogs"},
-                         {"name": "Horses"},
-                         {"name": "Squirrels"},
-                         {"name": "Birds"}
+                         {"name": "Calendar"},
+                         {"name": "Tabs"}
                      ]
                     },
-                    {"name": "Plants",
+                    {"name": "Other",
                      children: [
-                         {"name": "Flowers",
+                         {"name": "Items",
                           children: [
-                              {"name": "Roses"},
-                              {"name": "Tulips"},
-                              {"name": "Daisies"},
-                              {"name": "Daffodils"}
+                              {"name": "Item1"},
+                              {"name": "Item2"},
+                              {"name": "Item3"}
                           ]
                          },
-                         {"name": "Fungi",
+                         {"name": "Sub",
                           children: [
-                              {"name": "Porcinis"},
-                              {"name": "Oysters"},
-                              {"name": "Truffles"},
-                              {"name": "Shiitake"}
+                              {"name": "Sub1"}
                           ]
                          }
-
                      ]
                     },
                     {"name": "key1"},
