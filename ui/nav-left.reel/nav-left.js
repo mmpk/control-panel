@@ -35,7 +35,15 @@ exports.NavLeft = Component.specialize(/** @lends NavLeft# */ {
             { display_name: "key3",  comp: table  }
         ]
     },
-    
+    ASCII: {
+        value:  {
+            "medial": " +-",
+            "final": " ^-",
+            "before": " | ",
+            "after": "   "
+        }
+    },
+  
     handleButtonAction: {
         value: function(v) {
             var p =  this.classList.toggle('flip');
