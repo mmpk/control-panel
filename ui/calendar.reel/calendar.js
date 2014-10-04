@@ -27,7 +27,8 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
         value: null
     },
     enterDocument: {
-        value: function(firstTime) { console.log("KALENDARRR")
+        value: function(firstTime) { 
+            if(firstTime){
              var mc = this.templateObjects.monthController
                  mc.select(mc.content[this.date.getMonth()])
              
@@ -50,6 +51,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
              KeyComposer.createKey(Overlay, "right", "Right").addEventListener("keyPress", this);
              KeyComposer.createKey(Overlay, "up", "Up").addEventListener("keyPress", this);
              KeyComposer.createKey(Overlay, "down", "Down").addEventListener("keyPress", this);
+            }
         }
     },
     handleMouseup : {
