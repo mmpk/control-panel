@@ -36,6 +36,20 @@
                 "label": "Button"
             }
         },
+        "button3": {
+            "prototype": "native/ui/button.reel",
+            "properties": {
+                "element": {"#": "button3"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "enabled": false,
+                "formenctype": "application/x-www-form-urlencoded",
+                "formmethod": "get",
+                "label": "Quick",
+                "type": "button"
+            }
+        },
         "calendar": {
             "prototype": "ui/calendar.reel",
             "properties": {
@@ -125,7 +139,11 @@
             <div class="col-md-3 lefter">
                 <div data-montage-id="tabControl"></div>
                 <div data-montage-id="calendar"></div>
-                <button data-montage-id="button2"><span class="glyphicon glyphicon-calendar"></span> Caption</button>
+                <input data-montage-id="button3"/>
+                <button data-montage-id="button2">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                    Caption
+                </button>
             </div>
         </div>
     </div>
