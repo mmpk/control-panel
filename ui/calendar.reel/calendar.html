@@ -87,6 +87,14 @@
                 "content": {"<-": "@monthController.selection.0.days"}
             }
         },
+        "select": {
+            "prototype": "digit/ui/select.reel",
+            "properties": {
+                "element": {"#": "select"},
+                "contentController": {"@": "monthController"},
+                "labelPropertyName": "month"
+            }
+        },
         "text2": {
             "prototype": "montage/ui/text.reel",
             "properties": {
@@ -100,7 +108,6 @@
                 "value": {"<-": "@repetition:iteration.index +1"}
             }
         },
-
         "yearInput": {
             "prototype": "native/ui/input-number.reel",
             "properties": {
@@ -116,57 +123,59 @@
 </head>
 <body>
     <div data-montage-id="owner" class="Calendar">
+        <div class="iwraper">
+            <input data-montage-id="dateField" type="text">
+            <span class="glyphicon glyphicon-calendar">
 
-            <div class="iwraper">
-                <input data-montage-id="dateField" type="text">
-                <span class="glyphicon glyphicon-calendar">
-
-                </span>
-            </div>
-            <div data-montage-id="overlay" class="Cal">
-                <div class="cal_top_bar">
-                    <div id="month_minus" class="mon_btn">
-                        <
-                    </div>
-                    <input type="text" data-montage-id="monthInput" class="month_input">
-                    <div id="month_plus" class="mon_btn">
-                        >
-                    </div>
-                    <input type="number" data-montage-id="yearInput" class="year_input">
-                </div>
-                <div class="rep">
-                    <div class="days">
-                        <div>
-                            пн
-                        </div>
-                        <div>
-                            вт
-                        </div>
-                        <div>
-                            ср
-                        </div>
-                        <div>
-                            чт
-                        </div>
-                        <div>
-                            пт
-                        </div>
-                        <div>
-                            сб
-                        </div>
-                        <div>
-                            вс
-                        </div>
-                    </div>
-                </div>
-                <ul data-montage-id="repetition" class="rep">
-                    <p data-montage-id="text2" class="inline">
-
-                    </p>
-                   
-                </ul>
-            </div>
+            </span>
         </div>
+        <div data-montage-id="overlay" class="Cal">
+            <div class="cal_top_bar">
+                <div id="month_minus" class="mon_btn">
+                    <
+                </div>
+                <input type="text" data-montage-id="monthInput" class="month_input">
+                <div id="month_plus" class="mon_btn">
+                    >
+                </div>
+                <input type="number" data-montage-id="yearInput" class="year_input">
+                <select data-montage-id="select">
+                    <option value="">
+                        Select
+                    </option>
+                </select>
+            </div>
+            <div class="rep">
+                <div class="days">
+                    <div>
+                        пн
+                    </div>
+                    <div>
+                        вт
+                    </div>
+                    <div>
+                        ср
+                    </div>
+                    <div>
+                        чт
+                    </div>
+                    <div>
+                        пт
+                    </div>
+                    <div>
+                        сб
+                    </div>
+                    <div>
+                        вс
+                    </div>
+                </div>
+            </div>
+            <ul data-montage-id="repetition" class="rep">
+                <p data-montage-id="text2" class="inline">
 
+                </p>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>

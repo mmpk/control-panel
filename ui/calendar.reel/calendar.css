@@ -18,7 +18,6 @@
 .cal_top_bar > * {
     display: inline-table;
     vertical-align: middle;  
-    width: 30%;
 }
 .days {
     display: flex;
