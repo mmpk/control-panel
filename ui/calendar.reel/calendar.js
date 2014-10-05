@@ -146,7 +146,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     },
 
     handleSelectAction: {
-        value: function (event) {
+        value: function(event) {
             console.log("handleSelectAction")
             this.fillDays()
         }
