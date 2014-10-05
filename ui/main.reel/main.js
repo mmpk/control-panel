@@ -63,5 +63,21 @@ exports.Main = Component.specialize(/** @lends Main# */ {
                     {"name": "Pluto"}
                 ]
                }
+    },
+    Months: {
+        value: [
+            { month: "January" , days: new Array(31)},
+            { month: 'February' , days: new Array(28)},
+            { month: 'March' , days: new Array(31)},
+            { month: 'April' , days: new Array(30)},
+            { month: 'May' , days: new Array(31)},
+            { month: 'June' , days: Array(30)},
+            { month: 'July' , days: new Array(31)},
+            { month: 'August' , days: new Array(31)},
+            { month: 'September' , days: new Array(31)},
+            { month: 'October' , days: new Array(31)},
+            { month: 'November' , days: new Array(30)},
+            { month: 'December' , days: new Array(31)}
+        ]
     }
 });
