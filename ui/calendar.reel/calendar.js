@@ -82,7 +82,8 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
 
     },
     fillDays: {
-        value: function(v){  
+        value: function(v){ 
+             console.log("fillDays")
             var mc = this.templateObjects.monthController;         
             var rep = this.templateObjects.repetition
             var month = mc.content.indexOf(mc.selection[0]) + 1       
@@ -148,7 +149,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
     handleSelectAction: {
         value: function(event) {
             var self = this
-            self.fillDays()
+            this.fillDays()
             console.log("handleSelectAction")
            // this.fillDays()
         }
