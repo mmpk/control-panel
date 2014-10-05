@@ -100,7 +100,14 @@
                 "element": {"#": "select"},
                 "contentController": {"@": "monthController"},
                 "labelPropertyName": "month"
-            }
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "useCapture": false,
+                    "listener": {"@": "owner"}
+                }
+            ]
         },
         "text2": {
             "prototype": "montage/ui/text.reel",
