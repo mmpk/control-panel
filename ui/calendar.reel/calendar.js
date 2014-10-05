@@ -99,7 +99,8 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
                 arr.push(i+1)
             }
             rep.content = arr
-            rep.selection.rangeController.select(rep.content[this.date.getDate()]-1)
+             console.log(rep.content)
+            //rep.selection.rangeController.select(rep.content[this.date.getDate()]-1)
         }
     },
     data: {
@@ -148,10 +149,9 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
 
     handleSelectAction: {
         value: function(event) {
-            var self = this
             this.fillDays()
             console.log("handleSelectAction")
-           // this.fillDays()
+
         }
     }
 
