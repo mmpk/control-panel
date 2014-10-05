@@ -93,11 +93,14 @@
             "prototype": "digit/ui/select.reel",
             "properties": {
                 "element": {"#": "select"},
-                "content": {"@": "calendar"},
+                "content": null,
                 "enabled": true,
-                "labelPropertyName": "",
+                "labelPropertyName": "month",
                 "multiSelect": true,
                 "value": null
+            },
+            "bindings": {
+                "content": {"<-": "@calendar.data"}
             }
         },
         "substitution": {
