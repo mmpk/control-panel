@@ -6,7 +6,6 @@
         "digit": "~0.5.0",
         "jquery": "2.1.1",
         "native": "0.2.0",
-        "bootstrap": "3.2.0",
         "matte": "0.2.0"
     },
     "devDependencies": {
