@@ -1,4 +1,4 @@
-.Main {color: #2ecc71;background: #333;}
+.Main {color: #2ecc71;background: #fff;}
 .keye {
      padding: 50px;
      color: #2ecc71;
@@ -16,30 +16,30 @@
     min-width: 2.5em; /* Don't shrink below the height. Makes a perfect circle. */
     margin: 0 2px;
     padding: .425em 1em;
-    border-radius: 1.25em;
+    border-radius: .25em;
     vertical-align: middle;
     font-size: 100%; /* Override UA style. */
     color: inherit; /* 1 */
-    border: 3px solid transparent;
+    border: 3px solid ;
     background-color: transparent;
     outline: none;
     cursor: pointer;
     text-decoration: none; /* 1 */
     -webkit-tap-highlight-color: transparent;
-    animation: neonspark 4s 3s infinite;
-    box-shadow: 0 0 1px rgba(255,17,251,0.6),
+/*
+    box-shadow: 0 0 10px rgba(255,17,251,0.6),
                 0 0 2px rgba(255,17,251,0.6),
-                0 0 3px rgba(255,255,17,1);
+                0 0 3px rgba(255,255,17,1);*/
 }
 
 .Main .digit-Button:hover {
     box-shadow: 0 0 3px rgba(255,255,255,1) , 0 0 5px rgba(255,255,255,1) , 0 0 7px rgba(255,255,255,1) , 0 0 10px #00ffff;
 }
 
-@keyframes neonspark {
+@-webkit-keyframes neonspark {
     0% { box-shadow: none; }
-    30% { box-shadow: 0 0 30px rgba(255,0,84,0.6); }
-    60% { box-shadow: 0 0 30px rgba(255,0,84,0.6), 0 0 60px rgba(255,0,84,0.4); }
+    30% { box-shadow: 0 0 30px rgba(255,17,251,0.6); }
+    60% { box-shadow: 0 0 30px rgba(255,17,251,0.6), 0 0 60px rgba(255,0,84,0.4); }
     80% { box-shadow: none; }
     100% { box-shadow: 0 0 30px rgba(255,0,84,0.6),
         0 0 60px rgba(255,0,84,0.4),
