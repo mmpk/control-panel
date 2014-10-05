@@ -84,3 +84,32 @@
     border: 1px solid #eee;
     border-radius: 0.335em;
 }
+
+.digit-Select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 2.5em;
+    padding: 0 2em 0 1em;
+    border-radius: 1.5em;
+    font-size: 100%; /* Override UA style. */
+    color: inherit;
+    border: 1px solid;
+}
+
+/* States --------------------- */
+
+.digit-Select.montage--active {
+    background-color: hsla(0,0%,0%,.06);
+}
+
+.digit-Select:focus {
+    box-shadow: inset 0 0 0 1px;
+}
+
+.digit-Select:disabled {
+    opacity: .5;
+    border-style: dashed;
+    pointer-events: none;
+}

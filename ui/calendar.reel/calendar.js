@@ -143,5 +143,12 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
                      break;
              }
         }
+    },
+
+    handleSelectAction: {
+        value: function (event) {
+            this.fillDays()
+        }
     }
+
 });
