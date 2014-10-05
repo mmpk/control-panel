@@ -2,7 +2,7 @@
     background: #f3f3f3;
     border: 1px solid #ccc;
     border-radius: 0.335em;
-    padding: 2px;
+    padding-left: 1%;
      text-align: center;
 }
 .Cal ul {
@@ -17,7 +17,8 @@
 }
 .cal_top_bar > * {
     display: inline-table;
-    vertical-align: middle;   
+    vertical-align: middle;  
+    width: 30%;
 }
 .days {
     display: flex;
