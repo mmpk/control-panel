@@ -50,6 +50,14 @@
                 "type": "button"
             }
         },
+        "button4": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "button4"},
+                "enabled": true,
+                "label": "SCOOTER"
+            }
+        },
         "calendar": {
             "prototype": "ui/calendar.reel",
             "properties": {
@@ -108,7 +116,7 @@
     </script>
 </head>
 <body>
-    <div class="Main" data-montage-skin="light" data-montage-id="main">
+    <div class="Main" data-montage-skin="lightz" data-montage-id="main">
         <nav class="z-nav conto">
             <div class="z-nav-toggle">
                 <span class="glyphicon glyphicon-list"></span>
@@ -146,8 +154,10 @@
                     <span class="glyphicon glyphicon-calendar"></span>
                     Caption
                 </button>
+                <button data-montage-id="button4"></button>
                 <button class="btn btn-success">
-                               HELLO     <span class="glyphicon glyphicon-calendar"></span>
+                    HELLO
+                    <span class="glyphicon glyphicon-calendar"></span>
                 </button>
             </div>
         </div>
