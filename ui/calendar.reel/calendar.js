@@ -32,7 +32,10 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
              var mc = this.templateObjects.monthController
                  mc.addPathChangeListener("selection[0]", this, false)
                  mc.select(mc.content[this.date.getMonth()])
-                
+              
+                  var Sel = this.templateObjects.select
+                  console.log("SELECT")
+                  console.log(Sel.value)
              /*
              var a1 = document.querySelector("#month_minus").addEventListener("mouseup", this, false);
              this.templateObjects.yearInput.element.addEventListener("change", this, false);
