@@ -42,18 +42,6 @@
                 "content": {"<-": "@owner.data"}
             }
         },
-        "monthInput": {
-            "prototype": "native/ui/input-text.reel",
-            "properties": {
-                "element": {"#": "monthInput"},
-                "contenteditable": "true",
-                "dir": "ltr",
-                "draggable": "true"
-            },
-            "bindings": {
-                "value": {"<-": "@monthController.selection.0.month"}
-            }
-        },
         "myShortcut": {
             "prototype": "montage/composer/key-composer",
             "properties": {
@@ -116,16 +104,6 @@
             "bindings": {
                 "value": {"<-": "@repetition:iteration.index +1"}
             }
-        },
-        "yearInput": {
-            "prototype": "native/ui/input-number.reel",
-            "properties": {
-                "element": {"#": "yearInput"},
-                "contenteditable": "true",
-                "dir": "ltr",
-                "draggable": "true",
-                "value": ""
-            }
         }
     }
     </script>
@@ -140,14 +118,6 @@
         </div>
         <div data-montage-id="overlay" class="Cal">
             <div class="cal_top_bar">
-                <div id="month_minus" class="mon_btn">
-                    <
-                </div>
-                <input type="text" data-montage-id="monthInput" class="month_input">
-                <div id="month_plus" class="mon_btn">
-                    >
-                </div>
-                <input type="number" data-montage-id="yearInput" class="year_input">
                 <select data-montage-id="select">
                     <option value="">
                         Select
