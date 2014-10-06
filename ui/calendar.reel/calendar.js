@@ -150,9 +150,8 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
 
     handlePathChange: {
         value: function(event) {
-            this.fillDays()
-            console.log("handleSelectAction")
-
+            console.log(event)
+            this.fillDays()            
         }
     }
 
