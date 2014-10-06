@@ -35,7 +35,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
               
                   var Sel = this.templateObjects.select
                   console.log("SELECT")
-                  console.log(Sel.value)
+                  console.log(Sel.values)
              /*
              var a1 = document.querySelector("#month_minus").addEventListener("mouseup", this, false);
              this.templateObjects.yearInput.element.addEventListener("change", this, false);
@@ -150,7 +150,6 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
 
     handlePathChange: {
         value: function(event) {
-            console.log(event)
             this.fillDays()            
         }
     }
