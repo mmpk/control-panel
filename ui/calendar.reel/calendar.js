@@ -37,7 +37,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
              this.templateObjects.yearInput.element.addEventListener("change", this, false);
  */
              var b = document.querySelector(".iwraper").addEventListener("mousedown", this, false);
-console.log(this.document)
+console.log(this.element.querySelector(".iwraper"))
              var yInput = this.templateObjects.yearInput
                  yInput.value = this.date.getFullYear()
 
