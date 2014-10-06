@@ -39,7 +39,8 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
              this.templateObjects.yearInput.element.addEventListener("change", this, false);
  */
              var b = document.querySelector(".iwraper").addEventListener("mousedown", this, false);
-            
+             var mc = this.templateObjects.monthController;   
+                mc.addBeforePathChangeListener("selection", this, "handleBeforeChange")
              var yInput = this.templateObjects.yearInput
                  yInput.value = this.date.getFullYear()
 
@@ -147,7 +148,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
         }
     },
 
-    handleSelectAction: {
+    handleBeforeChange: {
         value: function(event) {
             this.fillDays()
             console.log("handleSelectAction")
