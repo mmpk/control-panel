@@ -40,7 +40,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
  */
              var b = document.querySelector(".iwraper").addEventListener("mousedown", this, false);
              var mc = this.templateObjects.monthController;   
-                mc.addBeforePathChangeListener("selection", this, handleBeforeChange)
+                mc.addBeforePathChangeListener("selection", this.handleBeforeChange)
              var yInput = this.templateObjects.yearInput
                  yInput.value = this.date.getFullYear()
 
