@@ -148,7 +148,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
         }
     },
 
-    handlePropertyChange: {
+    handlePathChange: {
         value: function(event) {
             console.log(event)
             this.fillDays()            
