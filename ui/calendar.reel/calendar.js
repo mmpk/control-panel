@@ -31,16 +31,13 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
             if(firstTime){
              var mc = this.templateObjects.monthController
                  mc.select(mc.content[this.date.getMonth()])
+                 mc.addPathChangeListener("selection[0]", this, false)
              /*
              var a1 = document.querySelector("#month_minus").addEventListener("mouseup", this, false);
-             var a2 = document.querySelector("#month_plus").addEventListener("mouseup", this, false);
-             var a1t = document.querySelector("#month_minus").addEventListener("touchstart", this, false);
-             var a2t = document.querySelector("#month_plus").addEventListener("touchstart", this, false);
              this.templateObjects.yearInput.element.addEventListener("change", this, false);
  */
-             var b = document.querySelector(".iwraper").addEventListener("mousedown", this, false);
-             var mc = this.templateObjects.monthController;   
-                 mc.addPathChangeListener("selection[0]", this, false)
+             var b = this.querySelector(".iwraper").addEventListener("mousedown", this, false);
+
              var yInput = this.templateObjects.yearInput
                  yInput.value = this.date.getFullYear()
 
