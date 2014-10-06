@@ -19,10 +19,11 @@ exports.NavLeft = Component.specialize(/** @lends NavLeft# */ {
         value: function(){            
             var tre = this.templateObjects.treeController;
             tre.nodes[0].expanded = true
-            console.log("TREE")
+            /*
             tre.nodes.forEach(function(n){
                 console.log(n.junctions)
             })
+            */
         }
     },
     Data: {
