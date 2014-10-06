@@ -29,7 +29,7 @@
                 "value": "19-09-2009"
             },
             "bindings": {
-                "value": {"<-": "@repetition.selection.0+'-'+@monthController.selection.0.month+'-'+@select.value"}
+                "value": {"<-": "@repetition.selection.0+'-'+@monthController.selection.0.month+'-'+@yearInput.value"}
             }
         },
         "monthController": {
@@ -55,13 +55,6 @@
                     "listener": {"@": "owner"}
                 }
             ]
-        },
-        "number": {
-            "prototype": "digit/ui/number-field.reel",
-            "properties": {
-                "element": {"#": "number"},
-                "value": "2014"
-            }
         },
         "overlay": {
             "prototype": "montage/ui/overlay.reel",
@@ -104,6 +97,16 @@
             "bindings": {
                 "value": {"<-": "@repetition:iteration.index +1"}
             }
+        },
+        "yearInput": {
+            "prototype": "digit/ui/number-field.reel",
+            "properties": {
+                "element": {"#": "yearInput"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "value": "2014"
+            }
         }
     }
     </script>
@@ -123,7 +126,7 @@
                         Select
                     </option>
                 </select>
-                <input type="number" data-montage-id="number">
+                <input type="number" data-montage-id="yearInput">
             </div>
             <div class="rep">
                 <div class="days">
