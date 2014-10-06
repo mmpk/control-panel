@@ -40,7 +40,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
  */
              var b = document.querySelector(".iwraper").addEventListener("mousedown", this, false);
              var mc = this.templateObjects.monthController;   
-                mc.addBeforePathChangeListener("selection[0]", this, false)
+                mc.addOwnPropertyChangeListener("selection[0]", this, false)
              var yInput = this.templateObjects.yearInput
                  yInput.value = this.date.getFullYear()
 
@@ -148,7 +148,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
         }
     },
 
-    handlePathChange: {
+    handlePropertyChange: {
         value: function(event) {
             console.log(event)
             this.fillDays()            
