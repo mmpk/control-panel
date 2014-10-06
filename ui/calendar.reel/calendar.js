@@ -34,7 +34,7 @@ exports.Calendar = Component.specialize(/** @lends Calendar# */ {
                  mc.select(mc.content[this.date.getMonth()])
               
                   var Sel = this.templateObjects.select
-                  Sel.value = "Octopus"
+                  Sel.value = "April"
                   console.log("SELECT")
                   console.log(Sel.values)
              /*
